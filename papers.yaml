@@ -1,0 +1,59 @@
+# 📄 papers.yaml — Source of truth for the research corpus
+#
+# Edit this file to curate your paper list. The README is AUTO-GENERATED
+# from this file (never edit README.md directly — run generate_readme.py).
+#
+# Schema:
+#   title:       Required
+#   date:        Required, YYYY-MM
+#   url:         Required, normalized (https://arxiv.org/abs/XXXX)
+#   category:    Required — one of the categories in config/taxonomy.yaml
+#   subcategory: Required — one of the subcategories in config/taxonomy.yaml
+#   authors:     Optional list
+#   venue:       Optional
+#   code_url:    Optional
+#   project_url: Optional
+#   abstract:    Optional
+#   tags:        Optional list
+#
+# All values below are EXAMPLES — replace them with papers from your own topic.
+
+papers:
+  - title: "Example Paper 1: A Foundational Survey of Your Topic"
+    date: "2026-01"
+    url: "https://arxiv.org/abs/2601.00001"
+    category: "survey"
+    subcategory: "hybrid"
+    authors:
+      - "Example Author A"
+      - "Example Author B"
+    venue: ""
+    code_url: ""
+    project_url: ""
+    abstract: "This is a placeholder abstract. Replace it with a real summary of the paper. The corpus pipeline uses title/abstract text for trend analysis, so keep abstracts accurate."
+    tags: []
+  - title: "Example Paper 2: An Agentic Method for Your Topic"
+    date: "2026-03"
+    url: "https://arxiv.org/abs/2603.00002"
+    category: "method"
+    subcategory: "agentic"
+    authors:
+      - "Example Author C"
+    venue: ""
+    code_url: ""
+    project_url: ""
+    abstract: "Another placeholder abstract. Papers are grouped by (category, subcategory) and sorted by year in the generated README."
+    tags: []
+  - title: "Example Paper 3: Application Study in Your Domain"
+    date: "2025-11"
+    url: "https://arxiv.org/abs/2511.00003"
+    category: "application"
+    subcategory: "non-agentic"
+    authors:
+      - "Example Author D"
+      - "Example Author E"
+    venue: ""
+    code_url: ""
+    project_url: ""
+    abstract: "A third placeholder. Once you add real papers, re-run the pipeline to regenerate statistics and reports."
+    tags: []
