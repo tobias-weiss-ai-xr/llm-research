@@ -49,7 +49,7 @@ scripts/validate_papers.py    ← schema/duplicate/URL validation
 scripts/generate_readme.py    ← README.md + docs/papers.json from papers.yaml
 scripts/standard_stats.py     ← statistics.json + papers.json + graph data
 scripts/analysis/generate_reports.py → docs/research/{literature_review,trends}.md
-scripts/fetch/                ← arXiv/OpenAlex/dblp/crossref/europepmc/GitHub discovery
+scripts/fetch/                ← arXiv/OpenAlex/dblp/crossref/europepmc/GitHub/GitLab/Codeberg discovery
 tools/                        ← topic_planner, trend_scanner, landscape_analyzer, brief_generator
 docs/index.html               ← GitHub Pages paper browser (reads docs/papers.json)
 ```
@@ -62,5 +62,7 @@ docs/index.html               ← GitHub Pages paper browser (reads docs/papers.
 - **"Suggest article topics"** → `python3 tools/topic_planner.py --top 10`
 - **"Find new papers"** → `python3 scripts/fetch/fetch_new_papers.py --local` (needs network)
 - **"Find GitHub repos"** → add ``github_queries`` to ``config/taxonomy.yaml``, then `python3 scripts/fetch/fetch_github_repos.py --dry-run`
+- **"Find GitLab projects"** → add ``gitlab_queries`` to ``config/taxonomy.yaml``, then `python3 scripts/fetch/fetch_gitlab_repos.py --dry-run`
+- **"Find Codeberg repos"** → add ``codeberg_queries`` to ``config/taxonomy.yaml``, then `python3 scripts/fetch/fetch_codeberg_repos.py --dry-run`
 - **"Fix broken/duplicate entries"** → validate with `--fix`, then review
   changed entries manually.

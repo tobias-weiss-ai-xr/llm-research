@@ -1,30 +1,27 @@
 #!/usr/bin/env python3
-"""Discover GitHub repositories relevant to your research topic.
+"""Discover Codeberg repositories relevant to your research topic.
 
-Reads GitHub search queries from ``config/taxonomy.yaml`` under the
-``github_queries`` key.  Each query can optionally specify a category,
-subcategory hint, and a minimum-stars override.  Repos are appended to
-``repos.yaml`` (sibling to ``papers.yaml``) in the same taxonomy.
+Reads queries from ``config/taxonomy.yaml`` under the ``codeberg_queries`` key.
+Uses the **Codeberg Gitea-compatible API** (no CLI needed).
 
-GitHub queries use the standard search syntax:
-  https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories
+Codeberg API docs (Gitea-flavoured):
+  https://codeberg.org/api/swagger
 
 Requirements:
-  - ``gh`` CLI installed and authenticated (``gh auth status``)
-  - ``pip install pyyaml``
+  - Internet access (public API, no token needed)
+  - ``pip install pyyaml requests``
 
 Usage:
-    python3 scripts/fetch/fetch_github_repos.py --dry-run
-    python3 scripts/fetch/fetch_github_repos.py --min-stars 100
-    python3 scripts/fetch/fetch_github_repos.py --from 5 --to 10
+    python3 scripts/fetch/fetch_codeberg_repos.py --dry-run
+    python3 scripts/fetch/fetch_codeberg_repos.py --min-stars 5
+    python3 scripts/fetch/fetch_codeberg_repos.py --host https://codeberg.org
 
-Output: repos.yaml in the repo root.
+Output: repos.yaml in the repo root (shared with other repo fetchers).
 """
 
 import argparse
-import json
+import os
 import re
-import subprocess
 import sys
 import time
 from collections import Counter
@@ -33,6 +30,7 @@ from pathlib import Path
 # Allow imports from scripts/ (sibling directory)
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+import requests
 import research_config
 from repos_common import (
     REPOS_YAML,
@@ -44,17 +42,26 @@ from repos_common import (
     append_repos,
 )
 
+CODEBERG_HOST = os.environ.get("CODEBERG_HOST", "https://codeberg.org")
+USER_AGENT = "Research-Corpus/1.0 (mailto:business@tobias-weiss.org)"
+
 
 # ── Config loading ────────────────────────────────────────────────────────
 
-def load_github_queries(cfg):
-    """Load github_queries from taxonomy.yaml.
+def load_codeberg_queries(cfg):
+    """Load codeberg_queries from taxonomy.yaml.
 
     Each entry must have ``query``.  Optional: ``category``,
-    ``subcategory_hint``, ``min_stars``.
+    ``subcategory_hint``, ``min_stars``, ``language``, ``owner`` (restrict
+    to a specific org/user).
+
+    Codeberg/Gitea search supports:
+      - Plain text search across repo names and descriptions
+      - ``topic:TAG`` prefix in query for topic filtering
+      - ``language:LANG`` prefix for language filtering
     """
     queries = []
-    for item in cfg.get("github_queries", []):
+    for item in cfg.get("codeberg_queries", []):
         q = item.get("query", "")
         if not q:
             continue
@@ -63,41 +70,75 @@ def load_github_queries(cfg):
             "category": item.get("category", ""),
             "subcategory_hint": item.get("subcategory_hint", ""),
             "min_stars": item.get("min_stars"),
+            "language": item.get("language", ""),
+            "owner": item.get("owner", ""),
         })
     return queries
 
 
-# ── GitHub API helpers ────────────────────────────────────────────────────
+# ── Codeberg / Gitea API helpers ──────────────────────────────────────────
 
-def gh_search_repos(query, sort="stars", order="desc", per_page=30, page=1):
-    """Search GitHub repos via ``gh api``.  Returns (items, total_count)."""
-    cmd = [
-        "gh", "api", "--method", "GET",
-        f"search/repositories?q={query}&sort={sort}&order={order}"
-        f"&per_page={per_page}&page={page}",
-    ]
+session = requests.Session()
+session.headers.update({"User-Agent": USER_AGENT})
+
+
+def codeberg_search_repos(query, host, per_page=20, page=1, owner=None):
+    """Search Codeberg repos via Gitea-compatible API.
+
+    Returns (items, total_count).  The ``repos/search`` endpoint supports
+    ``q``, ``sort``, ``order``, ``limit``, ``page``.
+    """
+    params = {
+        "q": query,
+        "sort": "stars",
+        "order": "desc",
+        "limit": min(per_page, 50),  # Gitea max is 50
+        "page": page,
+    }
+    if owner:
+        params["q"] = f"{query} user:{owner}"
+
     try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
-        if result.returncode != 0:
-            err = result.stderr.strip()
-            if "422" in err or "rate limit" in err.lower():
-                return [], 0
-            if "could not resolve host" in err.lower():
-                print("  WARNING: network error — skipping query", flush=True)
-                return [], 0
-            print(f"  WARNING: gh api error: {err[:120]}", flush=True)
+        resp = session.get(
+            f"{host}/api/v1/repos/search",
+            params=params,
+            timeout=30,
+        )
+        if resp.status_code == 429:
+            print("  WARNING: Codeberg rate limit (429), waiting 60s", flush=True)
+            time.sleep(60)
             return [], 0
-        data = json.loads(result.stdout)
-        return data.get("items", []), data.get("total_count", 0)
-    except subprocess.TimeoutExpired:
-        print("  WARNING: gh api timeout (30s)", flush=True)
+
+        if resp.status_code >= 400:
+            print(f"  WARNING: Codeberg API {resp.status_code}: {resp.text[:100]}",
+                  flush=True)
+            return [], 0
+
+        data = resp.json()
+        if not isinstance(data, dict):
+            return [], 0
+
+        items = data.get("data", [])
+        ok = data.get("ok", False)
+        total = data.get("total_count", len(items))
+        return (items if ok else []), total
+    except requests.Timeout:
+        print("  WARNING: Codeberg API timeout", flush=True)
         return [], 0
-    except json.JSONDecodeError:
+    except requests.ConnectionError:
+        print("  WARNING: Codeberg connection error", flush=True)
         return [], 0
 
 
-def github_to_raw(item):
-    """Map a GitHub API search result to a normalised raw dict."""
+def codeberg_to_raw(item):
+    """Map a Codeberg/Gitea repo to a normalised raw dict."""
+    license_info = item.get("license", {}) or {}
+    license_name = ""
+    if isinstance(license_info, dict):
+        license_name = license_info.get("spdx_id", license_info.get("name", ""))
+
+    topics = item.get("topics", []) or []
+
     return {
         "name": item.get("full_name", ""),
         "url": item.get("html_url", ""),
@@ -105,11 +146,11 @@ def github_to_raw(item):
         "stars": item.get("stargazers_count", 0),
         "forks": item.get("forks_count", 0),
         "language": item.get("language") or "",
-        "topics": item.get("topics", []),
-        "pushed_at": item.get("pushed_at", "")[:10],
-        "created_at": item.get("created_at", "")[:10],
+        "topics": topics,
+        "pushed_at": (item.get("updated_at", "") or "")[:10],
+        "created_at": (item.get("created_at", "") or "")[:10],
         "open_issues": item.get("open_issues_count", 0),
-        "license": (item.get("license") or {}).get("spdx_id", ""),
+        "license": license_name,
     }
 
 
@@ -117,42 +158,44 @@ def github_to_raw(item):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Discover GitHub repos relevant to your research topic."
+        description="Discover Codeberg repos relevant to your research topic."
     )
-    parser.add_argument("--min-stars", type=int, default=50,
-                        help="Default minimum star threshold (default: 50)")
-    parser.add_argument("--per-page", type=int, default=30,
-                        help="Results per GitHub query page (max 100)")
+    parser.add_argument("--min-stars", type=int, default=5,
+                        help="Default minimum star threshold (default: 5; Codeberg repos have fewer stars)")
+    parser.add_argument("--per-page", type=int, default=20,
+                        help="Results per page (max 50)")
     parser.add_argument("--dry-run", action="store_true",
                         help="Preview without writing files")
-    parser.add_argument("--sleep", type=float, default=3.0,
-                        help="Seconds between queries (default: 3)")
-    parser.add_argument("--max-pages", type=int, default=3,
-                        help="Max pages per query (default: 3 = 90 repos/query)")
+    parser.add_argument("--sleep", type=float, default=2.0,
+                        help="Seconds between queries (default: 2)")
+    parser.add_argument("--max-pages", type=int, default=5,
+                        help="Max pages per query (default: 5)")
     parser.add_argument("--from", dest="from_idx", type=int, default=0,
-                        help="Start at query index (0-based)")
+                        help="Start at query index")
     parser.add_argument("--to", dest="to_idx", type=int, default=None,
                         help="Stop at query index (inclusive)")
+    parser.add_argument("--host", type=str, default=CODEBERG_HOST,
+                        help="Codeberg host URL (default: https://codeberg.org)")
     parser.add_argument("--output", type=str, default=None,
                         help="Output file path (default: repos.yaml)")
     args = parser.parse_args()
 
     cfg = research_config.load_config()
-    queries = load_github_queries(cfg)
+    queries = load_codeberg_queries(cfg)
 
     if not queries:
         topic_name = cfg.get("topic", {}).get("name", "your topic")
-        print("ERROR: No github_queries defined in config/taxonomy.yaml.", file=sys.stderr)
-        print("Add a ``github_queries`` section, e.g.:", file=sys.stderr)
+        print("ERROR: No codeberg_queries defined in config/taxonomy.yaml.", file=sys.stderr)
+        print("Add a ``codeberg_queries`` section, e.g.:", file=sys.stderr)
         print("", file=sys.stderr)
-        print("github_queries:", file=sys.stderr)
-        print(f'  - query: "topic:{_norm(topic_name).replace(" ", "-")}+stars:>50"', file=sys.stderr)
+        print("codeberg_queries:", file=sys.stderr)
+        print(f'  - query: "{_norm(topic_name)}"', file=sys.stderr)
         print('    category: method', file=sys.stderr)
-        print('  - query: "YOUR KEYWORD+tool+stars:>100"', file=sys.stderr)
+        print('  - query: "YOUR KEYWORD tool"', file=sys.stderr)
         print('    category: application', file=sys.stderr)
+        print('    min_stars: 10', file=sys.stderr)
         print("", file=sys.stderr)
-        print("See: https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories",
-              file=sys.stderr)
+        print("See: https://codeberg.org/api/swagger", file=sys.stderr)
         sys.exit(1)
 
     # Build relevance filter
@@ -169,28 +212,29 @@ def main():
 
     existing_names, existing_count = load_existing_repos(output_path)
     print(f"Loaded {existing_count} existing repos from {output_path.name}", flush=True)
-    print(f"Running {len(active)}/{len(queries)} queries (min-stars {args.min_stars})...", flush=True)
+    print(f"Running {len(active)}/{len(queries)} queries on {args.host} "
+          f"(min-stars {args.min_stars})...", flush=True)
 
     all_new = []
     total_results = 0
     filtered_out = 0
 
     for qi, qinfo in enumerate(active, start=args.from_idx):
-        query_raw = qinfo["query"]
+        query_text = qinfo["query"]
         cat = qinfo.get("category", "")
         hint = qinfo.get("subcategory_hint", "")
         q_min_stars = qinfo.get("min_stars", args.min_stars)
-
-        if "stars:" not in query_raw:
-            query = f"{query_raw}+stars:>{q_min_stars}"
-        else:
-            query = re.sub(r'stars:>\d+', f'stars:>{q_min_stars}', query_raw)
+        q_owner = qinfo.get("owner", "")
 
         label = f"[{cat}]" if cat else f"[q{qi}]"
-        print(f"\nQuery {qi + 1}/{len(queries)} {label} {query[:90]}", flush=True)
+        print(f"\nQuery {qi + 1}/{len(queries)} {label} {query_text[:80]}", flush=True)
 
         for page in range(1, args.max_pages + 1):
-            items, total = gh_search_repos(query, per_page=args.per_page, page=page)
+            items, total = codeberg_search_repos(
+                query_text, args.host,
+                per_page=args.per_page, page=page,
+                owner=q_owner if q_owner else None,
+            )
             if qi == args.from_idx and page == 1:
                 total_results += total
                 print(f"  {total} total results", flush=True)
@@ -204,15 +248,19 @@ def main():
                 if name.lower().strip() in existing_names:
                     continue
 
+                # Client-side star filtering (API doesn't support min_stars)
+                if (item.get("stargazers_count") or 0) < q_min_stars:
+                    continue
+
                 desc = item.get("description") or ""
-                topics = item.get("topics", [])
+                topics = item.get("topics", []) or []
 
                 if not is_relevant_repo(name, desc, topics, signal_re):
                     filtered_out += 1
                     continue
 
                 existing_names.add(name.lower().strip())
-                raw = github_to_raw(item)
+                raw = codeberg_to_raw(item)
                 entry = normalize_entry(raw, cat, hint, cfg)
                 all_new.append(entry)
                 page_new += 1
@@ -226,7 +274,7 @@ def main():
         time.sleep(args.sleep)
 
     print(f"\n{'='*60}", flush=True)
-    print(f"Total search results scanned: {total_results}", flush=True)
+    print(f"Total results scanned: {total_results}", flush=True)
     print(f"Filtered out (irrelevant): {filtered_out}", flush=True)
     print(f"New relevant repos: {len(all_new)}", flush=True)
 
@@ -251,16 +299,11 @@ def main():
     print(f"\nAppended {len(all_new)} repos to {output_path.name}", flush=True)
 
     cats = Counter(e["category"] for e in all_new)
-    langs = Counter(e["language"] for e in all_new if e["language"])
     total_stars = sum(e["stars"] for e in all_new)
 
     print("\nCategory breakdown:", flush=True)
     for c, count in cats.most_common():
         print(f"  {c:20} {count:4}", flush=True)
-
-    print("\nTop languages:", flush=True)
-    for lang, count in langs.most_common(5):
-        print(f"  {lang:15} {count:4}", flush=True)
 
     print(f"\nTotal new stars: {total_stars:,}", flush=True)
 

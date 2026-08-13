@@ -79,12 +79,46 @@ openalex_queries:
 #   - query: "YOUR-KEYWORD+awesome+stars:>50"
 #     category: survey
 
-# ── GitHub relevance signals (optional) ─────────────────────────────────────
-# Extra keyword tokens used by fetch_github_repos.py to filter out irrelevant
-# repos from broad searches.  The fetcher also auto-extracts signals from
-# topic.name, topic.description, and taxonomy IDs.
+# ── GitLab repository discovery (fetch_gitlab_repos.py) ──────────────────────
+# GitLab public API — no CLI required.  Optional keys: category,
+# subcategory_hint, min_stars, topics (list), language.
+# See: https://docs.gitlab.com/ee/api/projects.html#search-for-projects-by-name
 #
-# github_signals:
+# Examples:
+# gitlab_queries:
+#   - query: "YOUR TOPIC"
+#     category: application
+#   - query: "YOUR KEYWORD tool"
+#     category: method
+#     min_stars: 10
+#     topics:
+#       - "devops"
+#       - "ci-cd"
+
+# ── Codeberg repository discovery (fetch_codeberg_repos.py) ──────────────────
+# Gitea-compatible API.  Optional keys: category, subcategory_hint,
+# min_stars, language, owner (restrict to org/user).
+# Supports topic:TAG and language:LANG prefixes in query string.
+# See: https://codeberg.org/api/swagger
+#
+# Examples:
+# codeberg_queries:
+#   - query: "YOUR TOPIC"
+#     category: method
+#   - query: "YOUR KEYWORD tool topic:devops"
+#     category: application
+#     min_stars: 5
+#   - query: "YOUR KEYWORD"
+#     category: evaluation
+#     owner: "some-org"
+
+# ── Relevance signals for repo fetchers (optional) ──────────────────────────
+# Extra keyword tokens shared by ALL repo fetchers (github, gitlab, codeberg)
+# to filter out irrelevant repos from broad searches.
+# Also accepts ``github_signals`` as a legacy alias.
+# Auto-extracted from: topic.name, topic.description, taxonomy IDs.
+#
+# repo_signals:
 #   - "llm security"
 #   - "model context protocol"
 #   - "prompt injection"
