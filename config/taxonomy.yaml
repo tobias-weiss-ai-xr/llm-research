@@ -60,3 +60,31 @@ openalex_queries:
     query: "YOUR TOPIC method architecture"
   - category: application
     query: "YOUR TOPIC application system"
+
+# ── GitHub repository discovery (fetch_github_repos.py) ─────────────────────
+# Each entry is a GitHub search query (topic:, keyword combos, stars:>N).
+# Optional keys: category, subcategory_hint, min_stars (per-query override).
+# If no queries are defined, the fetcher prints setup instructions and exits.
+# See: https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories
+#
+# Examples:
+# github_queries:
+#   - query: "topic:YOUR-TOPIC+stars:>100"
+#     category: application
+#   - query: "YOUR-KEYWORD+tool+stars:>200"
+#     category: method
+#   - query: "YOUR-KEYWORD+framework"
+#     category: method
+#     min_stars: 500          # per-query star threshold override
+#   - query: "YOUR-KEYWORD+awesome+stars:>50"
+#     category: survey
+
+# ── GitHub relevance signals (optional) ─────────────────────────────────────
+# Extra keyword tokens used by fetch_github_repos.py to filter out irrelevant
+# repos from broad searches.  The fetcher also auto-extracts signals from
+# topic.name, topic.description, and taxonomy IDs.
+#
+# github_signals:
+#   - "llm security"
+#   - "model context protocol"
+#   - "prompt injection"

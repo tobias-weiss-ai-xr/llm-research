@@ -49,7 +49,7 @@ scripts/validate_papers.py    ← schema/duplicate/URL validation
 scripts/generate_readme.py    ← README.md + docs/papers.json from papers.yaml
 scripts/standard_stats.py     ← statistics.json + papers.json + graph data
 scripts/analysis/generate_reports.py → docs/research/{literature_review,trends}.md
-scripts/fetch/                ← arXiv/OpenAlex/dblp/crossref/europepmc discovery
+scripts/fetch/                ← arXiv/OpenAlex/dblp/crossref/europepmc/GitHub discovery
 tools/                        ← topic_planner, trend_scanner, landscape_analyzer, brief_generator
 docs/index.html               ← GitHub Pages paper browser (reads docs/papers.json)
 ```
@@ -61,5 +61,6 @@ docs/index.html               ← GitHub Pages paper browser (reads docs/papers.
 - **"What are the research gaps?"** → `python3 tools/landscape_analyzer.py`
 - **"Suggest article topics"** → `python3 tools/topic_planner.py --top 10`
 - **"Find new papers"** → `python3 scripts/fetch/fetch_new_papers.py --local` (needs network)
+- **"Find GitHub repos"** → add ``github_queries`` to ``config/taxonomy.yaml``, then `python3 scripts/fetch/fetch_github_repos.py --dry-run`
 - **"Fix broken/duplicate entries"** → validate with `--fix`, then review
   changed entries manually.
