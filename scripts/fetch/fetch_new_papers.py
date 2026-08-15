@@ -22,7 +22,26 @@ ARXIV_SEARCH_API = (
 
 
 def get_queries(cfg):
-    return cfg.get("arxiv_queries", [])
+    """Return arXiv queries, supporting both string and dict formats.
+
+    Each entry can be:
+      - a plain string (legacy): 'cat:cs.RO AND abs:"manipulation"'
+      - a dict with query + optional category/subcategory_hint:
+        query: 'cat:cs.RO AND abs:"manipulation"'
+        category: manipulation        # optional
+        subcategory_hint: method      # optional
+    """
+    out = []
+    for q in cfg.get("arxiv_queries", []):
+        if isinstance(q, dict):
+            out.append({
+                "query": q.get("query", ""),
+                "category": q.get("category", ""),
+                "subcategory_hint": q.get("subcategory_hint", ""),
+            })
+        else:
+            out.append({"query": q, "category": "", "subcategory_hint": ""})
+    return out
 
 
 def classify_subcategory(title, abstract="", cfg=None):
@@ -121,12 +140,16 @@ def format_yaml_entry(entry, cfg):
     title = entry["title"].replace('"', '\\"')
     cats = " | ".join(c["id"] for c in research_config.get_categories(cfg)) or "?"
     subs = " | ".join(s["id"] for s in research_config.get_subcategories(cfg)) or "?"
+    cat = entry.get("category", "")
+    sub = entry.get("subcategory", "")
+    cat_line = f'    category: "{cat}"' if cat else f'    category: ""  # TODO: {cats}'
+    sub_line = f'    subcategory: "{sub}"' if sub else f'    subcategory: ""  # TODO: {subs}'
     lines = [
         f'  - title: "{title}"',
         f'    date: "{entry.get("date", "")}"',
         f'    url: "{entry.get("url", "")}"',
-        f'    category: ""  # TODO: {cats}',
-        f'    subcategory: ""  # TODO: {subs}',
+        cat_line,
+        sub_line,
     ]
     if entry.get("abstract"):
         abstract = entry["abstract"][:200].replace('"', '\\"')
@@ -173,7 +196,10 @@ def main():
         return
 
     all_new = []
-    for qi, query in enumerate(queries):
+    for qi, qinfo in enumerate(queries):
+        query = qinfo["query"]
+        q_category = qinfo.get("category", "")
+        q_hint = qinfo.get("subcategory_hint", "")
         print(f"\nQuery {qi + 1}/{len(queries)}...", flush=True)
         entries = search_arxiv(query, args.months)
         for entry in entries:
@@ -190,6 +216,11 @@ def main():
             if arxiv_id and any(e.get("url", "") == entry["url"] for e in all_new):
                 continue
 
+            # Auto-classify subcategory if no hint; always classify subcategory
+            sub = q_hint or classify_subcategory(
+                entry.get("title", ""), entry.get("abstract", ""), cfg)
+            entry["category"] = q_category
+            entry["subcategory"] = sub
             all_new.append(entry)
 
         time.sleep(3)
@@ -224,8 +255,8 @@ def main():
                         "title": entry.get("title", ""),
                         "date": entry.get("date", ""),
                         "url": entry.get("url", ""),
-                        "category": "",
-                        "subcategory": "",
+                        "category": entry.get("category", ""),
+                        "subcategory": entry.get("subcategory", ""),
                         "abstract": entry.get("abstract", ""),
                     }
                 )
@@ -263,8 +294,8 @@ def main():
                         "title": entry.get("title", ""),
                         "date": entry.get("date", ""),
                         "url": entry.get("url", ""),
-                        "category": "",
-                        "subcategory": "",
+                        "category": entry.get("category", ""),
+                        "subcategory": entry.get("subcategory", ""),
                         "abstract": entry.get("abstract", ""),
                     }
                 )

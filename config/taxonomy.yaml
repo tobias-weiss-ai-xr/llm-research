@@ -37,6 +37,10 @@ taxonomy:
 # ── Discovery: arXiv queries (fetch_new_papers.py) ───────────────────────────
 # Each entry is an arXiv API query string (cat: + abs:/ti: operators).
 # Keep them topic-specific; the script deduplicates automatically.
+# Entries can also be dicts with optional category/subcategory_hint:
+#   - query: 'cat:cs.RO AND abs:"manipulation"'
+#     category: manipulation
+#     subcategory_hint: method
 arxiv_queries:
   - 'cat:cs.AI AND (abs:"YOUR TOPIC A" OR abs:"YOUR TOPIC B")'
   - 'cat:cs.CL AND (abs:"YOUR TOPIC C" AND abs:"agent")'
