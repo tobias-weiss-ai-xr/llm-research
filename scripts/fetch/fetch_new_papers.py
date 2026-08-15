@@ -128,6 +128,45 @@ def search_arxiv(query, months, start=0, max_results=100):
             summary_m = re.search(r"<summary>(.*?)</summary>", entry_xml, re.DOTALL)
             if summary_m:
                 entry["abstract"] = re.sub(r"\s+", " ", summary_m.group(1).strip())
+            # Extract authors from <author><name>...</name></author> tags
+            authors = []
+            for auth_m in re.finditer(r"<author>\s*<name>(.*?)</name>\s*</author>", entry_xml, re.DOTALL):
+                name = auth_m.group(1).strip()
+                if name:
+                    authors.append(name)
+            entry["authors"] = authors[:5]  # cap at 5 for readability
+            # Extract venue hint from <arxiv:comment> if present
+            venue = ""
+            comment_m = re.search(r"<arxiv:comment[^>]*>(.*?)</arxiv:comment>", entry_xml, re.DOTALL)
+            if comment_m:
+                comment = re.sub(r"\s+", " ", comment_m.group(1).strip())
+                venue_match = re.search(
+                    r"(?:Accepted|Published|Appears in|in proceedings of|in|at)\s+"
+                    r"((?:ACL|EMNLP|NAACL|NeurIPS|ICML|ICLR|CVPR|ICCV|ECCV|AAAI|"
+                    r"IJCAI|COLM|COLING|KDD|WWW|SIGIR|WSDM|CIKM|TMLR|JMLR|ICRA|IROS|RA-L|"
+                    r"CoRL|RSS|Humanoids|CASE|RAL)[\w\s\.\-]*"
+                    r"(?:\d{4})?)",
+                    comment, re.IGNORECASE
+                )
+                if venue_match:
+                    venue = venue_match.group(1).strip()
+            entry["venue"] = venue
+            # Extract code/project URLs from abstract
+            abstract_text = entry.get("abstract", "")
+            code_url = ""
+            project_url = ""
+            github_match = re.search(r"https?://github\.com/[\w\-.]+/[\w\-.]+", abstract_text)
+            if github_match:
+                code_url = github_match.group(0).rstrip(".")
+            proj_match = re.search(r"https?://(?:[\w\-.]+\.)?(?:github\.io|sites\.google\.com|huggingface\.co|zenodo\.org|projectpage\.[\w\-.]+)/[^\s\)]+", abstract_text)
+            if proj_match:
+                project_url = proj_match.group(0).rstrip(".")
+            if not code_url and not project_url:
+                gh_io_match = re.search(r"https?://[\w\-.]+\.github\.io/[^\s\)]+", abstract_text)
+                if gh_io_match:
+                    project_url = gh_io_match.group(0).rstrip(".")
+            entry["code_url"] = code_url
+            entry["project_url"] = project_url
             if entry.get("title") and entry.get("url"):
                 entries.append(entry)
         return entries
@@ -151,6 +190,18 @@ def format_yaml_entry(entry, cfg):
         cat_line,
         sub_line,
     ]
+    authors = entry.get("authors", [])
+    if authors:
+        lines.append(f'    authors:')
+        for a in authors:
+            lines.append(f'      - "{a}"')
+    if entry.get("venue"):
+        venue = entry["venue"].replace('"', '\\"')
+        lines.append(f'    venue: "{venue}"')
+    if entry.get("code_url"):
+        lines.append(f'    code_url: "{entry["code_url"]}"')
+    if entry.get("project_url"):
+        lines.append(f'    project_url: "{entry["project_url"]}"')
     if entry.get("abstract"):
         abstract = entry["abstract"][:200].replace('"', '\\"')
         lines.append(f'    abstract: "{abstract}..."')
@@ -257,6 +308,10 @@ def main():
                         "url": entry.get("url", ""),
                         "category": entry.get("category", ""),
                         "subcategory": entry.get("subcategory", ""),
+                        "authors": entry.get("authors", []),
+                        "venue": entry.get("venue", ""),
+                        "code_url": entry.get("code_url", ""),
+                        "project_url": entry.get("project_url", ""),
                         "abstract": entry.get("abstract", ""),
                     }
                 )
@@ -296,6 +351,10 @@ def main():
                         "url": entry.get("url", ""),
                         "category": entry.get("category", ""),
                         "subcategory": entry.get("subcategory", ""),
+                        "authors": entry.get("authors", []),
+                        "venue": entry.get("venue", ""),
+                        "code_url": entry.get("code_url", ""),
+                        "project_url": entry.get("project_url", ""),
                         "abstract": entry.get("abstract", ""),
                     }
                 )

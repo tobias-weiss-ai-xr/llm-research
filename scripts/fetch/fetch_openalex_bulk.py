@@ -182,7 +182,7 @@ def fetch_category(terms, months, per_category, sleep, subcat_keywords=None, mai
                     "category": None,
                     "subcategory": classify_subcategory(title, abstract, subcat_keywords),
                     "authors": [a.get("author", {}).get("display_name", "") for a in work.get("authorships", [])][:3],
-                    "abstract": abstract[:200],
+                    "abstract": abstract,
                     "venue": ((work.get("primary_location") or {}).get("source") or {}).get("display_name") or "",
                 }
             )

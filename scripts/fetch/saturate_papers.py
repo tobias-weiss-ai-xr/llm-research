@@ -33,18 +33,39 @@ MONTHS_BACK = 48
 MAX_ROUNDS = 3
 
 def get_queries(cfg):
+    """Expand arxiv_queries across multiple arXiv categories.
+
+    If a query already specifies a cat: clause, it is used as-is.
+    Otherwise, the query is expanded across the categories defined in
+    config/taxonomy.yaml (arxiv_expand_cats) or a default set.
+    Supports both string and dict query formats (like fetch_new_papers.py).
+    """
     base = cfg.get("arxiv_queries", [])
-    cats = ["cs.AI", "cs.CL", "cs.LG", "cs.RO"]
+    # Config can specify which arXiv categories to expand across
+    expand_cats = cfg.get("arxiv_expand_cats", ["cs.AI", "cs.LG", "cs.RO"])
     out = []
     for q in base:
-        m = re.match(r'cat:([\w.]+) AND (.+)', q)
+        if isinstance(q, dict):
+            query_str = q.get("query", "")
+            q_category = q.get("category", "")
+            q_hint = q.get("subcategory_hint", "")
+        else:
+            query_str = q
+            q_category = ""
+            q_hint = ""
+        m = re.match(r'cat:([\w.]+)\s+AND\s+(.+)', query_str)
         if m:
             clause = m.group(2)
-            for c in cats:
-                out.append(f'cat:{c} AND {clause}')
+            # Keep original category, also expand across other cats
+            out.append({"query": query_str, "category": q_category, "subcategory_hint": q_hint})
+            for c in expand_cats:
+                if c != m.group(1):
+                    out.append({"query": f'cat:{c} AND {clause}', "category": q_category, "subcategory_hint": q_hint})
         else:
-            out.append(q)
-    return out or [f'cat:cs.AI AND abs:"{cfg.get("topic", {}).get("short", "research")}"']
+            # No cat: prefix — expand across all expand_cats
+            for c in expand_cats:
+                out.append({"query": f'cat:{c} AND {query_str}', "category": q_category, "subcategory_hint": q_hint})
+    return out or [{"query": f'cat:cs.AI AND abs:"{cfg.get("topic", {}).get("short", "research")}"', "category": "", "subcategory_hint": ""}]
 
 
 def load_existing_papers(yaml_path):
@@ -108,217 +129,28 @@ def search_arxiv(query, months_back):
         return []
 
 
-AGENT_KEYWORDS = [
-    "agent",
-    "agents",
-    "llm",
-    "language model",
-    "autonomous",
-    "embodied",
-    "robot",
-    "assistant",
-    "chatbot",
-    "dialogue system",
-    "conversational",
-]
+def load_relevance_keywords(cfg):
+    """Load relevance keywords from config/taxonomy.yaml.
 
-MEMORY_KEYWORDS_AGENT_MEMORY = [
-    "agent memory",
-    "llm memory",
-    "memory-augmented agent",
-    "memory augmented agent",
-    "agent memor",
-    "long-term memory",
-    "episodic memory",
-    "semantic memory",
-    "working memory",
-    "experience replay",
-    "memory bank",
-    "memory store",
-    "memory system",
-    "memory architecture",
-    "memory management",
-    "memory-augmented",
-    "memory retrieval",
-    "memory update",
-    "memory consolidation",
-    "memory hierarchy",
-    "memory pruning",
-    "memory evolution",
-    "memory retention",
-    "context compression",
-    "context management",
-    "knowledge retention",
-    "reflexion",
-    "reflective memory",
-    "generative agent",
-    "memory module",
-    "structured memory",
-    "memory write",
-    "memory read",
-    "latent memory",
-    "memory personalization",
-    "reflective memory",
-    "memory benchmark",
-    "conversation memory",
-    "chat memory",
-    "dialogue memory",
-    "cognitive memory",
-    "memgpt",
-    "mem0",
-    "letta",
-    "memory wire",
-    "memory protocol",
-    "memory governance",
-    "memory ontology",
-    "memory constitution",
-    "memory lifecycle",
-]
-
-EXPERIENTIAL_KEYWORDS = [
-    "episodic",
-    "experiential",
-    "experience",
-    "narrative memory",
-    "event-based",
-    "interaction history",
-    "conversation history",
-    "dialogue history",
-    "trajectory",
-    "reflect",
-    "reflection",
-    "self-reflection",
-    "reflexion",
-]
-
-WORKING_KEYWORDS = [
-    "working memory",
-    "short-term",
-    "context management",
-    "kv cache",
-    "kv-cache",
-    "cache memory",
-    "attention memory",
-    "streaming",
-    "prompt caching",
-    "inference-time",
-]
-
-PARAMETRIC_KEYWORDS = [
-    "parametric",
-    "parameter",
-    "weight update",
-    "model update",
-    "fine-tun",
-    "finetun",
-    "gradient",
-    "continual learning",
-    "lifelong learning",
-    "continual pretrain",
-]
-
-LATENT_KEYWORDS = [
-    "latent",
-    "latent memory",
-    "latent space",
-    "embedding",
-    "vector store",
-    "vector database",
-    "knowledge graph",
-    "latent representation",
-    "implicit memory",
-    "representation learning",
-]
+    Returns a list of keyword strings. A paper is considered relevant if
+    any keyword appears in its title or abstract.
+    Falls back to the topic short name if no keywords are configured.
+    """
+    kws = cfg.get("relevance_keywords", [])
+    if kws:
+        return kws
+    # Fallback: use topic short name and category names
+    short = cfg.get("topic", {}).get("short", "")
+    cats = [c.get("id", "") for c in cfg.get("taxonomy", {}).get("categories", [])]
+    return [short] + cats if short else cats
 
 
-def is_relevant(title, abstract):
+def is_relevant(title, abstract, relevance_keywords=None):
+    """Check if a paper is relevant based on config-driven keywords."""
+    if not relevance_keywords:
+        return True  # No filter — accept all
     text = f"{title} {abstract}".lower()
-
-    has_agent = any(k in text for k in AGENT_KEYWORDS)
-    has_specific_memory = any(k in text for k in MEMORY_KEYWORDS_AGENT_MEMORY)
-
-    if has_agent and has_specific_memory:
-        return True
-
-    if has_agent:
-        memory_generic = any(
-            k in text
-            for k in [
-                "memory",
-                "memorization",
-                "forgetting",
-                "recall",
-                "retrieval",
-                "retriev",
-                "remember",
-                "context window",
-                "knowledge graph",
-                "cache",
-            ]
-        )
-        if memory_generic:
-            agent_terms = any(
-                k in text
-                for k in [
-                    "agent",
-                    "agents",
-                    "llm",
-                    "autonomous agent",
-                    "language model",
-                    "embodied agent",
-                    "conversational",
-                    "dialogue",
-                    "assistant",
-                    "multi-agent",
-                ]
-            )
-            if agent_terms:
-                return True
-
-    return False
-
-
-def classify_paper(title, abstract):
-    text = f"{title} {abstract}".lower()
-
-    is_exp = any(k in text for k in EXPERIENTIAL_KEYWORDS)
-    is_work = any(k in text for k in WORKING_KEYWORDS)
-
-    if is_work and not is_exp:
-        category = "working"
-    elif is_exp:
-        category = "experiential"
-    else:
-        category = "factual"
-
-    is_param = any(k in text for k in PARAMETRIC_KEYWORDS)
-    is_lat = any(k in text for k in LATENT_KEYWORDS)
-    is_tok = any(
-        k in text
-        for k in [
-            "token",
-            "text retrieval",
-            "retrieval",
-            "store",
-            "database",
-            "key-value",
-            "symbolic",
-            "explicit",
-            "rag",
-            "retrieve",
-            "index",
-            "knowledge base",
-        ]
-    )
-
-    if is_param and not is_lat and not is_tok:
-        subcategory = "parametric"
-    elif is_lat and not is_tok:
-        subcategory = "latent"
-    else:
-        subcategory = "token-level"
-
-    return category, subcategory
+    return any(kw.lower() in text for kw in relevance_keywords)
 
 
 def dedup_title(title, titles_lower, threshold=0.75):
@@ -341,7 +173,7 @@ def save_papers(yaml_path, data, papers):
         )
 
 
-def run_round(yaml_path, data, papers, by_id, titles_lower, queries, round_num):
+def run_round(yaml_path, data, papers, by_id, titles_lower, queries, round_num, cfg, relevance_keywords):
     print(f"\n{'=' * 60}", flush=True)
     print(f"ROUND {round_num}", flush=True)
     print(f"{'=' * 60}", flush=True)
@@ -350,7 +182,13 @@ def run_round(yaml_path, data, papers, by_id, titles_lower, queries, round_num):
     seen_ids = set()
     seen_titles = set(titles_lower)
 
-    for qi, query in enumerate(queries):
+    # Import classify_subcategory from fetch_new_papers for config-driven classification
+    from fetch_new_papers import classify_subcategory
+
+    for qi, qinfo in enumerate(queries):
+        query = qinfo["query"]
+        q_category = qinfo.get("category", "")
+        q_hint = qinfo.get("subcategory_hint", "")
         cat_match = re.search(r"cat:(\S+)", query)
         cat = cat_match.group(1) if cat_match else "?"
         print(
@@ -382,23 +220,25 @@ def run_round(yaml_path, data, papers, by_id, titles_lower, queries, round_num):
 
             abstract = entry.get("abstract", "")
 
-            if not is_relevant(title, abstract):
+            if not is_relevant(title, abstract, relevance_keywords):
                 continue
 
-            category, subcategory = classify_paper(title, abstract)
+            # Config-driven classification
+            cat = q_category or ""
+            sub = q_hint or classify_subcategory(title, abstract, cfg)
 
             new_paper = {
                 "title": title,
                 "date": entry.get("date", ""),
                 "url": entry.get("url", ""),
-                "category": category,
-                "subcategory": subcategory,
+                "category": cat,
+                "subcategory": sub,
                 "authors": [],
                 "venue": "",
                 "code_url": "",
                 "project_url": "",
                 "abstract": abstract,
-                "tags": [f"auto-{category}", f"auto-{subcategory}"],
+                "tags": [f"auto-{cat}", f"auto-{sub}"] if cat else [f"auto-{sub}"],
             }
 
             if arxiv_id:
@@ -409,7 +249,7 @@ def run_round(yaml_path, data, papers, by_id, titles_lower, queries, round_num):
             by_id[arxiv_id] = new_paper
 
             print(
-                f"    NEW [{category}/{subcategory}] {title[:70]}",
+                f"    NEW [{cat}/{sub}] {title[:70]}",
                 flush=True,
             )
 
@@ -429,12 +269,14 @@ def run_round(yaml_path, data, papers, by_id, titles_lower, queries, round_num):
 def main():
     cfg = research_config.load_config()
     queries = get_queries(cfg)
+    relevance_keywords = load_relevance_keywords(cfg)
 
     yaml_path = Path(__file__).resolve().parent.parent.parent / "papers.yaml"
     data, papers, by_id, titles_lower = load_existing_papers(yaml_path)
 
     print(f"Loaded {len(papers)} existing papers", flush=True)
     print(f"Using {len(queries)} queries (expanded from config/taxonomy.yaml)", flush=True)
+    print(f"Relevance keywords: {len(relevance_keywords)} configured", flush=True)
     print(f"Search window: {MONTHS_BACK} months", flush=True)
 
     total_new = 0
@@ -442,7 +284,7 @@ def main():
 
     while round_num <= MAX_ROUNDS:
         round_new = run_round(
-            yaml_path, data, papers, by_id, titles_lower, queries, round_num
+            yaml_path, data, papers, by_id, titles_lower, queries, round_num, cfg, relevance_keywords
         )
 
         papers.extend(round_new)
@@ -474,6 +316,10 @@ def main():
     if total_new == 0:
         print("\nNo new papers found. papers.yaml unchanged.", flush=True)
 
+    # Config-driven distribution summary
+    cats = research_config.get_categories(cfg)
+    subs = research_config.get_subcategories(cfg)
+
     cat_counter = Counter()
     sub_counter = Counter()
     for p in papers:
@@ -487,11 +333,13 @@ def main():
     print(f"New papers added: {total_new}", flush=True)
     print(f"Rounds: {round_num}", flush=True)
     print(f"\nBy category:", flush=True)
-    for cat in ["factual", "experiential", "working"]:
-        print(f"  {cat}: {cat_counter.get(cat, 0)}", flush=True)
+    for cat in cats:
+        cid = cat["id"]
+        print(f"  {cid}: {cat_counter.get(cid, 0)}", flush=True)
     print(f"\nBy subcategory:", flush=True)
-    for sub in ["token-level", "parametric", "latent"]:
-        print(f"  {sub}: {sub_counter.get(sub, 0)}", flush=True)
+    for sub in subs:
+        sid = sub["id"]
+        print(f"  {sid}: {sub_counter.get(sid, 0)}", flush=True)
 
 
 if __name__ == "__main__":

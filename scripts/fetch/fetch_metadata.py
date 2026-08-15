@@ -82,7 +82,8 @@ def fetch_batch(arxiv_ids):
                     venue_match = re.search(
                         r"(?:Accepted|Published|Appears in|in proceedings of|in|at)\s+"
                         r"((?:ACL|EMNLP|NAACL|NeurIPS|ICML|ICLR|CVPR|ICCV|ECCV|AAAI|"
-                        r"IJCAI|COLM|COLING|KDD|WWW|SIGIR|WSDM|CIKM|TMLR|JMLR)[\w\s\.\-]*"
+                        r"IJCAI|COLM|COLING|KDD|WWW|SIGIR|WSDM|CIKM|TMLR|JMLR|ICRA|IROS|RA-L|"
+                        r"CoRL|RSS|Humanoids|CASE|IROS|RAL)[\w\s\.\-]*"
                         r"(?:\d{4})?)",
                         comment, re.IGNORECASE
                     )
@@ -97,11 +98,29 @@ def fetch_batch(arxiv_ids):
                             venue = doi
                         break
 
+                # Extract code/project URLs from abstract or comment
+                code_url = ""
+                project_url = ""
+                search_text = abstract + " " + (comment_elem.text if comment_elem is not None and comment_elem.text else "")
+                github_match = re.search(r"https?://github\.com/[\w\-.]+/[\w\-.]+", search_text)
+                if github_match:
+                    code_url = github_match.group(0).rstrip(".")
+                proj_match = re.search(r"https?://(?:[\w\-.]+\.)?(?:github\.io|sites\.google\.com|huggingface\.co|zenodo\.org|projectpage\.[\w\-.]+)/[^\s\)]+", search_text)
+                if proj_match:
+                    project_url = proj_match.group(0).rstrip(".")
+                # If only a github.io match and no code_url, treat github.io as project_url
+                if not code_url and not project_url:
+                    gh_io_match = re.search(r"https?://[\w\-.]+\.github\.io/[^\s\)]+", search_text)
+                    if gh_io_match:
+                        project_url = gh_io_match.group(0).rstrip(".")
+
                 results[aid] = {
                     "authors": authors,
                     "abstract": abstract,
                     "date": date,
                     "venue": venue,
+                    "code_url": code_url,
+                    "project_url": project_url,
                 }
             time.sleep(API_DELAY)
             return results
@@ -177,6 +196,12 @@ def main():
                     changed = True
                 if meta["venue"] and not paper.get("venue"):
                     paper["venue"] = meta["venue"]
+                    changed = True
+                if meta.get("code_url") and not paper.get("code_url"):
+                    paper["code_url"] = meta["code_url"]
+                    changed = True
+                if meta.get("project_url") and not paper.get("project_url"):
+                    paper["project_url"] = meta["project_url"]
                     changed = True
                 if changed:
                     updated_entries += 1

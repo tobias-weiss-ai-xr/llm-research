@@ -28,12 +28,35 @@ LATEX_PATTERNS = [
     re.compile(r"\\\("),
     re.compile(r"\\\)"),
     re.compile(r"\^\d"),
+    re.compile(r"\\\["),
+    re.compile(r"\\\]"),
+    re.compile(r"\$[^$]+\$"),
+    re.compile(r"\\[a-zA-Z]+\{"),
 ]
 VANITY_DOMAINS = re.compile(
     r"(researchsquare\.com|techrxiv\.org|preprints\.org|hal\.science|"
     r"zenodo\.org/doi|rgdoi\.net)",
     re.IGNORECASE,
 )
+
+
+def clean_latex_artifacts(text):
+    """Clean common LaTeX artifacts from a string."""
+    if not text:
+        return text
+    # Remove $...$ inline math (replace with contents)
+    text = re.sub(r"\$([^$]+)\$", r"\1", text)
+    # Remove \(...\) inline math
+    text = re.sub(r"\\\((.+?)\\\)", r"\1", text)
+    # Remove \[...\] display math
+    text = re.sub(r"\\\[(.+?)\\\]", r"\1", text)
+    # Remove ${...}$ patterns
+    text = re.sub(r"\$\{([^}]+)\}\$", r"\1", text)
+    # Remove \textit{...}, \textbf{...}, \emph{...} etc.
+    text = re.sub(r"\\(?:textit|textbf|emph|text|mathrm|mathbf)\{([^}]+)\}", r"\1", text)
+    # Clean up double spaces
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
 
 
 def normalize_arxiv_url(url):
@@ -47,7 +70,7 @@ def is_arxiv_url(url):
     return "arxiv.org" in url or bool(ARXIV_DOI_PATTERN.search(url))
 
 
-def validate_papers(data, cfg, fix=False):
+def validate_papers(data, cfg, fix=False, sort=False):
     errors = []
     warnings = []
     fixed = 0
@@ -59,7 +82,7 @@ def validate_papers(data, cfg, fix=False):
 
     if not papers:
         errors.append("papers.yaml contains no papers under the 'papers' key")
-        return errors, warnings, fixed
+        return errors, warnings, fixed, papers
 
     for i, paper in enumerate(papers):
         title = paper.get("title", "")
@@ -110,10 +133,35 @@ def validate_papers(data, cfg, fix=False):
 
         if title:
             for pattern in LATEX_PATTERNS:
-                if pattern.search(title):
-                    warnings.append(
-                        f"{prefix}title contains possible LaTeX artifact: '{pattern.search(title).group()}'"
-                    )
+                m = pattern.search(title)
+                if m:
+                    if fix:
+                        new_title = clean_latex_artifacts(title)
+                        if new_title != title:
+                            paper["title"] = new_title
+                            fixed += 1
+                    else:
+                        warnings.append(
+                            f"{prefix}title contains possible LaTeX artifact: '{m.group()}'"
+                        )
+                        break
+
+        # Check abstract for LaTeX artifacts
+        abstract = paper.get("abstract", "")
+        if abstract:
+            for pattern in LATEX_PATTERNS:
+                m = pattern.search(abstract)
+                if m:
+                    if fix:
+                        new_abstract = clean_latex_artifacts(abstract)
+                        if new_abstract != abstract:
+                            paper["abstract"] = new_abstract
+                            fixed += 1
+                    else:
+                        warnings.append(
+                            f"{prefix}abstract contains possible LaTeX artifact: '{m.group()}'"
+                        )
+                        break
 
         url = paper.get("url", "")
         if url and VANITY_DOMAINS.search(url):
@@ -121,13 +169,20 @@ def validate_papers(data, cfg, fix=False):
                 f"{prefix}URL points to non-peer-reviewed platform — verify venue quality"
             )
 
-    return errors, warnings, fixed
+    if sort:
+        papers.sort(key=lambda p: (p.get("date", ""), p.get("title", "")), reverse=True)
+        data["papers"] = papers
+
+    return errors, warnings, fixed, papers
 
 
 def main():
     parser = argparse.ArgumentParser(description="Validate papers.yaml")
     parser.add_argument(
-        "--fix", action="store_true", help="Auto-fix URL normalization issues"
+        "--fix", action="store_true", help="Auto-fix URL normalization and LaTeX artifacts"
+    )
+    parser.add_argument(
+        "--sort", action="store_true", help="Sort papers by date (desc) then title"
     )
     args = parser.parse_args()
 
@@ -141,7 +196,7 @@ def main():
     with open(yaml_path, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f) or {}
 
-    errors, warnings, fixed = validate_papers(data, cfg, fix=args.fix)
+    errors, warnings, fixed, papers = validate_papers(data, cfg, fix=args.fix, sort=args.sort)
 
     if errors:
         print("ERRORS:", flush=True)
@@ -153,12 +208,15 @@ def main():
         for w in warnings:
             print(f"  - {w}", flush=True)
 
-    if fixed > 0:
+    if fixed > 0 or args.sort:
         with open(yaml_path, "w", encoding="utf-8") as f:
             yaml.dump(
                 data, f, default_flow_style=False, allow_unicode=True, sort_keys=False
             )
-        print(f"FIXED: {fixed} URL(s) normalized", flush=True)
+        if fixed > 0:
+            print(f"FIXED: {fixed} issue(s) fixed", flush=True)
+        if args.sort:
+            print(f"SORTED: {len(papers)} papers sorted by date (desc), title", flush=True)
 
     if not errors and not warnings:
         print(
