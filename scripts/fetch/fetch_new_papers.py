@@ -25,6 +25,41 @@ def get_queries(cfg):
     return cfg.get("arxiv_queries", [])
 
 
+def classify_subcategory(title, abstract="", cfg=None):
+    """Assign a subcategory using config keyword rules, then heuristics.
+
+    Reads ``subcategory_keywords`` from taxonomy.yaml (via research_config).
+    Falls back to a generic heuristic ordering when no config rules match.
+    """
+    if cfg is None:
+        cfg = research_config.load_config()
+    text = f"{title} {abstract}".lower()
+    title_lower = title.lower()
+    # 1. Config-driven rules (first match wins)
+    for sid, keywords in research_config.get_subcategory_keywords(cfg):
+        for kw in keywords:
+            if kw.lower() in text:
+                return sid
+    # 2. Generic heuristic fallback (same ordering as fetch_other_sources)
+    heuristic = [
+        ("theory", ["theory", "theoretical", "formal", "proof", "convergence", "bound"]),
+        ("mechanism", ["mechanism", "explainab", "interpretab", "attention", "saliency"]),
+        ("method", ["method", "algorithm", "approach", "technique", "framework", "novel method"]),
+        ("application", ["application", "applied", "deploy", "real-world", "case study"]),
+        ("development", ["implementation", "system", "platform", "toolkit", "library", "open-source"]),
+        ("systems", ["simulator", "simulation", "engine", "benchmark", "testbed", "environment"]),
+        ("evaluation", ["benchmark", "evaluation", "comparison", "baseline", "leaderboard"]),
+        ("review", ["survey", "review", "literature", "meta-analysis", "overview", "taxonomy"]),
+    ]
+    for sid, keywords in heuristic:
+        for kw in keywords:
+            if kw in text:
+                return sid
+    # 3. First configured subcategory as last resort
+    subs = research_config.get_subcategories(cfg)
+    return subs[0]["id"] if subs else ""
+
+
 def load_existing_papers(yaml_path):
     if not yaml_path.exists():
         return {}, []
@@ -139,7 +174,7 @@ def main():
 
     all_new = []
     for qi, query in enumerate(queries):
-        print(f"\nQuery {qi + 1}/{len(QUERIES)}...", flush=True)
+        print(f"\nQuery {qi + 1}/{len(queries)}...", flush=True)
         entries = search_arxiv(query, args.months)
         for entry in entries:
             arxiv_id_match = ARXIV_ID_PATTERN.search(entry.get("url", ""))

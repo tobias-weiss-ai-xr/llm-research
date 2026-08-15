@@ -21,6 +21,9 @@ from pathlib import Path
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
+import research_config
+
 REPO = Path(__file__).resolve().parent.parent
 
 TREND_KEYWORDS = [
@@ -34,10 +37,19 @@ TREND_KEYWORDS = [
     "diffusion", "language model", "multimodal", "similarity", "graph",
     "skill", "tool", "embodied", "stochastic", "causal",
 ]
+# Config-driven keywords override TREND_KEYWORDS when taxonomy.yaml defines them.
+_CFG = research_config.load_config()
+TREND_KEYWORDS = research_config.get_trend_keywords(_CFG) or TREND_KEYWORDS
 
 
 def _display(kebab):
-    return kebab.replace("-", " ").replace("_", " ").title()
+    """Display name from config, falling back to title-casing the id."""
+    d = research_config.category_display(_CFG, kebab)
+    if d == kebab:
+        d = research_config.subcategory_display(_CFG, kebab)
+    if d == kebab:
+        d = kebab.replace("-", " ").replace("_", " ").title()
+    return d
 
 
 def load_papers():

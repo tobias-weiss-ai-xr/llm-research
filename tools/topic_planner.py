@@ -12,15 +12,28 @@ Usage:
 
 import argparse
 import collections
+import sys
 from pathlib import Path
 
 import yaml
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
+import research_config
 
 REPO = Path(__file__).resolve().parent.parent
 
 
 def _display(kebab):
-    return kebab.replace("-", " ").replace("_", " ").title()
+    """Display name from config, falling back to title-casing the id."""
+    d = research_config.category_display(_CFG, kebab)
+    if d == kebab:
+        d = research_config.subcategory_display(_CFG, kebab)
+    if d == kebab:
+        d = kebab.replace("-", " ").replace("_", " ").title()
+    return d
+
+
+_CFG = research_config.load_config()
 
 
 def load_papers():

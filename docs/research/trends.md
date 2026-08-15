@@ -1,16 +1,16 @@
 # Trends (12-Month View)
 
-**Generated:** 2026-08-12  
+**Generated:** 2026-08-15  
 **Window:** since 2025-08 — 3 of 3 papers
 
 ## 🔥 Keyword Bursts
 
 | Keyword | Recent | Total | Burst |
 |---------|--------|-------|-------|
-| generate | 2 | 2 | 1.0× |
-| agent | 1 | 1 | 1.0× |
-| agentic | 1 | 1 | 1.0× |
 | survey | 1 | 1 | 1.0× |
+| method | 1 | 1 | 1.0× |
+| application | 1 | 1 | 1.0× |
+| analysis | 1 | 1 | 1.0× |
 
 ## 📈 Fastest-Growing Cells
 

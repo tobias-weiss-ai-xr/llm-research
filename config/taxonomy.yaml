@@ -10,6 +10,7 @@ topic:
   name: "Your Research Topic"          # shown in README header
   short: "your-topic"                  # used in URLs, badges, docs paths
   description: "Short description of the research field covered by this corpus."
+  openalex_mailto: "research@your-org.example"  # polite-pool email for OpenAlex API
 
 # ── Taxonomy ─────────────────────────────────────────────────────────────────
 # Categories = the main axis of your review (e.g. methods, applications, …).
@@ -122,3 +123,26 @@ openalex_queries:
 #   - "llm security"
 #   - "model context protocol"
 #   - "prompt injection"
+
+# ── Trend / burst keywords (optional) ───────────────────────────
+# Topic-specific keywords used by standard_stats.py, trend_scanner.py,
+# and landscape_analyzer.py for keyword-burst analysis.  If omitted,
+# a generic default list is used.  Keep entries lowercase; multi-word
+# phrases are supported (e.g. "world model").
+#
+# trend_keywords:
+#   - "reinforcement learning"
+#   - "manipulation"
+#   - "grasping"
+
+# ── Subclassification keywords (optional) ─────────────────────────
+# Maps subcategory IDs to keyword lists for auto-classification in
+# fetch_new_papers.py and fetch_other_sources.py.  The first matching
+# rule wins.  If omitted, fetchers fall back to heuristic rules.
+# Each ``id`` must match a subcategory defined above.
+#
+# subcategory_keywords:
+#   - id: theory
+#     keywords: ["theory", "formal", "proof", "convergence", "bound"]
+#   - id: method
+#     keywords: ["method", "algorithm", "framework", "novel approach"]

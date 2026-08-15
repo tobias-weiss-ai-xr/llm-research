@@ -2,7 +2,7 @@
  "categories": [
   {
    "id": "application",
-   "name": "Application",
+   "name": "Applications",
    "count": 1,
    "trajectory": {
     "2025": 1
@@ -21,7 +21,7 @@
   },
   {
    "id": "method",
-   "name": "Method",
+   "name": "Methods & Architectures",
    "count": 1,
    "trajectory": {
     "2026": 1
@@ -40,7 +40,7 @@
   },
   {
    "id": "survey",
-   "name": "Survey",
+   "name": "Surveys & Taxonomies",
    "count": 1,
    "trajectory": {
     "2026": 1
@@ -71,7 +71,7 @@
   },
   {
    "id": "non-agentic",
-   "name": "Non Agentic",
+   "name": "Non-Agentic",
    "count": 1
   }
  ],
@@ -95,21 +95,28 @@
  "venues": [],
  "keyword_bursts": [
   {
-   "keyword": "agent",
-   "recent": 1,
-   "total": 1,
-   "burst_score": 1.0,
-   "recent_share": 0.3333
-  },
-  {
-   "keyword": "agentic",
-   "recent": 1,
-   "total": 1,
-   "burst_score": 1.0,
-   "recent_share": 0.3333
-  },
-  {
    "keyword": "survey",
+   "recent": 1,
+   "total": 1,
+   "burst_score": 1.0,
+   "recent_share": 0.3333
+  },
+  {
+   "keyword": "method",
+   "recent": 1,
+   "total": 1,
+   "burst_score": 1.0,
+   "recent_share": 0.3333
+  },
+  {
+   "keyword": "application",
+   "recent": 1,
+   "total": 1,
+   "burst_score": 1.0,
+   "recent_share": 0.3333
+  },
+  {
+   "keyword": "analysis",
    "recent": 1,
    "total": 1,
    "burst_score": 1.0,
