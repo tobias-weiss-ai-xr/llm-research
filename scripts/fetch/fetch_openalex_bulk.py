@@ -14,9 +14,14 @@ import re
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+import sys
 
 import requests
 import yaml
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+import research_config
 
 OPENALEX_API = "https://api.openalex.org/works"
 
@@ -209,7 +214,6 @@ def main():
     parser.add_argument("--categories", default=None, help="Comma-separated subset of category keys")
     args = parser.parse_args()
 
-    import research_config
     cfg = research_config.load_config()
     category_terms = load_category_terms(cfg)
     subcat_keywords = load_subcat_keywords(cfg)
