@@ -17,7 +17,7 @@ import research_config
 
 ARXIV_ID_PATTERN = re.compile(r"(\d{4}\.\d{4,5})")
 ARXIV_SEARCH_API = (
-    "http://export.arxiv.org/api/query?search_query={}&start={}&max_results={}"
+    "https://export.arxiv.org/api/query?search_query={}&start={}&max_results={}"
 )
 
 

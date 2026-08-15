@@ -1,6 +1,9 @@
 # Changelog
 
 ## [Unreleased]
+- **Bug fix:** All arXiv API calls now use `https://` instead of `http://`
+  (`fetch_new_papers.py`, `fetch_metadata.py`, `saturate_papers.py`).  Many
+  networks block plain HTTP; HTTPS is required for arXiv's API.
 - **Bug fix:** `fetch_new_papers.py` — fixed `NameError` (`QUERIES` → `queries`) that
   crashed multi-query arXiv discovery runs.
 - **Bug fix:** `fetch_openalex_bulk.py` — `reconstruct_abstract()` and

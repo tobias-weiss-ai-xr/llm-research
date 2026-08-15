@@ -14,7 +14,7 @@ import requests
 import yaml
 
 ARXIV_ID_PATTERN = re.compile(r"(\d{4}\.\d{4,5})")
-ARXIV_API = "http://export.arxiv.org/api/query"
+ARXIV_API = "https://export.arxiv.org/api/query"
 BATCH_SIZE = 50  # arXiv allows up to ~300, but 50 is safe and fast
 API_DELAY = 3    # arXiv asks for 3s between requests
 
