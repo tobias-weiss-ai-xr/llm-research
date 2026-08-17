@@ -5,9 +5,9 @@
 
 <div align="center">
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg?)](LICENSE)
-[![CI](https://img.shields.io/github/actions/workflow/status/<YOUR_ORG>/<YOUR_REPO>/validate.yml?label=CI&logo=github)](https://github.com/<YOUR_ORG>/<YOUR_REPO>/actions/workflows/validate.yml)
-[![GitHub Pages](https://img.shields.io/badge/Demo-GitHub%20Pages-brightgreen.svg?logo=github)](https://<YOUR_ORG>.github.io/<YOUR_REPO>/)
+[**License**](LICENSE)
+[**CI**](https://github.com/<YOUR_ORG>/<YOUR_REPO>/actions/workflows/validate.yml)
+[**GitHub Pages**](https://<YOUR_ORG>.github.io/<YOUR_REPO>/)
 
 </div>
 
