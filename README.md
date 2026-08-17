@@ -3,13 +3,12 @@
 </h1>
 <h3 align="center">Agentic literature review, jump-started — fork me for your own topic</h3>
 
-<div align="center">
+### 🔗 Links
 
-[**License**](LICENSE)
-[**CI**](https://github.com/<YOUR_ORG>/<YOUR_REPO>/actions/workflows/validate.yml)
-[**GitHub Pages**](https://<YOUR_ORG>.github.io/<YOUR_REPO>/)
+- **License**: https://github.com/tobias-weiss-ai-xr/skeleton-research/blob/main/LICENSE
+- **CI**: https://github.com/<YOUR_ORG>/<YOUR_REPO>/actions/workflows/validate.yml
+- **GitHub Pages**: https://<YOUR_ORG>.github.io/<YOUR_REPO>/
 
-</div>
 
 > 🎓 **Workshop-ready:** This repository is the *skeleton* for a data-driven,
 > auto-validated, agentic literature review — the same architecture used by the
