@@ -5,7 +5,7 @@
 
 ### 🔗 Links
 
-- **License**: https://github.com/tobias-weiss-ai-xr/skeleton-research/blob/main/LICENSE
+- **License**: https://github.com/tobias-weiss-ai-xr/mobile-apps-best-practices/blob/main/LICENSE
 - **CI**: https://github.com/<YOUR_ORG>/<YOUR_REPO>/actions/workflows/validate.yml
 - **GitHub Pages**: https://<YOUR_ORG>.github.io/<YOUR_REPO>/
 
@@ -35,7 +35,7 @@
 
 ```bash
 # 1. Clone and rename
-git clone https://github.com/<YOUR_ORG>/skeleton-research.git my-topic-research
+git clone https://github.com/<YOUR_ORG>/mobile-apps-best-practices.git my-topic-research
 cd my-topic-research
 
 # 2. Define your topic & taxonomy
@@ -143,12 +143,12 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 If you use this skeleton for a project, please cite:
 
 ```bibtex
-@misc{skeleton-research,
+@misc{mobile-apps-best-practices,
   author = {Weiß, Tobias},
   title = {Research Corpus Skeleton: Data-Driven Agentic Literature Review},
   year = {2026},
   publisher = {GitHub},
-  url = {https://github.com/<YOUR_ORG>/skeleton-research}
+  url = {https://github.com/<YOUR_ORG>/mobile-apps-best-practices}
 }
 ```
 
