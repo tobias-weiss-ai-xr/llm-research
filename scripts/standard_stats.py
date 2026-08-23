@@ -26,6 +26,7 @@ from pathlib import Path
 
 import yaml
 
+import readme_sections
 import research_config
 
 REPO = Path(__file__).resolve().parent.parent
@@ -268,6 +269,18 @@ def main():
     stats, export, viz = compute_all(entries)
     outputs = build_outputs(stats, export, viz)
 
+    # The README corpus-statistics section is owned by this script too
+    # (marker-delimited; migrated from legacy headings when needed).
+    readme = REPO / "README.md"
+    readme_expected = None
+    if readme.exists():
+        stats_md = readme_sections.render_stats_section(stats, _CFG)
+        readme_expected = readme_sections.render_readme_check(
+            readme.read_text(encoding="utf-8"),
+            readme_sections.STATS_START, readme_sections.STATS_END,
+            stats_md,
+            legacy_heading=readme_sections.STATS_LEGACY_HEADING)
+
     if args.check:
         stale = []
         for rel in outputs:
@@ -275,6 +288,8 @@ def main():
             current = path.read_text(encoding="utf-8") if path.exists() else None
             if current != outputs[rel]:
                 stale.append(rel)
+        if readme_expected is not None and readme_expected != readme.read_text(encoding="utf-8"):
+            stale.append("README.md (corpus statistics)")
         if not stale:
             print("All stats outputs are up-to-date.")
             sys.exit(0)
@@ -290,6 +305,13 @@ def main():
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(content, encoding="utf-8")
     print(f"Wrote statistics.json ({len(entries)} papers), papers.json, assets/graph_analysis.json")
+
+    if readme_expected is not None:
+        if readme_expected != readme.read_text(encoding="utf-8"):
+            readme.write_text(readme_expected, encoding="utf-8")
+            print("Updated README.md corpus statistics")
+        else:
+            print("README.md corpus statistics up to date")
 
 
 if __name__ == "__main__":

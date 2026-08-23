@@ -12,106 +12,33 @@ Usage:
 import argparse
 import json
 import sys
-from collections import defaultdict
 from pathlib import Path
 
 import yaml
 
+import readme_sections
 import research_config
-
-
-def render_paper_list(papers, cfg):
-    lines = ["## 📚 Paper list", ""]
-
-    cats = research_config.get_categories(cfg)
-    subs = research_config.get_subcategories(cfg)
-
-    # Emoji TOC
-    for cat in cats:
-        cat_display = cat.get("display", cat["id"])
-        cat_anchor = cat_display.lower().replace(" ", "-")
-        lines.append(f"- [📚 {cat_display}](#{cat_anchor})")
-        for sub in subs:
-            group = [p for p in papers if p["category"] == cat["id"] and p["subcategory"] == sub["id"]]
-            if not group:
-                continue
-            sub_display = sub.get("display", sub["id"])
-            sub_anchor = sub_display.lower().replace(" ", "-")
-            lines.append(f"  - [{sub_display}](#{sub_anchor})")
-    lines.append("")
-
-    for cat in cats:
-        cat_display = cat.get("display", cat["id"])
-        lines.append(f"### {cat_display}")
-        lines.append("")
-
-        for sub in subs:
-            group = [p for p in papers if p["category"] == cat["id"] and p["subcategory"] == sub["id"]]
-            if not group:
-                continue
-
-            sub_display = sub.get("display", sub["id"])
-            lines.append(f"#### {sub_display}")
-            lines.append("")
-
-            # Group by year
-            year_groups = defaultdict(list)
-            for p in group:
-                year = p["date"][:4]
-                year_groups[year].append(p)
-
-            for year in sorted(year_groups.keys(), reverse=True):
-                lines.append(f"##### {year}")
-                lines.append("")
-
-                sorted_papers = sorted(year_groups[year], key=lambda p: p["date"], reverse=True)
-                for p in sorted_papers:
-                    y = p["date"][:4]
-                    title = p["title"]
-                    url = p["url"]
-                    venue = p.get("venue", "")
-                    code_url = p.get("code_url", "")
-                    project_url = p.get("project_url", "")
-
-                    entry = f"- [{y}] **{title}**"
-                    if venue:
-                        entry += f" *{venue}*"
-                    entry += f" [[paper]({url})]"
-                    if code_url:
-                        entry += f" [[code]({code_url})]"
-                    if project_url:
-                        entry += f" [[project]({project_url})]"
-                    lines.append(entry)
-
-                lines.append("")
-
-            lines.append("[⬆ Back to top](#paper-list)")
-            lines.append("")
-
-    return "\n".join(lines)
 
 
 def generate_readme(papers, readme_path, cfg, check_mode=False):
     readme_text = readme_path.read_text(encoding="utf-8")
+    content = readme_sections.render_paper_list(papers, cfg)
 
-    start_marker = "## 📚 Paper list"
-    end_marker = "## 📖 Citation"
+    # Marker-delimited replacement (handles migration from legacy headers
+    # and gracefully skips repos whose README deliberately has no paper list).
+    new_readme, found = readme_sections.replace_section(
+        readme_text,
+        readme_sections.PAPERLIST_START, readme_sections.PAPERLIST_END,
+        content,
+        legacy_heading=readme_sections.PAPERLIST_LEGACY_HEADING)
 
-    start_idx = readme_text.find(start_marker)
-    end_idx = readme_text.find(end_marker)
-
-    if start_idx == -1 or end_idx == -1:
-        print(
-            "Error: Could not find paper list or citation section in README.md",
-            file=sys.stderr,
-        )
-        sys.exit(1)
-
-    before = readme_text[:start_idx]
-    after = readme_text[end_idx:]
-
-    generated_list = render_paper_list(papers, cfg)
-    new_readme = before + generated_list + "\n" + after
+    if not found:
+        # No paper-list section and no legacy heading: this repo dropped the
+        # paper list from its README (e.g. it lives on the GitHub Pages site).
+        # Do NOT hard-fail — just leave the README untouched and carry on.
+        print("README.md has no paper-list section — README left untouched "
+              "(docs/papers.json is still written).")
+        return
 
     if check_mode:
         if new_readme == readme_text:
@@ -119,7 +46,7 @@ def generate_readme(papers, readme_path, cfg, check_mode=False):
             sys.exit(0)
         else:
             print(
-                "README.md is out-of-date. Run generate_readme.py without --check to update.",
+                "README.md is out-of-date. Run generate_readme.py to update.",
                 file=sys.stderr,
             )
             sys.exit(1)

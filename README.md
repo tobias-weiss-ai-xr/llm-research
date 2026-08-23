@@ -66,16 +66,25 @@ git push
 config/taxonomy.yaml ──► papers.yaml ──► validate_papers.py
                           │   ▲              │
                           ▼   └── fetch_* ───┘
-                   generate_readme.py ──► README.md (auto)
+                   generate_readme.py ──► README.md paper list (auto)
                           │
                           ▼
-                  standard_stats.py ──► statistics.json, docs/papers.json
+                  standard_stats.py ──► statistics.json, docs/papers.json,
+                                        README.md corpus statistics (auto)
                           │
                           ▼
               analysis/generate_reports.py ──► docs/research/*.md
 ```
 
-- **Never edit README.md directly** — it is generated from `papers.yaml`.
+The generated README sections (paper list + corpus statistics) are
+**marker-delimited** (`<!-- BEGIN … -->` … `<!-- END … -->`) and are owned by
+the pipeline: `generate_readme.py` and `standard_stats.py` regenerate exactly
+their section on every run. Everything else in the README is user-owned prose
+and is left untouched. If a repo drops a section entirely (e.g. the paper list
+lives on the GitHub Pages site), the owning script skips it gracefully instead
+of erroring.
+
+- **Never edit the generated README sections by hand** — run the pipeline.
 - The **taxonomy lives in one place** (`config/taxonomy.yaml`); every script reads it via `scripts/research_config.py`, which now validates the config up front so mistakes fail loudly.
 - **CI (validate.yml)** runs on every push/PR and weekly to discover new papers. The `validate` job re-checks that all generated outputs are fresh (README, statistics, reports), and a `test` job runs the pytest suite.
 
@@ -124,6 +133,8 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 - **One config file** to change → one re-run to verify (low context cost for agents).
 - **Auto-validation** gives agents an objective pass/fail signal.
 - **Weekly discovery** keeps the corpus fresh without human babysitting.
+
+<!-- BEGIN PAPER LIST -->
 
 ## 📚 Paper list
 
@@ -184,6 +195,65 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 - [2026] **Example Paper 1: A Foundational Survey of Your Topic** [[paper](https://arxiv.org/abs/2601.00001)]
 
 [⬆ Back to top](#paper-list)
+
+<!-- END PAPER LIST -->
+
+<!-- BEGIN CORPUS STATISTICS -->
+
+## 📊 Corpus Statistics
+
+**5 papers** across **4 categories**.  
+Sources: **arXiv** 5 (100%).  
+
+### Top categories
+
+| Category | Papers | Recent | |
+|----------|--------|--------|-|
+| survey | **2** | 1 | ████████████ |
+| application | **1** | 1 | ██████░░░░░░ |
+| evaluation | **1** | 1 | ██████░░░░░░ |
+| method | **1** | 1 | ██████░░░░░░ |
+
+### By year
+
+| Year | Papers | |
+|------|--------|-|
+| 2025 | 3 | ████████████ |
+| 2026 | 2 | ████████░░░░ |
+
+### Momentum (hottest categories)
+
+| Category | Total | Rate | Recent | Score |
+|----------|-------|------|--------|-------|
+| Application | 1 | 0.1/mo | 100% | 100 |
+| Evaluation | 1 | 0.1/mo | 100% | 100 |
+| Method | 1 | 0.1/mo | 100% | 100 |
+| Survey | 2 | 0.1/mo | 50% | 50 |
+
+### Trending keywords
+
+| Keyword | Papers | Burst |
+|---------|--------|-------|
+| benchmark | 1 | 1.25 |
+| evaluation | 1 | 1.25 |
+| method | 1 | 1.25 |
+| application | 1 | 1.25 |
+| survey | 1 | 0.62 |
+| analysis | 1 | 0.62 |
+
+### Research gaps (thinnest cells)
+
+| Cell | Papers |
+|------|--------|
+| `survey/hybrid` | 1 |
+| `method/agentic` | 1 |
+| `application/non-agentic` | 1 |
+| `evaluation/hybrid` | 1 |
+| `survey/non-agentic` | 1 |
+
+*Generated 2026-08 by `scripts/standard_stats.py`.*
+
+<!-- END CORPUS STATISTICS -->
 
 ## 📖 Citation
 

@@ -10,6 +10,8 @@ topic:
   name: "Your Research Topic"          # shown in README header
   short: "your-topic"                  # used in URLs, badges, docs paths
   description: "Short description of the research field covered by this corpus."
+  # Optional: GitHub Pages URL shown in the auto-generated README statistics section
+  # github_pages: "https://ORG.github.io/your-topic"
   openalex_mailto: "research@your-org.example"  # polite-pool email for OpenAlex API
 
 # ── Taxonomy ─────────────────────────────────────────────────────────────────
