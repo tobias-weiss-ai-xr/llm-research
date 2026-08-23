@@ -8,6 +8,11 @@ on:
       - 'repos.yaml'
       - 'scripts/'
       - 'config/'
+      - 'tools/extract_concepts.py'
+      - 'tools/relate_concepts.py'
+      - 'concepts.json'
+      - 'concept_graph.json'
+      - 'docs/research/concept_map.md'
       - 'tests/'
       - 'requirements.txt'
       - '.github/workflows/validate.yml'
@@ -17,6 +22,11 @@ on:
       - 'repos.yaml'
       - 'scripts/'
       - 'config/'
+      - 'tools/extract_concepts.py'
+      - 'tools/relate_concepts.py'
+      - 'concepts.json'
+      - 'concept_graph.json'
+      - 'docs/research/concept_map.md'
       - 'tests/'
       - 'requirements.txt'
       - '.github/workflows/validate.yml'
@@ -53,6 +63,14 @@ jobs:
           python3 scripts/generate_readme.py --check
           python3 scripts/standard_stats.py --check
           python3 scripts/analysis/generate_reports.py --check
+
+      - name: Verify concept graph builds
+        continue-on-error: false
+        run: |
+          python3 tools/extract_concepts.py --papers papers.yaml --out concepts.json
+          python3 tools/relate_concepts.py --papers papers.yaml --concepts concepts.json --write-doc > concept_graph.json
+          test -s concepts.json && test -s concept_graph.json && test -s docs/research/concept_map.md \
+            || { echo 'Concept graph failed to build — check tools/extract_concepts.py + tools/relate_concepts.py'; exit 1; }
 
   test:
     runs-on: ubuntu-latest
@@ -124,6 +142,8 @@ jobs:
           python3 scripts/generate_readme.py
           python3 scripts/standard_stats.py
           python3 scripts/analysis/generate_reports.py
+          python3 tools/extract_concepts.py --papers papers.yaml --out concepts.json
+          python3 tools/relate_concepts.py --papers papers.yaml --concepts concepts.json --write-doc > concept_graph.json
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3

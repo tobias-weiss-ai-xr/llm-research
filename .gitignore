@@ -6,7 +6,10 @@ __pycache__/
 # Pipeline outputs (generated — never commit)
 papers.json
 statistics.json
+concepts.json
+concept_graph.json
 docs/topics/
+docs/research/concept_map.md
 
 # Generated citation export
 paper/
