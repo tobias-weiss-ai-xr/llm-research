@@ -1,0 +1,9 @@
+# Concept extraction mode for this repository.
+#
+# broad     — taxonomy (structural) + curated seeds (config/concepts.yaml)
+#             + emergent noun bigrams mined from title+abstract.
+# selective — taxonomy (structural) + curated seeds ONLY; skips the noisy
+#             emergent bigrams for a clean, high-signal concept graph.
+#             The feedback loop (tools/feedback_concepts.py) keeps growing
+#             the curated set from the graph analysis.
+mode: selective
