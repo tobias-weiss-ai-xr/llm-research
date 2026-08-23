@@ -69,8 +69,10 @@ jobs:
         run: |
           python3 tools/extract_concepts.py --papers papers.yaml --out concepts.json
           python3 tools/relate_concepts.py --papers papers.yaml --concepts concepts.json --write-doc > concept_graph.json
-          test -s concepts.json && test -s concept_graph.json && test -s docs/research/concept_map.md \
-            || { echo 'Concept graph failed to build — check tools/extract_concepts.py + tools/relate_concepts.py'; exit 1; }
+          python3 tools/analyze_concept_graph.py --graph concept_graph.json --write-doc > concept_graph_analysis.json
+          test -s concepts.json && test -s concept_graph.json && test -s concept_graph_analysis.json \
+            && test -s docs/research/concept_map.md && test -s docs/research/concept_graph_analysis.md \
+            || { echo 'Concept graph failed to build — check tools/extract_concepts.py + tools/relate_concepts.py + tools/analyze_concept_graph.py'; exit 1; }
 
   test:
     runs-on: ubuntu-latest
