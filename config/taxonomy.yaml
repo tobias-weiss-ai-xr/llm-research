@@ -7,9 +7,9 @@
 
 # ── Topic ────────────────────────────────────────────────────────────────────
 topic:
-  name: "Your Research Topic"          # shown in README header
-  short: "your-topic"                  # used in URLs, badges, docs paths
-  description: "Short description of the research field covered by this corpus."
+  name: "LLM Research"                 # shown in README header
+  short: "llm-research"                # used in URLs, badges, docs paths
+  description: "Research on large language models: architectures, training, inference efficiency, evaluation, and applications."
   # Optional: GitHub Pages URL shown in the auto-generated README statistics section
   # github_pages: "https://ORG.github.io/your-topic"
   openalex_mailto: "research@your-org.example"  # polite-pool email for OpenAlex API
@@ -44,9 +44,9 @@ taxonomy:
 #     category: manipulation
 #     subcategory_hint: method
 arxiv_queries:
-  - 'cat:cs.AI AND (abs:"YOUR TOPIC A" OR abs:"YOUR TOPIC B")'
-  - 'cat:cs.CL AND (abs:"YOUR TOPIC C" AND abs:"agent")'
-  - 'cat:cs.LG AND abs:"YOUR TOPIC D"'
+  - 'cat:cs.CL AND (abs:"large language model" OR abs:"LLM inference")'
+  - 'cat:cs.LG AND (abs:"transformer" AND abs:"efficient")'
+  - 'cat:cs.AI AND (abs:"LLM agent" OR abs:"tool use")'
 
 # ── Discovery: multi-source queries (fetch_other_sources.py) ─────────────────
 # Each entry defines one query against a source (dblp, crossref, europepmc, …).

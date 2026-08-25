@@ -139,62 +139,26 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 ## 📚 Paper list
 
 - [📚 Methods & Architectures](#methods-&-architectures)
-  - [Agentic](#agentic)
+  - [Non-Agentic](#non-agentic)
 - [📚 Applications](#applications)
-  - [Non-Agentic](#non-agentic)
 - [📚 Evaluation & Benchmarks](#evaluation-&-benchmarks)
-  - [Hybrid](#hybrid)
 - [📚 Surveys & Taxonomies](#surveys-&-taxonomies)
-  - [Non-Agentic](#non-agentic)
-  - [Hybrid](#hybrid)
 
 ### Methods & Architectures
 
-#### Agentic
+#### Non-Agentic
 
 ##### 2026
 
-- [2026] **Example Paper 2: An Agentic Method for Your Topic** [[paper](https://arxiv.org/abs/2603.00002)]
+- [2026] **KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation for Efficient Large Language Model Inference** [[paper](https://arxiv.org/abs/2608.21362)]
 
 [⬆ Back to top](#paper-list)
 
 ### Applications
 
-#### Non-Agentic
-
-##### 2025
-
-- [2025] **Example Paper 3: Application Study in Your Domain** [[paper](https://arxiv.org/abs/2511.00003)]
-
-[⬆ Back to top](#paper-list)
-
 ### Evaluation & Benchmarks
 
-#### Hybrid
-
-##### 2025
-
-- [2025] **Example Paper 4: An Evaluation Benchmark for Your Topic** [[paper](https://arxiv.org/abs/2508.00004)]
-
-[⬆ Back to top](#paper-list)
-
 ### Surveys & Taxonomies
-
-#### Non-Agentic
-
-##### 2025
-
-- [2025] **Example Paper 5: A Survey of Your Topic Across Domains** [[paper](https://arxiv.org/abs/2505.00005)]
-
-[⬆ Back to top](#paper-list)
-
-#### Hybrid
-
-##### 2026
-
-- [2026] **Example Paper 1: A Foundational Survey of Your Topic** [[paper](https://arxiv.org/abs/2601.00001)]
-
-[⬆ Back to top](#paper-list)
 
 <!-- END PAPER LIST -->
 
@@ -202,54 +166,39 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 
 ## 📊 Corpus Statistics
 
-**5 papers** across **4 categories**.  
-Sources: **arXiv** 5 (100%).  
+**1 papers** across **1 categories**.  
+Sources: **arXiv** 1 (100%).  
 
 ### Top categories
 
 | Category | Papers | Recent | |
 |----------|--------|--------|-|
-| survey | **2** | 1 | ████████████ |
-| application | **1** | 1 | ██████░░░░░░ |
-| evaluation | **1** | 1 | ██████░░░░░░ |
-| method | **1** | 1 | ██████░░░░░░ |
+| method | **1** | 1 | ████████████ |
 
 ### By year
 
 | Year | Papers | |
 |------|--------|-|
-| 2025 | 3 | ████████████ |
-| 2026 | 2 | ████████░░░░ |
+| 2026 | 1 | ████████████ |
 
 ### Momentum (hottest categories)
 
 | Category | Total | Rate | Recent | Score |
 |----------|-------|------|--------|-------|
-| Application | 1 | 0.1/mo | 100% | 100 |
-| Evaluation | 1 | 0.1/mo | 100% | 100 |
 | Method | 1 | 0.1/mo | 100% | 100 |
-| Survey | 2 | 0.1/mo | 50% | 50 |
 
 ### Trending keywords
 
 | Keyword | Papers | Burst |
 |---------|--------|-------|
-| benchmark | 1 | 1.25 |
-| evaluation | 1 | 1.25 |
-| method | 1 | 1.25 |
-| application | 1 | 1.25 |
-| survey | 1 | 0.62 |
-| analysis | 1 | 0.62 |
+| model | 1 | 1.0 |
+| system | 1 | 1.0 |
 
 ### Research gaps (thinnest cells)
 
 | Cell | Papers |
 |------|--------|
-| `survey/hybrid` | 1 |
-| `method/agentic` | 1 |
-| `application/non-agentic` | 1 |
-| `evaluation/hybrid` | 1 |
-| `survey/non-agentic` | 1 |
+| `method/non-agentic` | 1 |
 
 *Generated 2026-08 by `scripts/standard_stats.py`.*
 
