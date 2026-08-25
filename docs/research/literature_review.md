@@ -1,7 +1,7 @@
 # Literature Review
 
 **Generated:** 2026-08-25  
-**Corpus:** 17 papers across 3 categories
+**Corpus:** 271 papers across 3 categories
 
 > Synthesis of the corpus. Category insights are grounded in title/abstract analysis of the papers themselves.
 
@@ -11,12 +11,12 @@
 
 | Rank | Category | Papers |
 |------|----------|--------|
-| 1 | Methods & Architectures | 14 |
-| 2 | Evaluation & Benchmarks | 2 |
-| 3 | Surveys & Taxonomies | 1 |
+| 1 | Methods & Architectures | 175 |
+| 2 | Evaluation & Benchmarks | 84 |
+| 3 | Surveys & Taxonomies | 12 |
 
 **Time span:** 2023–2026 (median year 2024)
-**Dominant aspects:** Non-Agentic (17)
+**Dominant aspects:** Non-Agentic (271)
 
 ---
 
@@ -24,9 +24,9 @@
 
 | Category | Total | Last 12m | Prior 12m | Growth | 12-m share | Papers/mo |
 |----------|------:|---------:|----------:|-------:|----------:|----------:|
-| Method | 14 | 1 | 0 | — | 7% | 0.1 |
-| Evaluation | 2 | 0 | 0 | — | 0% | 0.0 |
-| Survey | 1 | 0 | 0 | — | 0% | 0.0 |
+| Evaluation | 84 | 82 | 0 | — | 98% | 6.8 |
+| Method | 175 | 162 | 0 | — | 93% | 13.5 |
+| Survey | 12 | 11 | 0 | — | 92% | 0.9 |
 
 ---
 
@@ -34,9 +34,9 @@
 
 | Cell | Papers |
 |------|--------:|
-| `survey/non-agentic` | 1 |
-| `evaluation/non-agentic` | 2 |
-| `method/non-agentic` | 14 |
+| `survey/non-agentic` | 12 |
+| `evaluation/non-agentic` | 84 |
+| `method/non-agentic` | 175 |
 
 ---
 
@@ -45,34 +45,37 @@
 
 ### Methods & Architectures (`method`)
 
-**Corpus size:** 14 papers
+**Corpus size:** 175 papers
 
 **Recent papers:**
 
-- [2026-05] KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation for Efficient La — https://arxiv.org/abs/2608.21362
-- [2024-06] PyramidKV: Dynamic KV Cache Compression based on Pyramidal Information Funneling — https://arxiv.org/abs/2406.02069
-- [2024-06] Quest: Query-Aware Sparsity for Efficient Long-Context LLM Inference — https://arxiv.org/abs/2406.10774
+- [2026-08] Practical Online KV Cache Compaction for LLM Agents: An Empirical Study — https://arxiv.org/abs/2608.00902
+- [2026-08] Learning how to Forget: Fine-tuning for Long-Context Sparse Attention — https://arxiv.org/abs/2608.19920
+- [2026-08] Bole: Efficient Tree Speculation for Hybrid-Attention Language Models — https://arxiv.org/abs/2608.01651
 
 ---
 
 ### Evaluation & Benchmarks (`evaluation`)
 
-**Corpus size:** 2 papers
+**Corpus size:** 84 papers
 
 **Recent papers:**
 
-- [2024-04] RULER: What's the Real Context Size of Your Long-Context Language Models? — https://arxiv.org/abs/2404.06654
-- [2023-08] LongBench: A Bilingual, Multitask Benchmark for Long Context Understanding — https://arxiv.org/abs/2308.14508
+- [2026-08] Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning — https://arxiv.org/abs/2608.19181
+- [2026-08] LongCat Sparse Attention: Taming the Lightning via Streaming-aware Hierarchical Cross-Layer Ind — https://arxiv.org/abs/2608.01662
+- [2026-08] SEER: Long-Context Reasoning via Selective Visual-Text Compression — https://arxiv.org/abs/2608.15962
 
 ---
 
 ### Surveys & Taxonomies (`survey`)
 
-**Corpus size:** 1 papers
+**Corpus size:** 12 papers
 
 **Recent papers:**
 
-- [2024-04] A Survey on Efficient Inference for Large Language Models — https://arxiv.org/abs/2404.14294
+- [2026-08] Beyond Tokens: A Survey on Decoding Methods for Large Language and Vision-Language Models — https://arxiv.org/abs/2608.14797
+- [2026-08] The conditional superiority of fast silicon sampling — https://arxiv.org/abs/2608.14079
+- [2026-08] Large Language Models for Low-Resource Languages: A Conceptual Framework for an Electronic Expl — https://arxiv.org/abs/2608.04186
 
 ---
 
