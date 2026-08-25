@@ -1,6 +1,26 @@
 {
  "categories": [
   {
+   "id": "evaluation",
+   "name": "Evaluation & Benchmarks",
+   "count": 2,
+   "trajectory": {
+    "2023": 1,
+    "2024": 1
+   },
+   "momentum": {
+    "id": "evaluation",
+    "name": "Evaluation",
+    "total": 2,
+    "recent": 0,
+    "prior": 0,
+    "growth_pct": null,
+    "recent_share": 0.0,
+    "papers_per_month": 0.0,
+    "score": 0.0
+   }
+  },
+  {
    "id": "method",
    "name": "Methods & Architectures",
    "count": 14,
@@ -20,13 +40,32 @@
     "papers_per_month": 0.1,
     "score": 7.1
    }
+  },
+  {
+   "id": "survey",
+   "name": "Surveys & Taxonomies",
+   "count": 1,
+   "trajectory": {
+    "2024": 1
+   },
+   "momentum": {
+    "id": "survey",
+    "name": "Survey",
+    "total": 1,
+    "recent": 0,
+    "prior": 0,
+    "growth_pct": null,
+    "recent_share": 0.0,
+    "papers_per_month": 0.0,
+    "score": 0.0
+   }
   }
  ],
  "subcategories": [
   {
    "id": "non-agentic",
    "name": "Non-Agentic",
-   "count": 14
+   "count": 17
   }
  ],
  "timeline": [
@@ -38,6 +77,11 @@
   [
    "2023-06",
    "method",
+   "non-agentic"
+  ],
+  [
+   "2023-08",
+   "evaluation",
    "non-agentic"
   ],
   [
@@ -67,12 +111,22 @@
   ],
   [
    "2024-04",
+   "evaluation",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
    "method",
    "non-agentic"
   ],
   [
    "2024-04",
    "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "survey",
    "non-agentic"
   ],
   [
@@ -106,14 +160,14 @@
   {
    "keyword": "system",
    "recent": 1,
-   "total": 8,
-   "burst_score": 1.75,
+   "total": 9,
+   "burst_score": 1.89,
    "recent_share": 1.0
   },
   {
    "keyword": "model",
    "recent": 1,
-   "total": 14,
+   "total": 17,
    "burst_score": 1.0,
    "recent_share": 1.0
   }

@@ -1,7 +1,7 @@
 # Literature Review
 
 **Generated:** 2026-08-25  
-**Corpus:** 14 papers across 1 categories
+**Corpus:** 17 papers across 3 categories
 
 > Synthesis of the corpus. Category insights are grounded in title/abstract analysis of the papers themselves.
 
@@ -12,9 +12,11 @@
 | Rank | Category | Papers |
 |------|----------|--------|
 | 1 | Methods & Architectures | 14 |
+| 2 | Evaluation & Benchmarks | 2 |
+| 3 | Surveys & Taxonomies | 1 |
 
 **Time span:** 2023–2026 (median year 2024)
-**Dominant aspects:** Non-Agentic (14)
+**Dominant aspects:** Non-Agentic (17)
 
 ---
 
@@ -23,6 +25,8 @@
 | Category | Total | Last 12m | Prior 12m | Growth | 12-m share | Papers/mo |
 |----------|------:|---------:|----------:|-------:|----------:|----------:|
 | Method | 14 | 1 | 0 | — | 7% | 0.1 |
+| Evaluation | 2 | 0 | 0 | — | 0% | 0.0 |
+| Survey | 1 | 0 | 0 | — | 0% | 0.0 |
 
 ---
 
@@ -30,6 +34,8 @@
 
 | Cell | Papers |
 |------|--------:|
+| `survey/non-agentic` | 1 |
+| `evaluation/non-agentic` | 2 |
 | `method/non-agentic` | 14 |
 
 ---
@@ -46,6 +52,27 @@
 - [2026-05] KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation for Efficient La — https://arxiv.org/abs/2608.21362
 - [2024-06] PyramidKV: Dynamic KV Cache Compression based on Pyramidal Information Funneling — https://arxiv.org/abs/2406.02069
 - [2024-06] Quest: Query-Aware Sparsity for Efficient Long-Context LLM Inference — https://arxiv.org/abs/2406.10774
+
+---
+
+### Evaluation & Benchmarks (`evaluation`)
+
+**Corpus size:** 2 papers
+
+**Recent papers:**
+
+- [2024-04] RULER: What's the Real Context Size of Your Long-Context Language Models? — https://arxiv.org/abs/2404.06654
+- [2023-08] LongBench: A Bilingual, Multitask Benchmark for Long Context Understanding — https://arxiv.org/abs/2308.14508
+
+---
+
+### Surveys & Taxonomies (`survey`)
+
+**Corpus size:** 1 papers
+
+**Recent papers:**
+
+- [2024-04] A Survey on Efficient Inference for Large Language Models — https://arxiv.org/abs/2404.14294
 
 ---
 

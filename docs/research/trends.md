@@ -1,14 +1,14 @@
 # Trends (12-Month View)
 
 **Generated:** 2026-08-25  
-**Window:** since 2025-08 — 1 of 14 papers
+**Window:** since 2025-08 — 1 of 17 papers
 
 ## 🔥 Keyword Bursts
 
 | Keyword | Recent | Total | Burst |
 |---------|--------|-------|-------|
-| system | 1 | 8 | 1.8× |
-| model | 1 | 14 | 1.0× |
+| system | 1 | 9 | 1.9× |
+| model | 1 | 17 | 1.0× |
 
 ## 📈 Fastest-Growing Cells
 

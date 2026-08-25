@@ -549,3 +549,129 @@ papers:
   - llm
   - kv-cache
   - efficiency
+- title: A Survey on Efficient Inference for Large Language Models
+  date: 2024-04
+  url: https://arxiv.org/abs/2404.14294
+  category: survey
+  subcategory: non-agentic
+  authors:
+  - Zhou, Zixuan
+  - Ning, Xuefei
+  - Hong, Ke
+  - Fu, Tianyu
+  - Xu, Jiaming
+  - Li, Shiyao
+  - Lou, Yuming
+  - Wang, Luning
+  - Yuan, Zhihang
+  - Li, Xiuhong
+  - Yan, Shengen
+  - Dai, Guohao
+  - Zhang, Xiao-Ping
+  - Dong, Yuhan
+  - Wang, Yu
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: Large Language Models (LLMs) have attracted extensive attention due to
+    their remarkable performance across various tasks. However, the substantial computational
+    and memory requirements of LLM inference pose challenges for deployment in resource-constrained
+    scenarios. Efforts within the field have been directed towards developing techniques
+    aimed at enhancing the efficiency of LLM inference. This paper presents a comprehensive
+    survey of the existing literature on efficient LLM inference. We start by analyzing
+    the primary causes of the inefficient LLM inference, i.e., the large model size,
+    the quadratic-complexity attention operation, and the auto-regressive decoding
+    approach. Then, we introduce a comprehensive taxonomy that organizes the current
+    literature into data-level, model-level, and system-level optimization. Moreover,
+    the paper includes comparative experiments on representative methods within critical
+    sub-fields to provide quantitative insights. Last but not least, we provide some
+    knowledge summary and discuss future research directions.
+  tags:
+  - llm
+  - efficiency
+  - survey
+- title: 'RULER: What''s the Real Context Size of Your Long-Context Language Models?'
+  date: 2024-04
+  url: https://arxiv.org/abs/2404.06654
+  category: evaluation
+  subcategory: non-agentic
+  authors:
+  - Hsieh, Cheng-Ping
+  - Sun, Simeng
+  - Kriman, Samuel
+  - Acharya, Shantanu
+  - Rekesh, Dima
+  - Jia, Fei
+  - Zhang, Yang
+  - Ginsburg, Boris
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: The needle-in-a-haystack (NIAH) test, which examines the ability to retrieve
+    a piece of information (the "needle") from long distractor texts (the "haystack"),
+    has been widely adopted to evaluate long-context language models (LMs). However,
+    this simple retrieval-based test is indicative of only a superficial form of long-context
+    understanding. To provide a more comprehensive evaluation of long-context LMs,
+    we create a new synthetic benchmark RULER with flexible configurations for customized
+    sequence length and task complexity. RULER expands upon the vanilla NIAH test
+    to encompass variations with diverse types and quantities of needles. Moreover,
+    RULER introduces new task categories multi-hop tracing and aggregation to test
+    behaviors beyond searching from context. We evaluate 17 long-context LMs with
+    13 representative tasks in RULER. Despite achieving nearly perfect accuracy in
+    the vanilla NIAH test, almost all models exhibit large performance drops as the
+    context length increases. While these models all claim context sizes of 32K tokens
+    or greater, only half of them can maintain satisfactory performance at the length
+    of 32K. Our analysis of Yi-34B, which supports context length of 200K, reveals
+    large room for improvement as we increase input length and task complexity. We
+    open source RULER to spur comprehensive evaluation of long-context LMs.
+  tags:
+  - llm
+  - efficiency
+  - benchmark
+- title: 'LongBench: A Bilingual, Multitask Benchmark for Long Context Understanding'
+  date: 2023-08
+  url: https://arxiv.org/abs/2308.14508
+  category: evaluation
+  subcategory: non-agentic
+  authors:
+  - Bai, Yushi
+  - Lv, Xin
+  - Zhang, Jiajie
+  - Lyu, Hongchang
+  - Tang, Jiankai
+  - Huang, Zhidian
+  - Du, Zhengxiao
+  - Liu, Xiao
+  - Zeng, Aohan
+  - Hou, Lei
+  - Dong, Yuxiao
+  - Tang, Jie
+  - Li, Juanzi
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: 'Although large language models (LLMs) demonstrate impressive performance
+    for many language tasks, most of them can only handle texts a few thousand tokens
+    long, limiting their applications on longer sequence inputs, such as books, reports,
+    and codebases. Recent works have proposed methods to improve LLMs'' long context
+    capabilities by extending context windows and more sophisticated memory mechanisms.
+    However, comprehensive benchmarks tailored for evaluating long context understanding
+    are lacking. In this paper, we introduce LongBench, the first bilingual, multi-task
+    benchmark for long context understanding, enabling a more rigorous evaluation
+    of long context understanding. LongBench comprises 21 datasets across 6 task categories
+    in both English and Chinese, with an average length of 6,711 words (English) and
+    13,386 characters (Chinese). These tasks cover key long-text application areas
+    including single-doc QA, multi-doc QA, summarization, few-shot learning, synthetic
+    tasks, and code completion. All datasets in LongBench are standardized into a
+    unified format, allowing for effortless automatic evaluation of LLMs. Upon comprehensive
+    evaluation of 8 LLMs on LongBench, we find that: (1) Commercial model (GPT-3.5-Turbo-16k)
+    outperforms other open-sourced models, but still struggles on longer contexts.
+    (2) Scaled position embedding and fine-tuning on longer sequences lead to substantial
+    improvement on long context understanding. (3) Context compression technique such
+    as retrieval brings improvement for model with weak ability on long contexts,
+    but the performance still lags behind models that have strong long context understanding
+    capability. The code and datasets are available at https://github.com/THUDM/LongBench.'
+  tags:
+  - llm
+  - efficiency
+  - benchmark

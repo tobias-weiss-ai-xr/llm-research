@@ -142,7 +142,9 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
   - [Non-Agentic](#non-agentic)
 - [📚 Applications](#applications)
 - [📚 Evaluation & Benchmarks](#evaluation-&-benchmarks)
+  - [Non-Agentic](#non-agentic)
 - [📚 Surveys & Taxonomies](#surveys-&-taxonomies)
+  - [Non-Agentic](#non-agentic)
 
 ### Methods & Architectures
 
@@ -177,7 +179,27 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 
 ### Evaluation & Benchmarks
 
+#### Non-Agentic
+
+##### 2024
+
+- [2024] **RULER: What's the Real Context Size of Your Long-Context Language Models?** [[paper](https://arxiv.org/abs/2404.06654)]
+
+##### 2023
+
+- [2023] **LongBench: A Bilingual, Multitask Benchmark for Long Context Understanding** [[paper](https://arxiv.org/abs/2308.14508)]
+
+[⬆ Back to top](#paper-list)
+
 ### Surveys & Taxonomies
+
+#### Non-Agentic
+
+##### 2024
+
+- [2024] **A Survey on Efficient Inference for Large Language Models** [[paper](https://arxiv.org/abs/2404.14294)]
+
+[⬆ Back to top](#paper-list)
 
 <!-- END PAPER LIST -->
 
@@ -185,21 +207,23 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 
 ## 📊 Corpus Statistics
 
-**14 papers** across **1 categories**.  
-Sources: **arXiv** 14 (100%).  
+**17 papers** across **3 categories**.  
+Sources: **arXiv** 17 (100%).  
 
 ### Top categories
 
 | Category | Papers | Recent | |
 |----------|--------|--------|-|
 | method | **14** | 1 | ████████████ |
+| evaluation | **2** | 0 | ██░░░░░░░░░░ |
+| survey | **1** | 0 | █░░░░░░░░░░░ |
 
 ### By year
 
 | Year | Papers | |
 |------|--------|-|
-| 2023 | 4 | █████░░░░░░░ |
-| 2024 | 9 | ████████████ |
+| 2023 | 5 | █████░░░░░░░ |
+| 2024 | 11 | ████████████ |
 | 2026 | 1 | █░░░░░░░░░░░ |
 
 ### Momentum (hottest categories)
@@ -207,18 +231,22 @@ Sources: **arXiv** 14 (100%).
 | Category | Total | Rate | Recent | Score |
 |----------|-------|------|--------|-------|
 | Method | 14 | 0.1/mo | 7% | 7 |
+| Evaluation | 2 | 0.0/mo | 0% | 0 |
+| Survey | 1 | 0.0/mo | 0% | 0 |
 
 ### Trending keywords
 
 | Keyword | Papers | Burst |
 |---------|--------|-------|
-| system | 1 | 1.75 |
+| system | 1 | 1.89 |
 | model | 1 | 1.0 |
 
 ### Research gaps (thinnest cells)
 
 | Cell | Papers |
 |------|--------|
+| `survey/non-agentic` | 1 |
+| `evaluation/non-agentic` | 2 |
 | `method/non-agentic` | 14 |
 
 *Generated 2026-08 by `scripts/standard_stats.py`.*
