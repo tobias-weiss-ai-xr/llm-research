@@ -155,12 +155,14 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 ##### 2024
 
 - [2024] **PyramidKV: Dynamic KV Cache Compression based on Pyramidal Information Funneling** [[paper](https://arxiv.org/abs/2406.02069)]
+- [2024] **Quest: Query-Aware Sparsity for Efficient Long-Context LLM Inference** [[paper](https://arxiv.org/abs/2406.10774)]
 - [2024] **CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion** [[paper](https://arxiv.org/abs/2405.16444)]
 - [2024] **MiniCache: KV Cache Compression in Depth Dimension for Large Language Models** [[paper](https://arxiv.org/abs/2405.14366)]
 - [2024] **SnapKV: LLM Knows What You are Looking for Before Generation** [[paper](https://arxiv.org/abs/2404.14469)]
 - [2024] **TriForce: Lossless Acceleration of Long Sequence Generation with Hierarchical Speculative Decoding** [[paper](https://arxiv.org/abs/2404.11912)]
 - [2024] **GEAR: An Efficient KV Cache Compression Recipe for Near-Lossless Generative Inference of LLM** [[paper](https://arxiv.org/abs/2403.05527)]
 - [2024] **KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache** [[paper](https://arxiv.org/abs/2402.02750)]
+- [2024] **ChunkAttention: Efficient Self-Attention with Prefix-Aware KV Cache and Two-Phase Partition** [[paper](https://arxiv.org/abs/2402.15220)]
 
 ##### 2023
 
@@ -183,41 +185,41 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 
 ## 📊 Corpus Statistics
 
-**12 papers** across **1 categories**.  
-Sources: **arXiv** 12 (100%).  
+**14 papers** across **1 categories**.  
+Sources: **arXiv** 14 (100%).  
 
 ### Top categories
 
 | Category | Papers | Recent | |
 |----------|--------|--------|-|
-| method | **12** | 1 | ████████████ |
+| method | **14** | 1 | ████████████ |
 
 ### By year
 
 | Year | Papers | |
 |------|--------|-|
-| 2023 | 4 | ███████░░░░░ |
-| 2024 | 7 | ████████████ |
-| 2026 | 1 | ██░░░░░░░░░░ |
+| 2023 | 4 | █████░░░░░░░ |
+| 2024 | 9 | ████████████ |
+| 2026 | 1 | █░░░░░░░░░░░ |
 
 ### Momentum (hottest categories)
 
 | Category | Total | Rate | Recent | Score |
 |----------|-------|------|--------|-------|
-| Method | 12 | 0.1/mo | 8% | 8 |
+| Method | 14 | 0.1/mo | 7% | 7 |
 
 ### Trending keywords
 
 | Keyword | Papers | Burst |
 |---------|--------|-------|
-| system | 1 | 1.71 |
+| system | 1 | 1.75 |
 | model | 1 | 1.0 |
 
 ### Research gaps (thinnest cells)
 
 | Cell | Papers |
 |------|--------|
-| `method/non-agentic` | 12 |
+| `method/non-agentic` | 14 |
 
 *Generated 2026-08 by `scripts/standard_stats.py`.*
 
