@@ -3,20 +3,22 @@
   {
    "id": "method",
    "name": "Methods & Architectures",
-   "count": 1,
+   "count": 12,
    "trajectory": {
+    "2023": 4,
+    "2024": 7,
     "2026": 1
    },
    "momentum": {
     "id": "method",
     "name": "Method",
-    "total": 1,
+    "total": 12,
     "recent": 1,
     "prior": 0,
     "growth_pct": null,
-    "recent_share": 1.0,
+    "recent_share": 0.083,
     "papers_per_month": 0.1,
-    "score": 100.0
+    "score": 8.3
    }
   }
  ],
@@ -24,10 +26,65 @@
   {
    "id": "non-agentic",
    "name": "Non-Agentic",
-   "count": 1
+   "count": 12
   }
  ],
  "timeline": [
+  [
+   "2023-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
   [
    "2026-05",
    "method",
@@ -37,16 +94,16 @@
  "venues": [],
  "keyword_bursts": [
   {
-   "keyword": "model",
+   "keyword": "system",
    "recent": 1,
-   "total": 1,
-   "burst_score": 1.0,
+   "total": 7,
+   "burst_score": 1.71,
    "recent_share": 1.0
   },
   {
-   "keyword": "system",
+   "keyword": "model",
    "recent": 1,
-   "total": 1,
+   "total": 12,
    "burst_score": 1.0,
    "recent_share": 1.0
   }

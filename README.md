@@ -152,6 +152,23 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 
 - [2026] **KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation for Efficient Large Language Model Inference** [[paper](https://arxiv.org/abs/2608.21362)]
 
+##### 2024
+
+- [2024] **PyramidKV: Dynamic KV Cache Compression based on Pyramidal Information Funneling** [[paper](https://arxiv.org/abs/2406.02069)]
+- [2024] **CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion** [[paper](https://arxiv.org/abs/2405.16444)]
+- [2024] **MiniCache: KV Cache Compression in Depth Dimension for Large Language Models** [[paper](https://arxiv.org/abs/2405.14366)]
+- [2024] **SnapKV: LLM Knows What You are Looking for Before Generation** [[paper](https://arxiv.org/abs/2404.14469)]
+- [2024] **TriForce: Lossless Acceleration of Long Sequence Generation with Hierarchical Speculative Decoding** [[paper](https://arxiv.org/abs/2404.11912)]
+- [2024] **GEAR: An Efficient KV Cache Compression Recipe for Near-Lossless Generative Inference of LLM** [[paper](https://arxiv.org/abs/2403.05527)]
+- [2024] **KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache** [[paper](https://arxiv.org/abs/2402.02750)]
+
+##### 2023
+
+- [2023] **Prompt Cache: Modular Attention Reuse for Low-Latency Inference** [[paper](https://arxiv.org/abs/2311.04934)]
+- [2023] **Efficient Memory Management for Large Language Model Serving with PagedAttention** [[paper](https://arxiv.org/abs/2309.06180)]
+- [2023] **H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models** [[paper](https://arxiv.org/abs/2306.14048)]
+- [2023] **Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time** [[paper](https://arxiv.org/abs/2305.17118)]
+
 [⬆ Back to top](#paper-list)
 
 ### Applications
@@ -166,39 +183,41 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 
 ## 📊 Corpus Statistics
 
-**1 papers** across **1 categories**.  
-Sources: **arXiv** 1 (100%).  
+**12 papers** across **1 categories**.  
+Sources: **arXiv** 12 (100%).  
 
 ### Top categories
 
 | Category | Papers | Recent | |
 |----------|--------|--------|-|
-| method | **1** | 1 | ████████████ |
+| method | **12** | 1 | ████████████ |
 
 ### By year
 
 | Year | Papers | |
 |------|--------|-|
-| 2026 | 1 | ████████████ |
+| 2023 | 4 | ███████░░░░░ |
+| 2024 | 7 | ████████████ |
+| 2026 | 1 | ██░░░░░░░░░░ |
 
 ### Momentum (hottest categories)
 
 | Category | Total | Rate | Recent | Score |
 |----------|-------|------|--------|-------|
-| Method | 1 | 0.1/mo | 100% | 100 |
+| Method | 12 | 0.1/mo | 8% | 8 |
 
 ### Trending keywords
 
 | Keyword | Papers | Burst |
 |---------|--------|-------|
+| system | 1 | 1.71 |
 | model | 1 | 1.0 |
-| system | 1 | 1.0 |
 
 ### Research gaps (thinnest cells)
 
 | Cell | Papers |
 |------|--------|
-| `method/non-agentic` | 1 |
+| `method/non-agentic` | 12 |
 
 *Generated 2026-08 by `scripts/standard_stats.py`.*
 

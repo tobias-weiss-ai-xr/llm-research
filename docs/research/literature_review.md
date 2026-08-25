@@ -1,7 +1,7 @@
 # Literature Review
 
 **Generated:** 2026-08-25  
-**Corpus:** 1 papers across 1 categories
+**Corpus:** 12 papers across 1 categories
 
 > Synthesis of the corpus. Category insights are grounded in title/abstract analysis of the papers themselves.
 
@@ -11,10 +11,10 @@
 
 | Rank | Category | Papers |
 |------|----------|--------|
-| 1 | Methods & Architectures | 1 |
+| 1 | Methods & Architectures | 12 |
 
-**Time span:** 2026–2026 (median year 2026)
-**Dominant aspects:** Non-Agentic (1)
+**Time span:** 2023–2026 (median year 2024)
+**Dominant aspects:** Non-Agentic (12)
 
 ---
 
@@ -22,7 +22,7 @@
 
 | Category | Total | Last 12m | Prior 12m | Growth | 12-m share | Papers/mo |
 |----------|------:|---------:|----------:|-------:|----------:|----------:|
-| Method | 1 | 1 | 0 | — | 100% | 0.1 |
+| Method | 12 | 1 | 0 | — | 8% | 0.1 |
 
 ---
 
@@ -30,7 +30,7 @@
 
 | Cell | Papers |
 |------|--------:|
-| `method/non-agentic` | 1 |
+| `method/non-agentic` | 12 |
 
 ---
 
@@ -39,11 +39,13 @@
 
 ### Methods & Architectures (`method`)
 
-**Corpus size:** 1 papers
+**Corpus size:** 12 papers
 
 **Recent papers:**
 
 - [2026-05] KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation for Efficient La — https://arxiv.org/abs/2608.21362
+- [2024-06] PyramidKV: Dynamic KV Cache Compression based on Pyramidal Information Funneling — https://arxiv.org/abs/2406.02069
+- [2024-05] CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion — https://arxiv.org/abs/2405.16444
 
 ---
 

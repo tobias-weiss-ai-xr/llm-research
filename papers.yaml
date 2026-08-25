@@ -1,5 +1,6 @@
 papers:
-- title: 'KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation for Efficient Large Language Model Inference'
+- title: 'KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation
+    for Efficient Large Language Model Inference'
   date: 2026-05
   url: https://arxiv.org/abs/2608.21362
   category: method
@@ -9,9 +10,475 @@ papers:
   venue: ''
   code_url: ''
   project_url: ''
-  abstract: 'Transformer-based large language models (LLMs) incur high prefill latency because key-value (KV) tensors must be recomputed for each request. Existing prefix-caching systems reduce this cost but require prompts to share a leading contiguous prefix, limiting effectiveness when shared content appears at arbitrary positions. We present KVBoost, a chunk-level KV cache reuse system for HuggingFace-compatible decoder models that enables reuse regardless of content position. KVBoost introduces a dual-hash keying scheme that separates positional identity (prefix hash) from content identity (content hash), supporting both exact and approximate cache matches. To address attention boundary errors from independently cached chunks, KVBoost employs two repair strategies: SelectiveRecompute, which re-encodes boundary regions, and CacheBlendRecompute, which identifies and recomputes high-deviation tokens after a probe pass. The system further incorporates asymmetric KV quantization (int8/int4), adaptive chunk boundary splitting, and importance-weighted eviction under a fixed memory budget. Evaluated on Qwen/Qwen2.5-3B over 1,000 bug-localization samples, KVBoost achieves a 4.49x reduction in time-to-first-token (142.4 ms vs. 639.1 ms) and outperforms prefix caching by 16%, with no loss in accuracy (99.2% vs. 99.1%). KVBoost provides a practical, memory-bounded inference acceleration layer compatible with RoPE-based models without architectural modification.'
+  abstract: 'Transformer-based large language models (LLMs) incur high prefill latency
+    because key-value (KV) tensors must be recomputed for each request. Existing prefix-caching
+    systems reduce this cost but require prompts to share a leading contiguous prefix,
+    limiting effectiveness when shared content appears at arbitrary positions. We
+    present KVBoost, a chunk-level KV cache reuse system for HuggingFace-compatible
+    decoder models that enables reuse regardless of content position. KVBoost introduces
+    a dual-hash keying scheme that separates positional identity (prefix hash) from
+    content identity (content hash), supporting both exact and approximate cache matches.
+    To address attention boundary errors from independently cached chunks, KVBoost
+    employs two repair strategies: SelectiveRecompute, which re-encodes boundary regions,
+    and CacheBlendRecompute, which identifies and recomputes high-deviation tokens
+    after a probe pass. The system further incorporates asymmetric KV quantization
+    (int8/int4), adaptive chunk boundary splitting, and importance-weighted eviction
+    under a fixed memory budget. Evaluated on Qwen/Qwen2.5-3B over 1,000 bug-localization
+    samples, KVBoost achieves a 4.49x reduction in time-to-first-token (142.4 ms vs.
+    639.1 ms) and outperforms prefix caching by 16%, with no loss in accuracy (99.2%
+    vs. 99.1%). KVBoost provides a practical, memory-bounded inference acceleration
+    layer compatible with RoPE-based models without architectural modification.'
   tags:
   - llm
   - inference
+  - kv-cache
+  - efficiency
+- title: 'CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge
+    Fusion'
+  date: 2024-05
+  url: https://arxiv.org/abs/2405.16444
+  category: method
+  subcategory: non-agentic
+  authors:
+  - Yao, Jiayi
+  - Li, Hanchen
+  - Liu, Yuhan
+  - Ray, Siddhant
+  - Cheng, Yihua
+  - Zhang, Qizheng
+  - Du, Kuntai
+  - Lu, Shan
+  - Jiang, Junchen
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: 'Large language models (LLMs) often incorporate multiple text chunks in
+    their inputs to provide the necessary contexts. To speed up the prefill of the
+    long LLM inputs, one can pre-compute the KV cache of a text and re-use the KV
+    cache when the context is reused as the prefix of another LLM input. However,
+    the reused text chunks are not always the input prefix, which makes precomputed
+    KV caches not directly usable since they ignore the text''s cross-attention with
+    the preceding texts. Thus, the benefits of reusing KV caches remain largely unrealized.
+    This paper tackles just one challenge: when an LLM input contains multiple text
+    chunks, how to quickly combine their precomputed KV caches in order to achieve
+    the same generation quality as the expensive full prefill (i.e., without reusing
+    KV cache)? This challenge naturally arises in retrieval-augmented generation (RAG)
+    where the input is supplemented with multiple retrieved texts as the context.
+    We present CacheBlend, a scheme that reuses the precomputed KV caches, regardless
+    prefix or not, and selectively recomputes the KV values of a small subset of tokens
+    to partially update each reused KV cache. In the meantime, the small extra delay
+    for recomputing some tokens can be pipelined with the retrieval of KV caches within
+    the same job, allowing CacheBlend to store KV caches in slower devices with more
+    storage capacity while retrieving them without increasing the inference delay.
+    By comparing CacheBlend with the state-of-the-art KV cache reusing schemes on
+    three open-source LLMs of various sizes and four popular benchmark datasets of
+    different tasks, we show that CacheBlend reduces time-to-first-token (TTFT) by
+    2.2-3.3x and increases the inference throughput by 2.8-5x from full KV recompute
+    without compromising generation quality. The code is available at https://github.com/LMCache/LMCache.'
+  tags:
+  - llm
+  - kv-cache
+  - efficiency
+- title: Efficient Memory Management for Large Language Model Serving with PagedAttention
+  date: 2023-09
+  url: https://arxiv.org/abs/2309.06180
+  category: method
+  subcategory: non-agentic
+  authors:
+  - Kwon, Woosuk
+  - Li, Zhuohan
+  - Zhuang, Siyuan
+  - Sheng, Ying
+  - Zheng, Lianmin
+  - Yu, Cody Hao
+  - Gonzalez, Joseph E.
+  - Zhang, Hao
+  - Stoica, Ion
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: High throughput serving of large language models (LLMs) requires batching
+    sufficiently many requests at a time. However, existing systems struggle because
+    the key-value cache (KV cache) memory for each request is huge and grows and shrinks
+    dynamically. When managed inefficiently, this memory can be significantly wasted
+    by fragmentation and redundant duplication, limiting the batch size. To address
+    this problem, we propose PagedAttention, an attention algorithm inspired by the
+    classical virtual memory and paging techniques in operating systems. On top of
+    it, we build vLLM, an LLM serving system that achieves (1) near-zero waste in
+    KV cache memory and (2) flexible sharing of KV cache within and across requests
+    to further reduce memory usage. Our evaluations show that vLLM improves the throughput
+    of popular LLMs by 2-4× with the same level of latency compared to the state-of-the-art
+    systems, such as FasterTransformer and Orca. The improvement is more pronounced
+    with longer sequences, larger models, and more complex decoding algorithms. vLLM's
+    source code is publicly available at https://github.com/vllm-project/vllm
+  tags:
+  - llm
+  - kv-cache
+  - efficiency
+- title: 'H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language
+    Models'
+  date: 2023-06
+  url: https://arxiv.org/abs/2306.14048
+  category: method
+  subcategory: non-agentic
+  authors:
+  - Zhang, Zhenyu
+  - Sheng, Ying
+  - Zhou, Tianyi
+  - Chen, Tianlong
+  - Zheng, Lianmin
+  - Cai, Ruisi
+  - Song, Zhao
+  - Tian, Yuandong
+  - Ré, Christopher
+  - Barrett, Clark
+  - Wang, Zhangyang
+  - Chen, Beidi
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: Large Language Models (LLMs), despite their recent impressive accomplishments,
+    are notably cost-prohibitive to deploy, particularly for applications involving
+    long-content generation, such as dialogue systems and story writing. Often, a
+    large amount of transient state information, referred to as the KV cache, is stored
+    in GPU memory in addition to model parameters, scaling linearly with the sequence
+    length and batch size. In this paper, we introduce a novel approach for implementing
+    the KV cache which significantly reduces its memory footprint. Our approach is
+    based on the noteworthy observation that a small portion of tokens contributes
+    most of the value when computing attention scores. We call these tokens Heavy
+    Hitters (H2). Through a comprehensive investigation, we find that (i) the emergence
+    of H2 is natural and strongly correlates with the frequent co-occurrence of tokens
+    in the text, and (ii) removing them results in significant performance degradation.
+    Based on these insights, we propose Heavy Hitter Oracle (H2O), a KV cache eviction
+    policy that dynamically retains a balance of recent and H2 tokens. We formulate
+    the KV cache eviction as a dynamic submodular problem and prove (under mild assumptions)
+    a theoretical guarantee for our novel eviction algorithm which could help guide
+    future work. We validate the accuracy of our algorithm with OPT, LLaMA, and GPT-NeoX
+    across a wide range of tasks. Our implementation of H2O with 20% heavy hitters
+    improves the throughput over three leading inference systems DeepSpeed Zero-Inference,
+    Hugging Face Accelerate, and FlexGen by up to 29×, 29×, and 3× on OPT-6.7B and
+    OPT-30B. With the same batch size, H2O can reduce the latency by up to 1.9×. The
+    code is available at https://github.com/FMInference/H2O.
+  tags:
+  - llm
+  - kv-cache
+  - efficiency
+- title: 'KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache'
+  date: 2024-02
+  url: https://arxiv.org/abs/2402.02750
+  category: method
+  subcategory: non-agentic
+  authors:
+  - Liu, Zirui
+  - Yuan, Jiayi
+  - Jin, Hongye
+  - Zhong, Shaochen
+  - Xu, Zhaozhuo
+  - Braverman, Vladimir
+  - Chen, Beidi
+  - Hu, Xia
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: Efficiently serving large language models (LLMs) requires batching of
+    many requests to reduce the cost per request. Yet, with larger batch sizes and
+    longer context lengths, the key-value (KV) cache, which stores attention keys
+    and values to avoid re-computations, significantly increases memory demands and
+    becomes the new bottleneck in speed and memory usage. Additionally, the loading
+    of the KV cache causes the computational core to be idle, which limits the inference
+    speed. A straightforward and effective solution to reduce KV cache size is quantization,
+    which decreases the total bytes taken by KV cache. However, there is a lack of
+    in-depth studies that explore the element distribution of KV cache to understand
+    the hardness and limitation of KV cache quantization. To fill the gap, we conducted
+    a comprehensive study on the element distribution in KV cache of popular LLMs.
+    Our findings indicate that the key cache should be quantized per-channel, i.e.,
+    group elements along the channel dimension and quantize them together. In contrast,
+    the value cache should be quantized per-token. From this analysis, we developed
+    a tuning-free 2bit KV cache quantization algorithm named KIVI. With hardware-friendly
+    implementation, KIVI can enable Llama, Falcon, and Mistral models to maintain
+    almost the same quality while using 2.6× less peak memory (including model weight).
+    This reduction in memory usage enables up to 4× larger batch size, bringing 2.35×
+    sim 3.47× throughput on real LLM inference workload. The source code is available
+    at https://github.com/jy-yuan/KIVI.
+  tags:
+  - llm
+  - kv-cache
+  - efficiency
+- title: 'GEAR: An Efficient KV Cache Compression Recipe for Near-Lossless Generative
+    Inference of LLM'
+  date: 2024-03
+  url: https://arxiv.org/abs/2403.05527
+  category: method
+  subcategory: non-agentic
+  authors:
+  - Kang, Hao
+  - Zhang, Qingru
+  - Kundu, Souvik
+  - Jeong, Geonhwa
+  - Liu, Zaoxing
+  - Krishna, Tushar
+  - Zhao, Tuo
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: Key-value (KV) caching has become the de-facto to accelerate generation
+    speed for large language models (LLMs) inference. However, the growing cache demand
+    with increasing sequence length has transformed LLM inference to be a memory bound
+    problem, significantly constraining the system throughput. Existing methods rely
+    on dropping unimportant tokens or quantizing all entries uniformly. Such methods,
+    however, often incur high approximation errors to represent the compressed matrices.
+    The autoregressive decoding process further compounds the error of each step,
+    resulting in critical deviation in model generation and deterioration of performance.
+    To tackle this challenge, we propose GEAR, an efficient KV cache compression framework
+    that achieves near-lossless high-ratio compression. GEAR first applies quantization
+    to majority of entries of similar magnitudes to ultra-low precision. It then employs
+    a low rank matrix to approximate the quantization error, and a sparse matrix to
+    remedy individual errors from outlier entries. By adeptly integrating three techniques,
+    GEAR is able to fully exploit their synergistic potentials. Our experiments demonstrate
+    that compared to alternatives, GEAR achieves near-lossless 4-bit KV cache compression
+    with up to 2.38x throughput improvement, while reducing peak-memory size up to
+    2.29x. Our code is publicly available at https://github.com/HaoKang-Timmy/GEAR.
+  tags:
+  - llm
+  - kv-cache
+  - efficiency
+- title: 'Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM
+    KV Cache Compression at Test Time'
+  date: 2023-05
+  url: https://arxiv.org/abs/2305.17118
+  category: method
+  subcategory: non-agentic
+  authors:
+  - Liu, Zichang
+  - Desai, Aditya
+  - Liao, Fangshuo
+  - Wang, Weitao
+  - Xie, Victor
+  - Xu, Zhaozhuo
+  - Kyrillidis, Anastasios
+  - Shrivastava, Anshumali
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: 'Large language models(LLMs) have sparked a new wave of exciting AI applications.
+    Hosting these models at scale requires significant memory resources. One crucial
+    memory bottleneck for the deployment stems from the context window. It is commonly
+    recognized that model weights are memory hungry; however, the size of key-value
+    embedding stored during the generation process (KV cache) can easily surpass the
+    model size. The enormous size of the KV cache puts constraints on the inference
+    batch size, which is crucial for high throughput inference workload. Inspired
+    by an interesting observation of the attention scores, we hypothesize the persistence
+    of importance: only pivotal tokens, which had a substantial influence at one step,
+    will significantly influence future generations. Based on our empirical verification
+    and theoretical analysis around this hypothesis, we propose Scissorhands, a system
+    that maintains the memory usage of the KV cache at a fixed budget without finetuning
+    the model. In essence, Scissorhands manages the KV cache by storing the pivotal
+    tokens with a higher probability. We validate that Scissorhands reduces the inference
+    memory usage of the KV cache by up to 5X without compromising model quality. We
+    further demonstrate that Scissorhands can be combined with 4-bit quantization,
+    traditionally used to compress model weights, to achieve up to 20X compression.'
+  tags:
+  - llm
+  - kv-cache
+  - efficiency
+- title: 'SnapKV: LLM Knows What You are Looking for Before Generation'
+  date: 2024-04
+  url: https://arxiv.org/abs/2404.14469
+  category: method
+  subcategory: non-agentic
+  authors:
+  - Li, Yuhong
+  - Huang, Yingbing
+  - Yang, Bowen
+  - Venkitesh, Bharat
+  - Locatelli, Acyr
+  - Ye, Hanchen
+  - Cai, Tianle
+  - Lewis, Patrick
+  - Chen, Deming
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: Large Language Models (LLMs) have made remarkable progress in processing
+    extensive contexts, with the Key-Value (KV) cache playing a vital role in enhancing
+    their performance. However, the growth of the KV cache in response to increasing
+    input length poses challenges to memory and time efficiency. To address this problem,
+    this paper introduces SnapKV, an innovative and fine-tuning-free approach that
+    efficiently minimizes KV cache size while still delivering comparable performance
+    in real-world applications. We discover that each attention head in the model
+    consistently focuses on specific prompt attention features during generation.
+    Meanwhile, this robust pattern can be obtained from an 'observation' window located
+    at the end of the prompts. Drawing on this insight, SnapKV automatically compresses
+    KV caches by selecting clustered important KV positions for each attention head.
+    Our approach significantly reduces the growing computational overhead and memory
+    footprint when processing long input sequences. Specifically, SnapKV achieves
+    a consistent decoding speed with a 3.6x increase in generation speed and an 8.2x
+    enhancement in memory efficiency compared to the baseline when processing inputs
+    of 16K tokens. At the same time, it maintains comparable performance to the baseline
+    models across 16 long sequence datasets. Moreover, SnapKV can process up to 380K
+    context tokens on a single A100-80GB GPU using HuggingFace implementation with
+    minor changes, exhibiting only a negligible accuracy drop in the Needle-in-a-Haystack
+    test. Further comprehensive studies suggest SnapKV's potential for practical applications.
+  tags:
+  - llm
+  - kv-cache
+  - efficiency
+- title: 'Prompt Cache: Modular Attention Reuse for Low-Latency Inference'
+  date: 2023-11
+  url: https://arxiv.org/abs/2311.04934
+  category: method
+  subcategory: non-agentic
+  authors:
+  - Gim, In
+  - Chen, Guojun
+  - Lee, Seung-seob
+  - Sarda, Nikhil
+  - Khandelwal, Anurag
+  - Zhong, Lin
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: We present Prompt Cache, an approach for accelerating inference for large
+    language models (LLM) by reusing attention states across different LLM prompts.
+    Many input prompts have overlapping text segments, such as system messages, prompt
+    templates, and documents provided for context. Our key insight is that by precomputing
+    and storing the attention states of these frequently occurring text segments on
+    the inference server, we can efficiently reuse them when these segments appear
+    in user prompts. Prompt Cache employs a schema to explicitly define such reusable
+    text segments, called prompt modules. The schema ensures positional accuracy during
+    attention state reuse and provides users with an interface to access cached states
+    in their prompt. Using a prototype implementation, we evaluate Prompt Cache across
+    several LLMs. We show that Prompt Cache significantly reduce latency in time-to-first-token,
+    especially for longer prompts such as document-based question answering and recommendations.
+    The improvements range from 8x for GPU-based inference to 60x for CPU-based inference,
+    all while maintaining output accuracy and without the need for model parameter
+    modifications.
+  tags:
+  - llm
+  - kv-cache
+  - efficiency
+- title: 'PyramidKV: Dynamic KV Cache Compression based on Pyramidal Information Funneling'
+  date: 2024-06
+  url: https://arxiv.org/abs/2406.02069
+  category: method
+  subcategory: non-agentic
+  authors:
+  - Cai, Zefan
+  - Zhang, Yichi
+  - Gao, Bofei
+  - Liu, Yuliang
+  - Li, Yucheng
+  - Liu, Tianyu
+  - Lu, Keming
+  - Xiong, Wayne
+  - Dong, Yue
+  - Hu, Junjie
+  - Xiao, Wen
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: In this study, we investigate whether attention-based information flow
+    inside large language models (LLMs) is aggregated through noticeable patterns
+    for long context processing. Our observations reveal that LLMs aggregate information
+    through Pyramidal Information Funneling where attention is scattering widely in
+    lower layers, progressively consolidating within specific contexts, and ultimately
+    focusing on critical tokens (a.k.a massive activation or attention sink) in higher
+    layers. Motivated by these insights, we developed PyramidKV, a novel and effective
+    KV cache compression method. This approach dynamically adjusts the KV cache size
+    across different layers, allocating more cache in lower layers and less in higher
+    ones, diverging from traditional methods that maintain a uniform KV cache size.
+    Our experimental evaluations, utilizing the LongBench benchmark, show that PyramidKV
+    matches the performance of models with a full KV cache while retaining only 12%
+    of the KV cache, thus significantly reducing memory usage. In scenarios emphasizing
+    memory efficiency, where only 0.7% of the KV cache is maintained, PyramidKV surpasses
+    other KV cache compression techniques, achieving up to a 20.5 absolute accuracy
+    improvement on TREC dataset. In the Needle-in-a-Haystack experiment, PyramidKV
+    outperforms competing methods in maintaining long-context comprehension in LLMs;
+    notably, retaining just 128 KV cache entries enables the LLAMA-3-70B model to
+    achieve 100.0 Acc. performance.
+  tags:
+  - llm
+  - kv-cache
+  - efficiency
+- title: 'MiniCache: KV Cache Compression in Depth Dimension for Large Language Models'
+  date: 2024-05
+  url: https://arxiv.org/abs/2405.14366
+  category: method
+  subcategory: non-agentic
+  authors:
+  - Liu, Akide
+  - Liu, Jing
+  - Pan, Zizheng
+  - He, Yefei
+  - Haffari, Gholamreza
+  - Zhuang, Bohan
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: A critical approach for efficiently deploying computationally demanding
+    large language models (LLMs) is Key-Value (KV) caching. The KV cache stores key-value
+    states of previously generated tokens, significantly reducing the need for repetitive
+    computations and thereby lowering latency in autoregressive generation. However,
+    the size of the KV cache grows linearly with sequence length, posing challenges
+    for applications requiring long context input and extensive sequence generation.
+    In this paper, we present a simple yet effective approach, called MiniCache, to
+    compress the KV cache across layers from a novel depth perspective, significantly
+    reducing the memory footprint for LLM inference. Our approach is based on the
+    observation that KV cache states exhibit high similarity between the adjacent
+    layers in the middle-to-deep portion of LLMs. To facilitate merging, we propose
+    disentangling the states into the magnitude and direction components, interpolating
+    the directions of the state vectors while preserving their lengths unchanged.
+    Furthermore, we introduce a token retention strategy to keep highly distinct state
+    pairs unmerged, thus preserving the information with minimal additional storage
+    overhead. Our MiniCache is training-free and general, complementing existing KV
+    cache compression strategies, such as quantization and sparsity. We conduct a
+    comprehensive evaluation of MiniCache utilizing various models including LLaMA-2,
+    LLaMA-3, Phi-3, Mistral, and Mixtral across multiple benchmarks, demonstrating
+    its exceptional performance in achieving superior compression ratios and high
+    throughput. On the ShareGPT dataset, LLaMA-2-7B with 4-bit MiniCache achieves
+    a remarkable compression ratio of up to 5.02x, enhances inference throughput by
+    approximately 5x, and reduces the memory footprint by 41% compared to the FP16
+    full cache baseline, all while maintaining near-lossless performance.
+  tags:
+  - llm
+  - kv-cache
+  - efficiency
+- title: 'TriForce: Lossless Acceleration of Long Sequence Generation with Hierarchical
+    Speculative Decoding'
+  date: 2024-04
+  url: https://arxiv.org/abs/2404.11912
+  category: method
+  subcategory: non-agentic
+  authors:
+  - Sun, Hanshi
+  - Chen, Zhuoming
+  - Yang, Xinyu
+  - Tian, Yuandong
+  - Chen, Beidi
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: With large language models (LLMs) widely deployed in long content generation
+    recently, there has emerged an increasing demand for efficient long-sequence inference
+    support. However, key-value (KV) cache, which is stored to avoid re-computation,
+    has emerged as a critical bottleneck by growing linearly in size with the sequence
+    length. Due to the auto-regressive nature of LLMs, the entire KV cache will be
+    loaded for every generated token, resulting in low utilization of computational
+    cores and high latency. While various compression methods for KV cache have been
+    proposed to alleviate this issue, they suffer from degradation in generation quality.
+    We introduce TriForce, a hierarchical speculative decoding system that is scalable
+    for long sequence generation. This approach leverages the original model weights
+    and dynamic sparse KV cache via retrieval as a draft model, which serves as an
+    intermediate layer in the hierarchy and is further speculated by a smaller model
+    to reduce its drafting latency. TriForce not only facilitates impressive speedups
+    for Llama2-7B-128K, achieving up to 2.31× on an A100 GPU but also showcases scalability
+    in handling even longer contexts. For the offloading setting on two RTX 4090 GPUs,
+    TriForce achieves 0.108s/tokenunicode{x2014only half as slow as the auto-regressive
+    baseline on an A100, which attains 7.78× on our optimized offloading system. Additionally,
+    TriForce performs 4.86× than DeepSpeed-Zero-Inference on a single RTX 4090 GPU.
+    TriForce's robustness is highlighted by its consistently outstanding performance
+    across various temperatures. The code is available at https://github.com/Infini-AI-Lab/TriForce.
+  tags:
+  - llm
   - kv-cache
   - efficiency
