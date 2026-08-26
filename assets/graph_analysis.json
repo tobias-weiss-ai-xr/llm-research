@@ -1,76 +1,288 @@
 {
  "categories": [
   {
+   "id": "application",
+   "name": "Applications",
+   "count": 393,
+   "trajectory": {
+    "2023": 3,
+    "2024": 58,
+    "2025": 176,
+    "2026": 156
+   },
+   "momentum": {
+    "id": "application",
+    "name": "Application",
+    "total": 393,
+    "recent": 239,
+    "prior": 116,
+    "growth_pct": 106.0,
+    "recent_share": 0.608,
+    "papers_per_month": 19.9,
+    "score": 166.8
+   }
+  },
+  {
    "id": "evaluation",
    "name": "Evaluation & Benchmarks",
-   "count": 84,
+   "count": 113,
    "trajectory": {
-    "2023": 1,
-    "2024": 1,
-    "2026": 82
+    "1998": 1,
+    "2001": 1,
+    "2004": 1,
+    "2012": 2,
+    "2017": 1,
+    "2019": 2,
+    "2021": 1,
+    "2023": 3,
+    "2024": 5,
+    "2025": 7,
+    "2026": 89
    },
    "momentum": {
     "id": "evaluation",
     "name": "Evaluation",
-    "total": 84,
-    "recent": 82,
-    "prior": 0,
-    "growth_pct": null,
-    "recent_share": 0.976,
-    "papers_per_month": 6.8,
-    "score": 97.6
+    "total": 113,
+    "recent": 93,
+    "prior": 4,
+    "growth_pct": 2225.0,
+    "recent_share": 0.823,
+    "papers_per_month": 7.8,
+    "score": 2307.3
    }
   },
   {
    "id": "method",
    "name": "Methods & Architectures",
-   "count": 175,
+   "count": 260,
    "trajectory": {
-    "2023": 4,
-    "2024": 9,
-    "2026": 162
+    "2000": 1,
+    "2008": 1,
+    "2012": 1,
+    "2013": 1,
+    "2015": 1,
+    "2016": 2,
+    "2017": 1,
+    "2018": 2,
+    "2019": 1,
+    "2020": 1,
+    "2023": 5,
+    "2024": 17,
+    "2025": 19,
+    "2026": 207
    },
    "momentum": {
     "id": "method",
     "name": "Method",
-    "total": 175,
-    "recent": 162,
-    "prior": 0,
-    "growth_pct": null,
-    "recent_share": 0.926,
-    "papers_per_month": 13.5,
-    "score": 92.6
+    "total": 260,
+    "recent": 214,
+    "prior": 15,
+    "growth_pct": 1326.7,
+    "recent_share": 0.823,
+    "papers_per_month": 17.8,
+    "score": 1409.0
    }
   },
   {
    "id": "survey",
    "name": "Surveys & Taxonomies",
-   "count": 12,
+   "count": 24,
    "trajectory": {
+    "2012": 3,
+    "2014": 1,
+    "2018": 1,
+    "2019": 1,
+    "2020": 1,
     "2024": 1,
-    "2026": 11
+    "2025": 3,
+    "2026": 12
    },
    "momentum": {
     "id": "survey",
     "name": "Survey",
-    "total": 12,
-    "recent": 11,
-    "prior": 0,
-    "growth_pct": null,
-    "recent_share": 0.917,
-    "papers_per_month": 0.9,
-    "score": 91.7
+    "total": 24,
+    "recent": 14,
+    "prior": 1,
+    "growth_pct": 1300.0,
+    "recent_share": 0.583,
+    "papers_per_month": 1.2,
+    "score": 1358.3
    }
   }
  ],
  "subcategories": [
   {
+   "id": "",
+   "name": "",
+   "count": 475
+  },
+  {
+   "id": "agentic",
+   "name": "Agentic",
+   "count": 13
+  },
+  {
+   "id": "hybrid",
+   "name": "Hybrid",
+   "count": 21
+  },
+  {
    "id": "non-agentic",
    "name": "Non-Agentic",
-   "count": 271
+   "count": 281
   }
  ],
  "timeline": [
+  [
+   "1998-01",
+   "evaluation",
+   "hybrid"
+  ],
+  [
+   "2000-01",
+   "method",
+   "agentic"
+  ],
+  [
+   "2001-01",
+   "evaluation",
+   "hybrid"
+  ],
+  [
+   "2004-01",
+   "evaluation",
+   "hybrid"
+  ],
+  [
+   "2008-01",
+   "method",
+   "agentic"
+  ],
+  [
+   "2012-01",
+   "evaluation",
+   "hybrid"
+  ],
+  [
+   "2012-01",
+   "evaluation",
+   "hybrid"
+  ],
+  [
+   "2012-01",
+   "method",
+   "agentic"
+  ],
+  [
+   "2012-01",
+   "survey",
+   "hybrid"
+  ],
+  [
+   "2012-01",
+   "survey",
+   "hybrid"
+  ],
+  [
+   "2012-10",
+   "survey",
+   "hybrid"
+  ],
+  [
+   "2013-01",
+   "method",
+   "agentic"
+  ],
+  [
+   "2014-01",
+   "survey",
+   "hybrid"
+  ],
+  [
+   "2015-01",
+   "method",
+   "agentic"
+  ],
+  [
+   "2016-01",
+   "method",
+   "agentic"
+  ],
+  [
+   "2016-01",
+   "method",
+   "agentic"
+  ],
+  [
+   "2017-01",
+   "evaluation",
+   "hybrid"
+  ],
+  [
+   "2017-01",
+   "method",
+   "agentic"
+  ],
+  [
+   "2018-01",
+   "method",
+   "agentic"
+  ],
+  [
+   "2018-01",
+   "method",
+   "agentic"
+  ],
+  [
+   "2018-01",
+   "survey",
+   "hybrid"
+  ],
+  [
+   "2019-01",
+   "evaluation",
+   "hybrid"
+  ],
+  [
+   "2019-01",
+   "evaluation",
+   "hybrid"
+  ],
+  [
+   "2019-01",
+   "method",
+   "agentic"
+  ],
+  [
+   "2019-02",
+   "survey",
+   "hybrid"
+  ],
+  [
+   "2020-01",
+   "method",
+   "agentic"
+  ],
+  [
+   "2020-01",
+   "survey",
+   "hybrid"
+  ],
+  [
+   "2021-01",
+   "evaluation",
+   "hybrid"
+  ],
+  [
+   "2023-01",
+   "evaluation",
+   "hybrid"
+  ],
+  [
+   "2023-01",
+   "evaluation",
+   "hybrid"
+  ],
   [
    "2023-05",
    "method",
@@ -92,9 +304,119 @@
    "non-agentic"
   ],
   [
+   "2023-10",
+   "application",
+   ""
+  ],
+  [
+   "2023-10",
+   "application",
+   ""
+  ],
+  [
+   "2023-10",
+   "method",
+   ""
+  ],
+  [
+   "2023-11",
+   "application",
+   ""
+  ],
+  [
    "2023-11",
    "method",
    "non-agentic"
+  ],
+  [
+   "2024-01",
+   "application",
+   ""
+  ],
+  [
+   "2024-01",
+   "application",
+   ""
+  ],
+  [
+   "2024-01",
+   "application",
+   ""
+  ],
+  [
+   "2024-01",
+   "application",
+   ""
+  ],
+  [
+   "2024-01",
+   "application",
+   ""
+  ],
+  [
+   "2024-01",
+   "application",
+   ""
+  ],
+  [
+   "2024-01",
+   "application",
+   ""
+  ],
+  [
+   "2024-01",
+   "application",
+   ""
+  ],
+  [
+   "2024-01",
+   "application",
+   ""
+  ],
+  [
+   "2024-01",
+   "application",
+   ""
+  ],
+  [
+   "2024-01",
+   "application",
+   ""
+  ],
+  [
+   "2024-01",
+   "application",
+   ""
+  ],
+  [
+   "2024-01",
+   "evaluation",
+   "hybrid"
+  ],
+  [
+   "2024-01",
+   "method",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "application",
+   ""
+  ],
+  [
+   "2024-02",
+   "application",
+   ""
+  ],
+  [
+   "2024-02",
+   "application",
+   ""
+  ],
+  [
+   "2024-02",
+   "method",
+   ""
   ],
   [
    "2024-02",
@@ -108,13 +430,43 @@
   ],
   [
    "2024-03",
+   "application",
+   ""
+  ],
+  [
+   "2024-03",
+   "application",
+   ""
+  ],
+  [
+   "2024-03",
+   "application",
+   ""
+  ],
+  [
+   "2024-03",
+   "method",
+   ""
+  ],
+  [
+   "2024-03",
    "method",
    "non-agentic"
   ],
   [
    "2024-04",
+   "application",
+   ""
+  ],
+  [
+   "2024-04",
    "evaluation",
    "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   ""
   ],
   [
    "2024-04",
@@ -133,6 +485,36 @@
   ],
   [
    "2024-05",
+   "application",
+   ""
+  ],
+  [
+   "2024-05",
+   "application",
+   ""
+  ],
+  [
+   "2024-05",
+   "application",
+   ""
+  ],
+  [
+   "2024-05",
+   "application",
+   ""
+  ],
+  [
+   "2024-05",
+   "application",
+   ""
+  ],
+  [
+   "2024-05",
+   "application",
+   ""
+  ],
+  [
+   "2024-05",
    "method",
    "non-agentic"
   ],
@@ -143,6 +525,31 @@
   ],
   [
    "2024-06",
+   "application",
+   ""
+  ],
+  [
+   "2024-06",
+   "application",
+   ""
+  ],
+  [
+   "2024-06",
+   "application",
+   ""
+  ],
+  [
+   "2024-06",
+   "evaluation",
+   ""
+  ],
+  [
+   "2024-06",
+   "method",
+   ""
+  ],
+  [
+   "2024-06",
    "method",
    "non-agentic"
   ],
@@ -152,9 +559,1954 @@
    "non-agentic"
   ],
   [
+   "2024-07",
+   "application",
+   ""
+  ],
+  [
+   "2024-07",
+   "application",
+   ""
+  ],
+  [
+   "2024-07",
+   "application",
+   ""
+  ],
+  [
+   "2024-07",
+   "application",
+   ""
+  ],
+  [
+   "2024-07",
+   "application",
+   ""
+  ],
+  [
+   "2024-07",
+   "application",
+   ""
+  ],
+  [
+   "2024-07",
+   "application",
+   ""
+  ],
+  [
+   "2024-07",
+   "evaluation",
+   ""
+  ],
+  [
+   "2024-08",
+   "application",
+   ""
+  ],
+  [
+   "2024-08",
+   "application",
+   ""
+  ],
+  [
+   "2024-08",
+   "application",
+   ""
+  ],
+  [
+   "2024-09",
+   "application",
+   ""
+  ],
+  [
+   "2024-09",
+   "application",
+   ""
+  ],
+  [
+   "2024-09",
+   "application",
+   ""
+  ],
+  [
+   "2024-09",
+   "method",
+   ""
+  ],
+  [
+   "2024-09",
+   "method",
+   ""
+  ],
+  [
+   "2024-10",
+   "application",
+   ""
+  ],
+  [
+   "2024-10",
+   "application",
+   ""
+  ],
+  [
+   "2024-10",
+   "application",
+   ""
+  ],
+  [
+   "2024-10",
+   "application",
+   ""
+  ],
+  [
+   "2024-10",
+   "application",
+   ""
+  ],
+  [
+   "2024-10",
+   "application",
+   ""
+  ],
+  [
+   "2024-10",
+   "application",
+   ""
+  ],
+  [
+   "2024-10",
+   "application",
+   ""
+  ],
+  [
+   "2024-11",
+   "application",
+   ""
+  ],
+  [
+   "2024-11",
+   "application",
+   ""
+  ],
+  [
+   "2024-11",
+   "application",
+   ""
+  ],
+  [
+   "2024-11",
+   "evaluation",
+   ""
+  ],
+  [
+   "2024-12",
+   "application",
+   ""
+  ],
+  [
+   "2024-12",
+   "application",
+   ""
+  ],
+  [
+   "2024-12",
+   "application",
+   ""
+  ],
+  [
+   "2024-12",
+   "application",
+   ""
+  ],
+  [
+   "2024-12",
+   "application",
+   ""
+  ],
+  [
+   "2024-12",
+   "application",
+   ""
+  ],
+  [
+   "2024-12",
+   "method",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "application",
+   ""
+  ],
+  [
+   "2025-01",
+   "evaluation",
+   ""
+  ],
+  [
+   "2025-01",
+   "method",
+   ""
+  ],
+  [
+   "2025-01",
+   "method",
+   ""
+  ],
+  [
+   "2025-01",
+   "method",
+   ""
+  ],
+  [
+   "2025-01",
+   "survey",
+   "hybrid"
+  ],
+  [
+   "2025-02",
+   "application",
+   ""
+  ],
+  [
+   "2025-02",
+   "application",
+   ""
+  ],
+  [
+   "2025-02",
+   "application",
+   ""
+  ],
+  [
+   "2025-02",
+   "application",
+   ""
+  ],
+  [
+   "2025-02",
+   "application",
+   ""
+  ],
+  [
+   "2025-02",
+   "application",
+   ""
+  ],
+  [
+   "2025-02",
+   "application",
+   ""
+  ],
+  [
+   "2025-02",
+   "application",
+   ""
+  ],
+  [
+   "2025-02",
+   "application",
+   ""
+  ],
+  [
+   "2025-02",
+   "application",
+   ""
+  ],
+  [
+   "2025-02",
+   "application",
+   ""
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   ""
+  ],
+  [
+   "2025-02",
+   "method",
+   ""
+  ],
+  [
+   "2025-02",
+   "method",
+   ""
+  ],
+  [
+   "2025-03",
+   "application",
+   ""
+  ],
+  [
+   "2025-03",
+   "application",
+   ""
+  ],
+  [
+   "2025-03",
+   "application",
+   ""
+  ],
+  [
+   "2025-03",
+   "application",
+   ""
+  ],
+  [
+   "2025-03",
+   "application",
+   ""
+  ],
+  [
+   "2025-03",
+   "application",
+   ""
+  ],
+  [
+   "2025-03",
+   "evaluation",
+   ""
+  ],
+  [
+   "2025-04",
+   "application",
+   ""
+  ],
+  [
+   "2025-04",
+   "application",
+   ""
+  ],
+  [
+   "2025-04",
+   "application",
+   ""
+  ],
+  [
+   "2025-04",
+   "application",
+   ""
+  ],
+  [
+   "2025-04",
+   "application",
+   ""
+  ],
+  [
+   "2025-04",
+   "application",
+   ""
+  ],
+  [
+   "2025-04",
+   "application",
+   ""
+  ],
+  [
+   "2025-04",
+   "application",
+   ""
+  ],
+  [
+   "2025-04",
+   "application",
+   ""
+  ],
+  [
+   "2025-04",
+   "application",
+   ""
+  ],
+  [
+   "2025-04",
+   "application",
+   ""
+  ],
+  [
+   "2025-04",
+   "application",
+   ""
+  ],
+  [
+   "2025-04",
+   "application",
+   ""
+  ],
+  [
+   "2025-04",
+   "application",
+   ""
+  ],
+  [
+   "2025-04",
+   "method",
+   ""
+  ],
+  [
+   "2025-04",
+   "method",
+   ""
+  ],
+  [
+   "2025-05",
+   "application",
+   ""
+  ],
+  [
+   "2025-05",
+   "application",
+   ""
+  ],
+  [
+   "2025-05",
+   "application",
+   ""
+  ],
+  [
+   "2025-05",
+   "application",
+   ""
+  ],
+  [
+   "2025-05",
+   "application",
+   ""
+  ],
+  [
+   "2025-05",
+   "application",
+   ""
+  ],
+  [
+   "2025-05",
+   "application",
+   ""
+  ],
+  [
+   "2025-05",
+   "application",
+   ""
+  ],
+  [
+   "2025-05",
+   "application",
+   ""
+  ],
+  [
+   "2025-05",
+   "application",
+   ""
+  ],
+  [
+   "2025-05",
+   "application",
+   ""
+  ],
+  [
+   "2025-05",
+   "application",
+   ""
+  ],
+  [
+   "2025-05",
+   "application",
+   ""
+  ],
+  [
+   "2025-05",
+   "method",
+   ""
+  ],
+  [
+   "2025-06",
+   "application",
+   ""
+  ],
+  [
+   "2025-06",
+   "application",
+   ""
+  ],
+  [
+   "2025-06",
+   "application",
+   ""
+  ],
+  [
+   "2025-06",
+   "application",
+   ""
+  ],
+  [
+   "2025-06",
+   "application",
+   ""
+  ],
+  [
+   "2025-06",
+   "application",
+   ""
+  ],
+  [
+   "2025-06",
+   "application",
+   ""
+  ],
+  [
+   "2025-06",
+   "application",
+   ""
+  ],
+  [
+   "2025-06",
+   "application",
+   ""
+  ],
+  [
+   "2025-06",
+   "application",
+   ""
+  ],
+  [
+   "2025-06",
+   "application",
+   ""
+  ],
+  [
+   "2025-06",
+   "application",
+   ""
+  ],
+  [
+   "2025-06",
+   "application",
+   ""
+  ],
+  [
+   "2025-06",
+   "method",
+   ""
+  ],
+  [
+   "2025-06",
+   "method",
+   ""
+  ],
+  [
+   "2025-07",
+   "application",
+   ""
+  ],
+  [
+   "2025-07",
+   "application",
+   ""
+  ],
+  [
+   "2025-07",
+   "application",
+   ""
+  ],
+  [
+   "2025-07",
+   "application",
+   ""
+  ],
+  [
+   "2025-07",
+   "application",
+   ""
+  ],
+  [
+   "2025-07",
+   "application",
+   ""
+  ],
+  [
+   "2025-07",
+   "application",
+   ""
+  ],
+  [
+   "2025-07",
+   "application",
+   ""
+  ],
+  [
+   "2025-07",
+   "application",
+   ""
+  ],
+  [
+   "2025-07",
+   "application",
+   ""
+  ],
+  [
+   "2025-07",
+   "application",
+   ""
+  ],
+  [
+   "2025-07",
+   "method",
+   ""
+  ],
+  [
+   "2025-07",
+   "method",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "application",
+   ""
+  ],
+  [
+   "2025-08",
+   "method",
+   ""
+  ],
+  [
+   "2025-08",
+   "survey",
+   ""
+  ],
+  [
+   "2025-09",
+   "application",
+   ""
+  ],
+  [
+   "2025-09",
+   "application",
+   ""
+  ],
+  [
+   "2025-09",
+   "application",
+   ""
+  ],
+  [
+   "2025-09",
+   "application",
+   ""
+  ],
+  [
+   "2025-09",
+   "application",
+   ""
+  ],
+  [
+   "2025-09",
+   "application",
+   ""
+  ],
+  [
+   "2025-09",
+   "application",
+   ""
+  ],
+  [
+   "2025-09",
+   "application",
+   ""
+  ],
+  [
+   "2025-09",
+   "application",
+   ""
+  ],
+  [
+   "2025-09",
+   "application",
+   ""
+  ],
+  [
+   "2025-09",
+   "application",
+   ""
+  ],
+  [
+   "2025-09",
+   "application",
+   ""
+  ],
+  [
+   "2025-09",
+   "application",
+   ""
+  ],
+  [
+   "2025-09",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "application",
+   ""
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   ""
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   ""
+  ],
+  [
+   "2025-10",
+   "method",
+   ""
+  ],
+  [
+   "2025-11",
+   "application",
+   ""
+  ],
+  [
+   "2025-11",
+   "application",
+   ""
+  ],
+  [
+   "2025-11",
+   "application",
+   ""
+  ],
+  [
+   "2025-11",
+   "application",
+   ""
+  ],
+  [
+   "2025-11",
+   "application",
+   ""
+  ],
+  [
+   "2025-11",
+   "application",
+   ""
+  ],
+  [
+   "2025-11",
+   "application",
+   ""
+  ],
+  [
+   "2025-11",
+   "application",
+   ""
+  ],
+  [
+   "2025-11",
+   "application",
+   ""
+  ],
+  [
+   "2025-11",
+   "application",
+   ""
+  ],
+  [
+   "2025-11",
+   "application",
+   ""
+  ],
+  [
+   "2025-11",
+   "application",
+   ""
+  ],
+  [
+   "2025-11",
+   "method",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "application",
+   ""
+  ],
+  [
+   "2025-12",
+   "evaluation",
+   ""
+  ],
+  [
+   "2025-12",
+   "evaluation",
+   ""
+  ],
+  [
+   "2025-12",
+   "method",
+   ""
+  ],
+  [
+   "2025-12",
+   "method",
+   ""
+  ],
+  [
+   "2025-12",
+   "method",
+   ""
+  ],
+  [
+   "2025-12",
+   "method",
+   ""
+  ],
+  [
+   "2025-12",
+   "survey",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   ""
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "evaluation",
+   ""
+  ],
+  [
+   "2026-01",
+   "method",
+   ""
+  ],
+  [
+   "2026-01",
+   "method",
+   ""
+  ],
+  [
+   "2026-01",
+   "method",
+   ""
+  ],
+  [
+   "2026-01",
+   "method",
+   ""
+  ],
+  [
+   "2026-01",
+   "method",
+   ""
+  ],
+  [
+   "2026-01",
+   "method",
+   ""
+  ],
+  [
+   "2026-01",
+   "method",
+   ""
+  ],
+  [
+   "2026-01",
+   "method",
+   ""
+  ],
+  [
+   "2026-01",
+   "survey",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "application",
+   ""
+  ],
+  [
+   "2026-02",
+   "method",
+   ""
+  ],
+  [
+   "2026-02",
+   "method",
+   ""
+  ],
+  [
+   "2026-02",
+   "method",
+   ""
+  ],
+  [
+   "2026-02",
+   "method",
+   ""
+  ],
+  [
+   "2026-02",
+   "method",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "application",
+   ""
+  ],
+  [
+   "2026-03",
+   "method",
+   ""
+  ],
+  [
+   "2026-03",
+   "method",
+   ""
+  ],
+  [
+   "2026-03",
+   "method",
+   ""
+  ],
+  [
+   "2026-03",
+   "method",
+   ""
+  ],
+  [
+   "2026-03",
+   "method",
+   ""
+  ],
+  [
+   "2026-03",
+   "method",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "application",
+   ""
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   ""
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   ""
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   ""
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   ""
+  ],
+  [
+   "2026-04",
+   "method",
+   ""
+  ],
+  [
+   "2026-04",
+   "method",
+   ""
+  ],
+  [
+   "2026-04",
+   "method",
+   ""
+  ],
+  [
+   "2026-04",
+   "method",
+   ""
+  ],
+  [
+   "2026-04",
+   "method",
+   ""
+  ],
+  [
+   "2026-05",
+   "application",
+   ""
+  ],
+  [
+   "2026-05",
+   "application",
+   ""
+  ],
+  [
+   "2026-05",
+   "application",
+   ""
+  ],
+  [
+   "2026-05",
+   "application",
+   ""
+  ],
+  [
+   "2026-05",
+   "application",
+   ""
+  ],
+  [
+   "2026-05",
+   "application",
+   ""
+  ],
+  [
+   "2026-05",
+   "application",
+   ""
+  ],
+  [
+   "2026-05",
+   "application",
+   ""
+  ],
+  [
+   "2026-05",
+   "application",
+   ""
+  ],
+  [
+   "2026-05",
+   "application",
+   ""
+  ],
+  [
+   "2026-05",
+   "application",
+   ""
+  ],
+  [
+   "2026-05",
+   "application",
+   ""
+  ],
+  [
+   "2026-05",
+   "application",
+   ""
+  ],
+  [
+   "2026-05",
+   "application",
+   ""
+  ],
+  [
    "2026-05",
    "evaluation",
-   "non-agentic"
+   ""
   ],
   [
    "2026-05",
@@ -190,6 +2542,51 @@
    "2026-05",
    "evaluation",
    "non-agentic"
+  ],
+  [
+   "2026-05",
+   "evaluation",
+   "non-agentic"
+  ],
+  [
+   "2026-05",
+   "method",
+   ""
+  ],
+  [
+   "2026-05",
+   "method",
+   ""
+  ],
+  [
+   "2026-05",
+   "method",
+   ""
+  ],
+  [
+   "2026-05",
+   "method",
+   ""
+  ],
+  [
+   "2026-05",
+   "method",
+   ""
+  ],
+  [
+   "2026-05",
+   "method",
+   ""
+  ],
+  [
+   "2026-05",
+   "method",
+   ""
+  ],
+  [
+   "2026-05",
+   "method",
+   ""
   ],
   [
    "2026-05",
@@ -243,8 +2640,53 @@
   ],
   [
    "2026-06",
+   "application",
+   ""
+  ],
+  [
+   "2026-06",
+   "application",
+   ""
+  ],
+  [
+   "2026-06",
+   "application",
+   ""
+  ],
+  [
+   "2026-06",
+   "application",
+   ""
+  ],
+  [
+   "2026-06",
+   "application",
+   ""
+  ],
+  [
+   "2026-06",
+   "application",
+   ""
+  ],
+  [
+   "2026-06",
+   "application",
+   ""
+  ],
+  [
+   "2026-06",
+   "application",
+   ""
+  ],
+  [
+   "2026-06",
+   "application",
+   ""
+  ],
+  [
+   "2026-06",
    "evaluation",
-   "non-agentic"
+   ""
   ],
   [
    "2026-06",
@@ -390,6 +2832,46 @@
    "2026-06",
    "evaluation",
    "non-agentic"
+  ],
+  [
+   "2026-06",
+   "evaluation",
+   "non-agentic"
+  ],
+  [
+   "2026-06",
+   "method",
+   ""
+  ],
+  [
+   "2026-06",
+   "method",
+   ""
+  ],
+  [
+   "2026-06",
+   "method",
+   ""
+  ],
+  [
+   "2026-06",
+   "method",
+   ""
+  ],
+  [
+   "2026-06",
+   "method",
+   ""
+  ],
+  [
+   "2026-06",
+   "method",
+   ""
+  ],
+  [
+   "2026-06",
+   "method",
+   ""
   ],
   [
    "2026-06",
@@ -723,8 +3205,123 @@
   ],
   [
    "2026-07",
-   "evaluation",
-   "non-agentic"
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
+  ],
+  [
+   "2026-07",
+   "application",
+   ""
   ],
   [
    "2026-07",
@@ -845,6 +3442,36 @@
    "2026-07",
    "evaluation",
    "non-agentic"
+  ],
+  [
+   "2026-07",
+   "evaluation",
+   "non-agentic"
+  ],
+  [
+   "2026-07",
+   "method",
+   ""
+  ],
+  [
+   "2026-07",
+   "method",
+   ""
+  ],
+  [
+   "2026-07",
+   "method",
+   ""
+  ],
+  [
+   "2026-07",
+   "method",
+   ""
+  ],
+  [
+   "2026-07",
+   "method",
+   ""
   ],
   [
    "2026-07",
@@ -1088,8 +3715,23 @@
   ],
   [
    "2026-08",
-   "evaluation",
-   "non-agentic"
+   "application",
+   ""
+  ],
+  [
+   "2026-08",
+   "application",
+   ""
+  ],
+  [
+   "2026-08",
+   "application",
+   ""
+  ],
+  [
+   "2026-08",
+   "application",
+   ""
   ],
   [
    "2026-08",
@@ -1180,6 +3822,16 @@
    "2026-08",
    "evaluation",
    "non-agentic"
+  ],
+  [
+   "2026-08",
+   "evaluation",
+   "non-agentic"
+  ],
+  [
+   "2026-08",
+   "method",
+   ""
   ],
   [
    "2026-08",
@@ -1429,123 +4081,171 @@
  ],
  "venues": [
   {
-   "name": "EMNLP 2026 Main Conference. 8 pages",
-   "papers": 1
+   "name": "arXiv (Cornell University)",
+   "papers": 143
   },
   {
-   "name": "ICML 2026",
-   "papers": 1
+   "name": "Zenodo (CERN European Organization for Nuclear Research)",
+   "papers": 41
   },
   {
-   "name": "IJCAI-ECAI 2026",
-   "papers": 1
+   "name": "Lecture notes in computer science",
+   "papers": 14
+  },
+  {
+   "name": "Proceedings of the AAAI Conference on Artificial Intelligence",
+   "papers": 10
+  },
+  {
+   "name": "MED",
+   "papers": 10
+  },
+  {
+   "name": "Underline Science Inc.",
+   "papers": 8
+  },
+  {
+   "name": "Preprints.org",
+   "papers": 8
+  },
+  {
+   "name": "SSRN Electronic Journal",
+   "papers": 7
+  },
+  {
+   "name": "Open MIND",
+   "papers": 5
+  },
+  {
+   "name": "Information",
+   "papers": 4
+  },
+  {
+   "name": "Electronics",
+   "papers": 4
+  },
+  {
+   "name": "Applied Sciences",
+   "papers": 4
+  },
+  {
+   "name": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "papers": 2
+  },
+  {
+   "name": "Knowledge-Based Systems",
+   "papers": 2
+  },
+  {
+   "name": "Technologies",
+   "papers": 2
   }
  ],
  "keyword_bursts": [
   {
-   "keyword": "tool",
-   "recent": 25,
-   "total": 25,
-   "burst_score": 1.06,
-   "recent_share": 0.098
-  },
-  {
-   "keyword": "human",
-   "recent": 20,
-   "total": 20,
-   "burst_score": 1.06,
-   "recent_share": 0.0784
-  },
-  {
-   "keyword": "review",
-   "recent": 10,
-   "total": 10,
-   "burst_score": 1.06,
-   "recent_share": 0.0392
-  },
-  {
    "keyword": "autonomous",
-   "recent": 5,
-   "total": 5,
-   "burst_score": 1.06,
-   "recent_share": 0.0196
+   "recent": 47,
+   "total": 59,
+   "burst_score": 1.12,
+   "recent_share": 0.0839
   },
   {
    "keyword": "framework",
-   "recent": 78,
-   "total": 79,
-   "burst_score": 1.05,
-   "recent_share": 0.3059
-  },
-  {
-   "keyword": "learning",
-   "recent": 34,
-   "total": 35,
-   "burst_score": 1.03,
-   "recent_share": 0.1333
-  },
-  {
-   "keyword": "benchmark",
-   "recent": 122,
-   "total": 127,
-   "burst_score": 1.02,
-   "recent_share": 0.4784
+   "recent": 218,
+   "total": 278,
+   "burst_score": 1.11,
+   "recent_share": 0.3893
   },
   {
    "keyword": "method",
-   "recent": 113,
-   "total": 118,
-   "burst_score": 1.02,
-   "recent_share": 0.4431
-  },
-  {
-   "keyword": "survey",
-   "recent": 16,
-   "total": 17,
-   "burst_score": 1.0,
-   "recent_share": 0.0627
-  },
-  {
-   "keyword": "real-world",
-   "recent": 16,
-   "total": 17,
-   "burst_score": 1.0,
-   "recent_share": 0.0627
-  },
-  {
-   "keyword": "scalable",
-   "recent": 16,
-   "total": 17,
-   "burst_score": 1.0,
-   "recent_share": 0.0627
-  },
-  {
-   "keyword": "model",
-   "recent": 221,
-   "total": 237,
-   "burst_score": 0.99,
-   "recent_share": 0.8667
-  },
-  {
-   "keyword": "system",
-   "recent": 87,
-   "total": 95,
-   "burst_score": 0.97,
-   "recent_share": 0.3412
-  },
-  {
-   "keyword": "evaluation",
-   "recent": 51,
-   "total": 56,
-   "burst_score": 0.97,
-   "recent_share": 0.2
+   "recent": 212,
+   "total": 278,
+   "burst_score": 1.08,
+   "recent_share": 0.3786
   },
   {
    "keyword": "analysis",
-   "recent": 24,
-   "total": 27,
+   "recent": 97,
+   "total": 127,
+   "burst_score": 1.08,
+   "recent_share": 0.1732
+  },
+  {
+   "keyword": "benchmark",
+   "recent": 252,
+   "total": 333,
+   "burst_score": 1.07,
+   "recent_share": 0.45
+  },
+  {
+   "keyword": "system",
+   "recent": 232,
+   "total": 309,
+   "burst_score": 1.06,
+   "recent_share": 0.4143
+  },
+  {
+   "keyword": "tool",
+   "recent": 65,
+   "total": 88,
+   "burst_score": 1.04,
+   "recent_share": 0.1161
+  },
+  {
+   "keyword": "model",
+   "recent": 498,
+   "total": 691,
+   "burst_score": 1.02,
+   "recent_share": 0.8893
+  },
+  {
+   "keyword": "survey",
+   "recent": 37,
+   "total": 51,
+   "burst_score": 1.02,
+   "recent_share": 0.0661
+  },
+  {
+   "keyword": "human",
+   "recent": 102,
+   "total": 146,
+   "burst_score": 0.99,
+   "recent_share": 0.1821
+  },
+  {
+   "keyword": "learning",
+   "recent": 91,
+   "total": 131,
+   "burst_score": 0.98,
+   "recent_share": 0.1625
+  },
+  {
+   "keyword": "real-world",
+   "recent": 55,
+   "total": 80,
+   "burst_score": 0.97,
+   "recent_share": 0.0982
+  },
+  {
+   "keyword": "review",
+   "recent": 45,
+   "total": 66,
+   "burst_score": 0.96,
+   "recent_share": 0.0804
+  },
+  {
+   "keyword": "evaluation",
+   "recent": 147,
+   "total": 220,
    "burst_score": 0.94,
-   "recent_share": 0.0941
+   "recent_share": 0.2625
+  },
+  {
+   "keyword": "scalable",
+   "recent": 44,
+   "total": 67,
+   "burst_score": 0.93,
+   "recent_share": 0.0786
   }
  ]
 }

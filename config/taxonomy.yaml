@@ -1,163 +1,134 @@
-# ⚙️ Research Taxonomy & Discovery Config
-#
-# This is the ONLY file you need to adapt for your own research topic.
-# Edit categories/subcategories + discovery queries, then re-run the pipeline.
-#
-# Pipeline:  config/taxonomy.yaml → papers.yaml → validate → README → reports
+# ⚙️ LLM Research Taxonomy & Discovery Config
 
 # ── Topic ────────────────────────────────────────────────────────────────────
 topic:
-  name: "LLM Research"                 # shown in README header
-  short: "llm-research"                # used in URLs, badges, docs paths
+  name: "LLM Research"
+  short: "llm-research"
   description: "Research on large language models: architectures, training, inference efficiency, evaluation, and applications."
-  # Optional: GitHub Pages URL shown in the auto-generated README statistics section
-  # github_pages: "https://ORG.github.io/your-topic"
-  openalex_mailto: "research@your-org.example"  # polite-pool email for OpenAlex API
+  openalex_mailto: "research+tobias@tobias-weiss.org"
 
 # ── Taxonomy ─────────────────────────────────────────────────────────────────
-# Categories = the main axis of your review (e.g. methods, applications, …).
-# Subcategories = the secondary axis (e.g. architectures, benchmarks, …).
-# Every paper in papers.yaml must carry one category + one subcategory.
 taxonomy:
-  categories:                           # ordered list
+  categories:
     - id: method
       display: "Methods & Architectures"
+      description: "Transformer architectures, KV cache, quantization, distillation, MoE, RLHF, DPO"
     - id: application
       display: "Applications"
+      description: "Code generation, agentic systems, reasoning, multimodal, RAG, planning"
     - id: evaluation
       display: "Evaluation & Benchmarks"
+      description: "LLM benchmarks, long-context evaluation, safety evaluation, MMLU, HumanEval, Arena"
     - id: survey
       display: "Surveys & Taxonomies"
+      description: "Overview papers, landscape analyses, roadmaps"
   subcategories:
     - id: agentic
       display: "Agentic"
+      category: application
+      description: "LLM agents, tool use, planning, autonomous systems"
     - id: non-agentic
       display: "Non-Agentic"
+      category: method
+      description: "Architecture, training, inference, quantization"
     - id: hybrid
       display: "Hybrid"
+      category: application
+      description: "RAG, code generation, multimodal"
 
-# ── Discovery: arXiv queries (fetch_new_papers.py) ───────────────────────────
-# Each entry is an arXiv API query string (cat: + abs:/ti: operators).
-# Keep them topic-specific; the script deduplicates automatically.
-# Entries can also be dicts with optional category/subcategory_hint:
-#   - query: 'cat:cs.RO AND abs:"manipulation"'
-#     category: manipulation
-#     subcategory_hint: method
+# ── arXiv queries ──────────────────────────────────────────────────────────
 arxiv_queries:
-  - query: 'cat:cs.CL AND (abs:"KV cache" OR abs:"key-value cache" OR abs:"LLM inference efficiency")'
+  - query: 'cat:cs.CL AND (abs:"KV cache" OR abs:"key-value cache" OR abs:"LLM inference efficiency" OR abs:"speculative decoding")'
     category: method
-    subcategory_hint: non-agentic
-  - query: 'cat:cs.LG AND (abs:"LLM serving" OR abs:"efficient inference" OR abs:"prompt caching")'
+  - query: 'cat:cs.LG AND (abs:"LLM serving" OR abs:"efficient inference" OR abs:"prompt caching" OR abs:"continuous batching")'
     category: method
-    subcategory_hint: non-agentic
-  - query: 'cat:cs.CL AND (abs:"long context" AND abs:"benchmark")'
+  - query: 'cat:cs.CL AND (abs:"quantization" AND (abs:"LLM" OR abs:"language model" OR abs:"transformer"))'
+    category: method
+  - query: 'cat:cs.CL AND (abs:"mixture of experts" OR abs:"MoE" OR abs:"sparse model")'
+    category: method
+  - query: 'cat:cs.CL AND (abs:"RLHF" OR abs:"DPO" OR abs:"RLAIF" OR abs:"constitutional AI")'
+    category: method
+  - query: 'cat:cs.CL AND (abs:"LLM agent" OR abs:"language model agent" OR abs:"tool use" OR abs:"function calling")'
+    category: application
+    subcategory_hint: agentic
+  - query: 'cat:cs.CL AND (abs:"code generation" OR abs:"code LLM" OR abs:"program synthesis" AND abs:"language model")'
+    category: application
+    subcategory_hint: hybrid
+  - query: 'cat:cs.CL AND (abs:"reasoning" AND (abs:"LLM" OR abs:"language model") AND (abs:"chain-of-thought" OR abs:"CoT" OR abs:"tree-of-thought"))'
+    category: application
+  - query: 'cat:cs.CL AND (abs:"RAG" OR abs:"retrieval augmented generation" OR abs:"grounding" AND abs:"language model")'
+    category: application
+    subcategory_hint: hybrid
+  - query: 'cat:cs.CL AND (abs:"multimodal" AND (abs:"LLM" OR abs:"language model" OR abs:"vision-language"))'
+    category: application
+  - query: 'cat:cs.CL AND (abs:"long context" AND abs:"benchmark" OR abs:"evaluation" AND abs:"language model")'
     category: evaluation
-    subcategory_hint: non-agentic
-  - query: 'cat:cs.CL AND (abs:"efficient" OR abs:"KV cache" OR abs:"inference acceleration") AND abs:"survey"'
+  - query: 'cat:cs.CL AND (abs:"LLM" AND (abs:"benchmark" OR abs:"evaluation" OR abs:"leaderboard" OR abs:"arena"))'
+    category: evaluation
+  - query: 'cat:cs.CL AND (abs:"safety" OR abs:"jailbreak" OR abs:"alignment" AND abs:"language model")'
+    category: evaluation
+  - query: 'cat:cs.CL AND (abs:"efficient" OR abs:"KV cache" OR abs:"inference") AND abs:"survey" AND abs:"language model"'
     category: survey
-    subcategory_hint: non-agentic
 
-# ── Discovery: multi-source queries (fetch_other_sources.py) ─────────────────
-# Each entry defines one query against a source (dblp, crossref, europepmc, …).
+# ── Multi-source queries ──────────────────────────────────────────────────
 other_sources_queries:
   - source: dblp
-    query: your topic a
+    query: large language model survey
+    category: survey
+  - source: dblp
+    query: LLM inference efficiency KV cache
     category: method
+  - source: dblp
+    query: LLM agent tool use
+    category: application
     subcategory_hint: agentic
   - source: crossref
-    query: your topic b agent survey
+    query: large language model benchmark evaluation
+    category: evaluation
+  - source: crossref
+    query: mixture of experts sparse language model
+    category: method
+  - source: europepmc
+    query: large language model safety alignment
+    category: evaluation
+  - source: semantic_scholar
+    query: LLM reasoning chain-of-thought planning
+    category: application
+  - source: semantic_scholar
+    query: large language model architecture survey
     category: survey
-    subcategory_hint: hybrid
+  - source: openalex
+    query: LLM inference efficiency quantization serving
+    category: method
+  - source: openalex
+    query: large language model benchmark evaluation arena
+    category: evaluation
+  - source: openalex
+    query: LLM agent autonomous tool use function calling
+    category: application
+  - source: zenodo
+    query: large language model dataset benchmark
+    category: evaluation
 
-# ── OpenAlex bulk fetch (fetch_openalex_bulk.py) ─────────────────────────────
-# Per-category OpenAlex search phrases.
+# ── OpenAlex bulk fetch ──────────────────────────────────────────────────
 openalex_queries:
   - category: method
-    query: "YOUR TOPIC method architecture"
+    query: "LLM inference efficiency KV cache quantization speculative decoding continuous batching"
+  - category: method
+    query: "mixture of experts MoE sparse transformer architecture training"
+  - category: method
+    query: "RLHF DPO RLAIF alignment training language model preference optimization"
   - category: application
-    query: "YOUR TOPIC application system"
-
-# ── GitHub repository discovery (fetch_github_repos.py) ─────────────────────
-# Each entry is a GitHub search query (topic:, keyword combos, stars:>N).
-# Optional keys: category, subcategory_hint, min_stars (per-query override).
-# If no queries are defined, the fetcher prints setup instructions and exits.
-# See: https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories
-#
-# Examples:
-# github_queries:
-#   - query: "topic:YOUR-TOPIC+stars:>100"
-#     category: application
-#   - query: "YOUR-KEYWORD+tool+stars:>200"
-#     category: method
-#   - query: "YOUR-KEYWORD+framework"
-#     category: method
-#     min_stars: 500          # per-query star threshold override
-#   - query: "YOUR-KEYWORD+awesome+stars:>50"
-#     category: survey
-
-# ── GitLab repository discovery (fetch_gitlab_repos.py) ──────────────────────
-# GitLab public API — no CLI required.  Optional keys: category,
-# subcategory_hint, min_stars, topics (list), language.
-# See: https://docs.gitlab.com/ee/api/projects.html#search-for-projects-by-name
-#
-# Examples:
-# gitlab_queries:
-#   - query: "YOUR TOPIC"
-#     category: application
-#   - query: "YOUR KEYWORD tool"
-#     category: method
-#     min_stars: 10
-#     topics:
-#       - "devops"
-#       - "ci-cd"
-
-# ── Codeberg repository discovery (fetch_codeberg_repos.py) ──────────────────
-# Gitea-compatible API.  Optional keys: category, subcategory_hint,
-# min_stars, language, owner (restrict to org/user).
-# Supports topic:TAG and language:LANG prefixes in query string.
-# See: https://codeberg.org/api/swagger
-#
-# Examples:
-# codeberg_queries:
-#   - query: "YOUR TOPIC"
-#     category: method
-#   - query: "YOUR KEYWORD tool topic:devops"
-#     category: application
-#     min_stars: 5
-#   - query: "YOUR KEYWORD"
-#     category: evaluation
-#     owner: "some-org"
-
-# ── Relevance signals for repo fetchers (optional) ──────────────────────────
-# Extra keyword tokens shared by ALL repo fetchers (github, gitlab, codeberg)
-# to filter out irrelevant repos from broad searches.
-# Also accepts ``github_signals`` as a legacy alias.
-# Auto-extracted from: topic.name, topic.description, taxonomy IDs.
-#
-# repo_signals:
-#   - "llm security"
-#   - "model context protocol"
-#   - "prompt injection"
-
-# ── Trend / burst keywords (optional) ───────────────────────────
-# Topic-specific keywords used by standard_stats.py, trend_scanner.py,
-# and landscape_analyzer.py for keyword-burst analysis.  If omitted,
-# a generic default list is used.  Keep entries lowercase; multi-word
-# phrases are supported (e.g. "world model").
-#
-# trend_keywords:
-#   - "reinforcement learning"
-#   - "manipulation"
-#   - "grasping"
-
-# ── Subclassification keywords (optional) ─────────────────────────
-# Maps subcategory IDs to keyword lists for auto-classification in
-# fetch_new_papers.py and fetch_other_sources.py.  The first matching
-# rule wins.  If omitted, fetchers fall back to heuristic rules.
-# Each ``id`` must match a subcategory defined above.
-#
-# subcategory_keywords:
-#   - id: theory
-#     keywords: ["theory", "formal", "proof", "convergence", "bound"]
-#   - id: method
-#     keywords: ["method", "algorithm", "framework", "novel approach"]
+    query: "LLM agent autonomous tool use function calling planning reasoning"
+  - category: application
+    query: "code generation program synthesis language model benchmark HumanEval"
+  - category: application
+    query: "retrieval augmented generation RAG grounding language model"
+  - category: application
+    query: "multimodal vision-language model VLM image understanding"
+  - category: evaluation
+    query: "large language model benchmark evaluation MMLU HumanEval GPQA leaderboard arena"
+  - category: evaluation
+    query: "long context window evaluation language model needle in haystack"
+  - category: survey
+    query: "large language model survey taxonomy landscape overview roadmap"

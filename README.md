@@ -467,61 +467,88 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 
 ## 📊 Corpus Statistics
 
-**271 papers** across **3 categories**.  
-Sources: **arXiv** 271 (100%).  
+**790 papers** across **4 categories**.  
+Sources: **arXiv** 435 (55%).  
 
 ### Top categories
 
 | Category | Papers | Recent | |
 |----------|--------|--------|-|
-| method | **175** | 162 | ████████████ |
-| evaluation | **84** | 82 | ██████░░░░░░ |
-| survey | **12** | 11 | █░░░░░░░░░░░ |
+| application | **393** | 239 | ████████████ |
+| method | **260** | 214 | ████████░░░░ |
+| evaluation | **113** | 93 | ███░░░░░░░░░ |
+| survey | **24** | 14 | █░░░░░░░░░░░ |
 
 ### By year
 
 | Year | Papers | |
 |------|--------|-|
-| 2023 | 5 | █░░░░░░░░░░░ |
-| 2024 | 11 | █░░░░░░░░░░░ |
-| 2026 | 255 | ████████████ |
+| 1998 | 1 | █░░░░░░░░░░░ |
+| 2000 | 1 | █░░░░░░░░░░░ |
+| 2001 | 1 | █░░░░░░░░░░░ |
+| 2004 | 1 | █░░░░░░░░░░░ |
+| 2008 | 1 | █░░░░░░░░░░░ |
+| 2012 | 6 | █░░░░░░░░░░░ |
+| 2013 | 1 | █░░░░░░░░░░░ |
+| 2014 | 1 | █░░░░░░░░░░░ |
+| 2015 | 1 | █░░░░░░░░░░░ |
+| 2016 | 2 | █░░░░░░░░░░░ |
+| 2017 | 2 | █░░░░░░░░░░░ |
+| 2018 | 3 | █░░░░░░░░░░░ |
+| 2019 | 4 | █░░░░░░░░░░░ |
+| 2020 | 2 | █░░░░░░░░░░░ |
+| 2021 | 1 | █░░░░░░░░░░░ |
+| 2023 | 11 | █░░░░░░░░░░░ |
+| 2024 | 81 | ██░░░░░░░░░░ |
+| 2025 | 205 | █████░░░░░░░ |
+| 2026 | 464 | ████████████ |
 
 ### Momentum (hottest categories)
 
 | Category | Total | Rate | Recent | Score |
 |----------|-------|------|--------|-------|
-| Evaluation | 84 | 6.8/mo | 98% | 98 |
-| Method | 175 | 13.5/mo | 93% | 93 |
-| Survey | 12 | 0.9/mo | 92% | 92 |
+| Evaluation | 113 | 7.8/mo | 82% | 2307 |
+| Method | 260 | 17.8/mo | 82% | 1409 |
+| Survey | 24 | 1.2/mo | 58% | 1358 |
+| Application | 393 | 19.9/mo | 61% | 167 |
 
 ### Trending keywords
 
 | Keyword | Papers | Burst |
 |---------|--------|-------|
-| tool | 25 | 1.06 |
-| human | 20 | 1.06 |
-| review | 10 | 1.06 |
-| autonomous | 5 | 1.06 |
-| framework | 78 | 1.05 |
-| learning | 34 | 1.03 |
-| benchmark | 122 | 1.02 |
-| method | 113 | 1.02 |
+| autonomous | 47 | 1.12 |
+| framework | 218 | 1.11 |
+| method | 212 | 1.08 |
+| analysis | 97 | 1.08 |
+| benchmark | 252 | 1.07 |
+| system | 232 | 1.06 |
+| tool | 65 | 1.04 |
+| model | 498 | 1.02 |
 
 ### Top venues
 
 | Venue | Papers |
 |-------|--------|
-| EMNLP 2026 Main Conference. 8 pages | 1 |
-| ICML 2026 | 1 |
-| IJCAI-ECAI 2026 | 1 |
+| arXiv (Cornell University) | 143 |
+| Zenodo (CERN European Organization for Nuclear Research) | 41 |
+| Lecture notes in computer science | 14 |
+| Proceedings of the AAAI Conference on Artificial Intelligence | 10 |
+| MED | 10 |
+| Underline Science Inc. | 8 |
+| Preprints.org | 8 |
+| SSRN Electronic Journal | 7 |
+| Open MIND | 5 |
+| Information | 4 |
 
 ### Research gaps (thinnest cells)
 
 | Cell | Papers |
 |------|--------|
+| `survey/` | 3 |
+| `survey/hybrid` | 9 |
+| `application/non-agentic` | 10 |
 | `survey/non-agentic` | 12 |
-| `evaluation/non-agentic` | 84 |
-| `method/non-agentic` | 175 |
+| `evaluation/hybrid` | 12 |
 
 *Generated 2026-08 by `scripts/standard_stats.py`.*
 
