@@ -467,17 +467,17 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 
 ## 📊 Corpus Statistics
 
-**790 papers** across **4 categories**.  
-Sources: **arXiv** 435 (55%).  
+**2093 papers** across **4 categories**.  
+Sources: **arXiv** 1625 (78%).  
 
 ### Top categories
 
 | Category | Papers | Recent | |
 |----------|--------|--------|-|
-| application | **393** | 239 | ████████████ |
-| method | **260** | 214 | ████████░░░░ |
-| evaluation | **113** | 93 | ███░░░░░░░░░ |
-| survey | **24** | 14 | █░░░░░░░░░░░ |
+| application | **1036** | 882 | ████████████ |
+| method | **665** | 619 | ████████░░░░ |
+| evaluation | **351** | 331 | ████░░░░░░░░ |
+| survey | **41** | 31 | █░░░░░░░░░░░ |
 
 ### By year
 
@@ -499,46 +499,46 @@ Sources: **arXiv** 435 (55%).
 | 2020 | 2 | █░░░░░░░░░░░ |
 | 2021 | 1 | █░░░░░░░░░░░ |
 | 2023 | 11 | █░░░░░░░░░░░ |
-| 2024 | 81 | ██░░░░░░░░░░ |
-| 2025 | 205 | █████░░░░░░░ |
-| 2026 | 464 | ████████████ |
+| 2024 | 81 | █░░░░░░░░░░░ |
+| 2025 | 205 | █░░░░░░░░░░░ |
+| 2026 | 1767 | ████████████ |
 
 ### Momentum (hottest categories)
 
 | Category | Total | Rate | Recent | Score |
 |----------|-------|------|--------|-------|
-| Evaluation | 113 | 7.8/mo | 82% | 2307 |
-| Method | 260 | 17.8/mo | 82% | 1409 |
-| Survey | 24 | 1.2/mo | 58% | 1358 |
-| Application | 393 | 19.9/mo | 61% | 167 |
+| Evaluation | 351 | 27.6/mo | 94% | 8269 |
+| Method | 665 | 51.6/mo | 93% | 4120 |
+| Survey | 41 | 2.6/mo | 76% | 3076 |
+| Application | 1036 | 73.5/mo | 85% | 745 |
 
 ### Trending keywords
 
 | Keyword | Papers | Burst |
 |---------|--------|-------|
-| autonomous | 47 | 1.12 |
-| framework | 218 | 1.11 |
-| method | 212 | 1.08 |
-| analysis | 97 | 1.08 |
-| benchmark | 252 | 1.07 |
-| system | 232 | 1.06 |
-| tool | 65 | 1.04 |
-| model | 498 | 1.02 |
+| framework | 769 | 1.04 |
+| benchmark | 856 | 1.03 |
+| analysis | 328 | 1.03 |
+| system | 746 | 1.02 |
+| method | 665 | 1.02 |
+| tool | 227 | 1.02 |
+| model | 1734 | 1.01 |
+| learning | 347 | 1.01 |
 
 ### Top venues
 
 | Venue | Papers |
 |-------|--------|
-| arXiv (Cornell University) | 143 |
-| Zenodo (CERN European Organization for Nuclear Research) | 41 |
-| Lecture notes in computer science | 14 |
-| Proceedings of the AAAI Conference on Artificial Intelligence | 10 |
+| arXiv (Cornell University) | 221 |
+| Zenodo (CERN European Organization for Nuclear Research) | 57 |
+| Lecture notes in computer science | 17 |
+| Proceedings of the AAAI Conference on Artificial Intelligence | 16 |
+| Underline Science Inc. | 16 |
+| ICML 2026 | 10 |
 | MED | 10 |
-| Underline Science Inc. | 8 |
-| Preprints.org | 8 |
+| Preprints.org | 9 |
+| Open MIND | 8 |
 | SSRN Electronic Journal | 7 |
-| Open MIND | 5 |
-| Information | 4 |
 
 ### Research gaps (thinnest cells)
 
