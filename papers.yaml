@@ -9769,7 +9769,7 @@ papers:
     and LNN remain open research frontiers due to their non-conventional internal
     data representations. Mathematical Foundations The governor secures systems via
     a strict, immutable prime-number anchoring system using 11 unique prime anchors:
-    $P = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31] Using the Euler product computed
+    P = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31] Using the Euler product computed
     explicitly at the Riemann critical line (\sigma = 0.5), the paper establishes
     a universal, architecture-agnostic safety constant: \Lambda = 1 - \prod_{p \in
     P}(1 - p^{-0.5}) = 0.9933689105 3. Implications for Agentic AI The mathematical
@@ -9779,7 +9779,7 @@ papers:
     Knowledge Preservation & Manifold Invariance: Individual agents are mathematically
     prevented from drifting away from their targeted safety manifolds. Cryptographic
     Verification: The entire system becomes end-to-end verifiable using cryptographic
-    signatures, bounded tightly by the universal constant \Lambda$. Ultimately, the
+    signatures, bounded tightly by the universal constant \Lambda. Ultimately, the
     paper bridges raw engineering classifications with deterministic number-theoretic
     safety proofs, offering open-source reproducible code and verification frameworks
     for secure, independent AI deployments.'
