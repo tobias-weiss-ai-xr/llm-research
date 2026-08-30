@@ -467,17 +467,17 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 
 ## 📊 Corpus Statistics
 
-**2093 papers** across **4 categories**.  
-Sources: **arXiv** 1625 (78%).  
+**3224 papers** across **4 categories**.  
+Sources: **arXiv** 2756 (85%).  
 
 ### Top categories
 
 | Category | Papers | Recent | |
 |----------|--------|--------|-|
-| application | **1036** | 882 | ████████████ |
-| method | **665** | 619 | ████████░░░░ |
-| evaluation | **351** | 331 | ████░░░░░░░░ |
-| survey | **41** | 31 | █░░░░░░░░░░░ |
+| application | **1418** | 995 | ████████████ |
+| method | **1078** | 708 | █████████░░░ |
+| evaluation | **607** | 391 | █████░░░░░░░ |
+| survey | **121** | 45 | █░░░░░░░░░░░ |
 
 ### By year
 
@@ -498,32 +498,32 @@ Sources: **arXiv** 1625 (78%).
 | 2019 | 4 | █░░░░░░░░░░░ |
 | 2020 | 2 | █░░░░░░░░░░░ |
 | 2021 | 1 | █░░░░░░░░░░░ |
-| 2023 | 11 | █░░░░░░░░░░░ |
-| 2024 | 81 | █░░░░░░░░░░░ |
-| 2025 | 205 | █░░░░░░░░░░░ |
-| 2026 | 1767 | ████████████ |
+| 2023 | 72 | █░░░░░░░░░░░ |
+| 2024 | 532 | ███░░░░░░░░░ |
+| 2025 | 746 | █████░░░░░░░ |
+| 2026 | 1846 | ████████████ |
 
 ### Momentum (hottest categories)
 
 | Category | Total | Rate | Recent | Score |
 |----------|-------|------|--------|-------|
-| Evaluation | 351 | 27.6/mo | 94% | 8269 |
-| Method | 665 | 51.6/mo | 93% | 4120 |
-| Survey | 41 | 2.6/mo | 76% | 3076 |
-| Application | 1036 | 73.5/mo | 85% | 745 |
+| Application | 1418 | 82.9/mo | 70% | 310 |
+| Method | 1078 | 59.0/mo | 66% | 304 |
+| Evaluation | 607 | 32.6/mo | 64% | 244 |
+| Survey | 121 | 3.8/mo | 37% | 40 |
 
 ### Trending keywords
 
 | Keyword | Papers | Burst |
 |---------|--------|-------|
-| framework | 769 | 1.04 |
-| benchmark | 856 | 1.03 |
-| analysis | 328 | 1.03 |
-| system | 746 | 1.02 |
-| method | 665 | 1.02 |
-| tool | 227 | 1.02 |
-| model | 1734 | 1.01 |
-| learning | 347 | 1.01 |
+| autonomous | 100 | 1.2 |
+| framework | 877 | 1.11 |
+| system | 843 | 1.11 |
+| tool | 257 | 1.08 |
+| benchmark | 980 | 1.06 |
+| analysis | 377 | 1.05 |
+| scalable | 166 | 1.04 |
+| model | 1999 | 0.99 |
 
 ### Top venues
 
@@ -534,7 +534,7 @@ Sources: **arXiv** 1625 (78%).
 | Lecture notes in computer science | 17 |
 | Proceedings of the AAAI Conference on Artificial Intelligence | 16 |
 | Underline Science Inc. | 16 |
-| ICML 2026 | 10 |
+| ICML 2026 | 12 |
 | MED | 10 |
 | Preprints.org | 9 |
 | Open MIND | 8 |
@@ -544,11 +544,11 @@ Sources: **arXiv** 1625 (78%).
 
 | Cell | Papers |
 |------|--------|
-| `survey/` | 3 |
 | `survey/hybrid` | 9 |
 | `application/non-agentic` | 10 |
 | `survey/non-agentic` | 12 |
 | `evaluation/hybrid` | 12 |
+| `method/agentic` | 13 |
 
 *Generated 2026-08 by `scripts/standard_stats.py`.*
 

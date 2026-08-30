@@ -3,29 +3,29 @@
   {
    "id": "application",
    "name": "Applications",
-   "count": 1036,
+   "count": 1418,
    "trajectory": {
-    "2023": 3,
-    "2024": 58,
-    "2025": 176,
-    "2026": 799
+    "2023": 28,
+    "2024": 199,
+    "2025": 356,
+    "2026": 835
    },
    "momentum": {
     "id": "application",
     "name": "Application",
-    "total": 1036,
-    "recent": 882,
-    "prior": 116,
-    "growth_pct": 660.3,
-    "recent_share": 0.851,
-    "papers_per_month": 73.5,
-    "score": 745.4
+    "total": 1418,
+    "recent": 995,
+    "prior": 293,
+    "growth_pct": 239.6,
+    "recent_share": 0.702,
+    "papers_per_month": 82.9,
+    "score": 309.8
    }
   },
   {
    "id": "evaluation",
    "name": "Evaluation & Benchmarks",
-   "count": 351,
+   "count": 607,
    "trajectory": {
     "1998": 1,
     "2001": 1,
@@ -34,27 +34,27 @@
     "2017": 1,
     "2019": 2,
     "2021": 1,
-    "2023": 3,
-    "2024": 5,
-    "2025": 7,
-    "2026": 327
+    "2023": 14,
+    "2024": 99,
+    "2025": 145,
+    "2026": 340
    },
    "momentum": {
     "id": "evaluation",
     "name": "Evaluation",
-    "total": 351,
-    "recent": 331,
-    "prior": 4,
-    "growth_pct": 8175.0,
-    "recent_share": 0.943,
-    "papers_per_month": 27.6,
-    "score": 8269.3
+    "total": 607,
+    "recent": 391,
+    "prior": 140,
+    "growth_pct": 179.3,
+    "recent_share": 0.644,
+    "papers_per_month": 32.6,
+    "score": 243.7
    }
   },
   {
    "id": "method",
    "name": "Methods & Architectures",
-   "count": 665,
+   "count": 1078,
    "trajectory": {
     "2000": 1,
     "2008": 1,
@@ -66,70 +66,66 @@
     "2018": 2,
     "2019": 1,
     "2020": 1,
-    "2023": 5,
-    "2024": 17,
-    "2025": 19,
-    "2026": 612
+    "2023": 25,
+    "2024": 203,
+    "2025": 197,
+    "2026": 641
    },
    "momentum": {
     "id": "method",
     "name": "Method",
-    "total": 665,
-    "recent": 619,
-    "prior": 15,
-    "growth_pct": 4026.7,
-    "recent_share": 0.931,
-    "papers_per_month": 51.6,
-    "score": 4119.8
+    "total": 1078,
+    "recent": 708,
+    "prior": 209,
+    "growth_pct": 238.8,
+    "recent_share": 0.657,
+    "papers_per_month": 59.0,
+    "score": 304.5
    }
   },
   {
    "id": "survey",
    "name": "Surveys & Taxonomies",
-   "count": 41,
+   "count": 121,
    "trajectory": {
     "2012": 3,
     "2014": 1,
     "2018": 1,
     "2019": 1,
     "2020": 1,
-    "2024": 1,
-    "2025": 3,
-    "2026": 29
+    "2023": 5,
+    "2024": 31,
+    "2025": 48,
+    "2026": 30
    },
    "momentum": {
     "id": "survey",
     "name": "Survey",
-    "total": 41,
-    "recent": 31,
-    "prior": 1,
-    "growth_pct": 3000.0,
-    "recent_share": 0.756,
-    "papers_per_month": 2.6,
-    "score": 3075.6
+    "total": 121,
+    "recent": 45,
+    "prior": 44,
+    "growth_pct": 2.3,
+    "recent_share": 0.372,
+    "papers_per_month": 3.8,
+    "score": 39.5
    }
   }
  ],
  "subcategories": [
   {
-   "id": "",
-   "name": "",
-   "count": 672
-  },
-  {
    "id": "agentic",
    "name": "Agentic",
-   "count": 544
+   "count": 1726
   },
   {
    "id": "hybrid",
    "name": "Hybrid",
-   "count": 191
+   "count": 327
   },
   {
    "id": "non-agentic",
    "name": "Non-Agentic",
-   "count": 686
+   "count": 1171
   }
  ],
  "timeline": [
@@ -300,28 +296,228 @@
   ],
   [
    "2023-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2023-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2023-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2023-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2023-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2023-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-09",
    "method",
    "non-agentic"
   ],
   [
    "2023-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2023-10",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2023-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2023-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2023-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2023-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2023-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2023-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2023-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2023-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2023-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2023-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2023-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2023-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2023-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2023-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2023-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2023-10",
+   "evaluation",
+   "agentic"
   ],
   [
    "2023-10",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2023-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-10",
+   "survey",
+   "agentic"
   ],
   [
    "2023-11",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2023-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2023-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2023-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2023-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2023-11",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2023-11",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2023-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2023-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2023-11",
+   "evaluation",
+   "agentic"
   ],
   [
    "2023-11",
@@ -329,64 +525,254 @@
    "non-agentic"
   ],
   [
-   "2024-01",
+   "2023-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-12",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2023-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2023-12",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2023-12",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2023-12",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2023-12",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2023-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-12",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2023-12",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2023-12",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2023-12",
+   "survey",
+   "agentic"
   ],
   [
    "2024-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-01",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-01",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-01",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-01",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-01",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "evaluation",
+   "agentic"
   ],
   [
    "2024-01",
@@ -399,24 +785,174 @@
    "agentic"
   ],
   [
-   "2024-02",
-   "application",
-   ""
-  ],
-  [
-   "2024-02",
-   "application",
-   ""
-  ],
-  [
-   "2024-02",
-   "application",
-   ""
-  ],
-  [
-   "2024-02",
+   "2024-01",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2024-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-01",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-01",
+   "survey",
+   "hybrid"
+  ],
+  [
+   "2024-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "evaluation",
+   "agentic"
   ],
   [
    "2024-02",
@@ -429,34 +965,369 @@
    "non-agentic"
   ],
   [
-   "2024-03",
-   "application",
-   ""
-  ],
-  [
-   "2024-03",
-   "application",
-   ""
-  ],
-  [
-   "2024-03",
-   "application",
-   ""
-  ],
-  [
-   "2024-03",
+   "2024-02",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-02",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-02",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-03",
+   "evaluation",
+   "agentic"
   ],
   [
    "2024-03",
    "method",
    "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-03",
+   "survey",
+   "agentic"
   ],
   [
    "2024-04",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2024-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-04",
+   "evaluation",
+   "agentic"
   ],
   [
    "2024-04",
@@ -466,7 +1337,72 @@
   [
    "2024-04",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-04",
+   "method",
+   "non-agentic"
   ],
   [
    "2024-04",
@@ -481,37 +1417,112 @@
   [
    "2024-04",
    "survey",
+   "agentic"
+  ],
+  [
+   "2024-04",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-04",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-04",
+   "survey",
    "non-agentic"
   ],
   [
    "2024-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-05",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2024-05",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-05",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-05",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-05",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-05",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-05",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-05",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-05",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-05",
+   "evaluation",
+   "agentic"
   ],
   [
    "2024-05",
@@ -524,29 +1535,269 @@
    "non-agentic"
   ],
   [
-   "2024-06",
-   "application",
-   ""
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-05",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-05",
+   "survey",
+   "agentic"
   ],
   [
    "2024-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-06",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-06",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-06",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-06",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-06",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-06",
+   "application",
+   "hybrid"
   ],
   [
    "2024-06",
    "evaluation",
-   ""
+   "agentic"
   ],
   [
    "2024-06",
-   "method",
-   ""
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "evaluation",
+   "agentic"
   ],
   [
    "2024-06",
@@ -559,324 +1810,1784 @@
    "non-agentic"
   ],
   [
-   "2024-07",
-   "application",
-   ""
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-06",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "survey",
+   "agentic"
   ],
   [
    "2024-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-07",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-07",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-07",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-07",
+   "application",
+   "hybrid"
   ],
   [
    "2024-07",
    "evaluation",
-   ""
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-07",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-07",
+   "survey",
+   "agentic"
   ],
   [
    "2024-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-08",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2024-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-08",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-08",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-08",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-08",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-08",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-08",
+   "survey",
+   "agentic"
   ],
   [
    "2024-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-09",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-09",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "evaluation",
+   "agentic"
   ],
   [
    "2024-09",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2024-09",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-09",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-09",
+   "survey",
+   "agentic"
   ],
   [
    "2024-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-10",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-10",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-10",
+   "survey",
+   "agentic"
   ],
   [
    "2024-11",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-11",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-11",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-11",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-11",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-11",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-11",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-11",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-11",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-11",
+   "application",
+   "hybrid"
   ],
   [
    "2024-11",
    "evaluation",
-   ""
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-11",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2024-11",
+   "survey",
+   "agentic"
   ],
   [
    "2024-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2024-12",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-12",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-12",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-12",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-12",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-12",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-12",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2024-12",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2024-12",
+   "evaluation",
+   "agentic"
   ],
   [
    "2024-12",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2024-12",
+   "survey",
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-01",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "application",
+   "agentic"
   ],
   [
    "2025-01",
    "evaluation",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "evaluation",
+   "agentic"
   ],
   [
    "2025-01",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2025-01",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2025-01",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2025-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-01",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-01",
+   "survey",
+   "agentic"
   ],
   [
    "2025-01",
@@ -886,2679 +3597,5609 @@
   [
    "2025-02",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-02",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-02",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-02",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-02",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-02",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-02",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-02",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-02",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-02",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-02",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-02",
+   "application",
+   "hybrid"
   ],
   [
    "2025-02",
    "evaluation",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "evaluation",
+   "agentic"
   ],
   [
    "2025-02",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2025-02",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-02",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-02",
+   "survey",
+   "agentic"
   ],
   [
    "2025-03",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-03",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-03",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-03",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-03",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-03",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-03",
+   "application",
+   "hybrid"
   ],
   [
    "2025-03",
    "evaluation",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-03",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-03",
+   "survey",
+   "agentic"
   ],
   [
    "2025-04",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-04",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-04",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-04",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-04",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-04",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-04",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-04",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-04",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-04",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-04",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-04",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-04",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-04",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "evaluation",
+   "agentic"
   ],
   [
    "2025-04",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2025-04",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2025-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-04",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-04",
+   "survey",
+   "agentic"
   ],
   [
    "2025-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-05",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-05",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-05",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-05",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-05",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-05",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-05",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-05",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-05",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "evaluation",
+   "agentic"
   ],
   [
    "2025-05",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-05",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-05",
+   "survey",
+   "agentic"
   ],
   [
    "2025-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-06",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "evaluation",
+   "agentic"
   ],
   [
    "2025-06",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2025-06",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-06",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-06",
+   "survey",
+   "agentic"
   ],
   [
    "2025-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-07",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-07",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-07",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-07",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-07",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-07",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "evaluation",
+   "agentic"
   ],
   [
    "2025-07",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2025-07",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2025-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-07",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-07",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-07",
+   "survey",
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-08",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-08",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-08",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-08",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-08",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-08",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "evaluation",
+   "agentic"
   ],
   [
    "2025-08",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2025-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-08",
+   "method",
+   "non-agentic"
   ],
   [
    "2025-08",
    "survey",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-08",
+   "survey",
+   "agentic"
   ],
   [
    "2025-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-09",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-09",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-09",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-09",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-09",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-09",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-09",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-09",
+   "survey",
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-10",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-10",
+   "application",
+   "hybrid"
   ],
   [
    "2025-10",
    "evaluation",
-   ""
+   "agentic"
   ],
   [
    "2025-10",
    "evaluation",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "evaluation",
+   "agentic"
   ],
   [
    "2025-10",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-10",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-10",
+   "survey",
+   "agentic"
   ],
   [
    "2025-11",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-11",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-11",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-11",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-11",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-11",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-11",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-11",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-11",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-11",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-11",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-11",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-11",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-11",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "evaluation",
+   "agentic"
   ],
   [
    "2025-11",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2025-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-11",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-11",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2025-11",
+   "survey",
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "application",
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-12",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-12",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-12",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-12",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2025-12",
+   "application",
+   "hybrid"
   ],
   [
    "2025-12",
    "evaluation",
-   ""
+   "agentic"
   ],
   [
    "2025-12",
    "evaluation",
-   ""
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2025-12",
+   "evaluation",
+   "agentic"
   ],
   [
    "2025-12",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2025-12",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2025-12",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2025-12",
    "method",
-   ""
+   "non-agentic"
+  ],
+  [
+   "2025-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-12",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2025-12",
+   "method",
+   "non-agentic"
   ],
   [
    "2025-12",
    "survey",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   ""
-  ],
-  [
-   "2026-01",
-   "application",
-   "non-agentic"
-  ],
-  [
-   "2026-01",
-   "application",
-   "non-agentic"
-  ],
-  [
-   "2026-01",
-   "application",
-   "non-agentic"
-  ],
-  [
-   "2026-01",
-   "application",
-   "non-agentic"
-  ],
-  [
-   "2026-01",
-   "application",
-   "non-agentic"
-  ],
-  [
-   "2026-01",
-   "application",
-   "non-agentic"
-  ],
-  [
-   "2026-01",
-   "application",
-   "non-agentic"
-  ],
-  [
-   "2026-01",
-   "application",
-   "non-agentic"
-  ],
-  [
-   "2026-01",
-   "application",
-   "non-agentic"
-  ],
-  [
-   "2026-01",
-   "application",
-   "non-agentic"
-  ],
-  [
-   "2026-01",
-   "evaluation",
-   ""
-  ],
-  [
-   "2026-01",
-   "method",
-   ""
-  ],
-  [
-   "2026-01",
-   "method",
-   ""
-  ],
-  [
-   "2026-01",
-   "method",
-   ""
-  ],
-  [
-   "2026-01",
-   "method",
-   ""
-  ],
-  [
-   "2026-01",
-   "method",
-   ""
-  ],
-  [
-   "2026-01",
-   "method",
-   ""
-  ],
-  [
-   "2026-01",
-   "method",
-   ""
-  ],
-  [
-   "2026-01",
-   "method",
-   ""
-  ],
-  [
-   "2026-01",
-   "survey",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   ""
-  ],
-  [
-   "2026-02",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-02",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-02",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-02",
-   "method",
-   ""
-  ],
-  [
-   "2026-02",
-   "method",
-   ""
-  ],
-  [
-   "2026-02",
-   "method",
-   ""
-  ],
-  [
-   "2026-02",
-   "method",
-   ""
-  ],
-  [
-   "2026-02",
-   "method",
-   ""
-  ],
-  [
-   "2026-02",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-02",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-02",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-02",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   ""
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-03",
-   "evaluation",
    "agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   ""
-  ],
-  [
-   "2026-03",
-   "method",
-   ""
-  ],
-  [
-   "2026-03",
-   "method",
-   ""
-  ],
-  [
-   "2026-03",
-   "method",
-   ""
-  ],
-  [
-   "2026-03",
-   "method",
-   ""
-  ],
-  [
-   "2026-03",
-   "method",
-   ""
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-03",
-   "method",
-   "non-agentic"
   ],
   [
-   "2026-03",
+   "2025-12",
    "survey",
    "agentic"
   ],
   [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-01",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-01",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-01",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-01",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-01",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-01",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-01",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "application",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2026-01",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-02",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-03",
+   "method",
+   "non-agentic"
+  ],
+  [
    "2026-03",
    "survey",
    "agentic"
@@ -3589,1529 +9230,1524 @@
    "agentic"
   ],
   [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   ""
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "application",
-   "hybrid"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   ""
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   ""
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   ""
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   ""
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "evaluation",
-   "agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   ""
-  ],
-  [
-   "2026-04",
-   "method",
-   ""
-  ],
-  [
-   "2026-04",
-   "method",
-   ""
-  ],
-  [
-   "2026-04",
-   "method",
-   ""
-  ],
-  [
-   "2026-04",
-   "method",
-   ""
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2026-04",
+   "2026-03",
    "survey",
    "agentic"
   ],
   [
    "2026-04",
-   "survey",
+   "application",
    "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "evaluation",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-04",
+   "method",
+   "non-agentic"
   ],
   [
    "2026-04",
@@ -5129,289 +10765,299 @@
    "agentic"
   ],
   [
-   "2026-05",
-   "application",
-   ""
+   "2026-04",
+   "survey",
+   "agentic"
+  ],
+  [
+   "2026-04",
+   "survey",
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2026-05",
+   "application",
+   "agentic"
   ],
   [
    "2026-05",
@@ -5926,7 +11572,7 @@
   [
    "2026-05",
    "evaluation",
-   ""
+   "agentic"
   ],
   [
    "2026-05",
@@ -6266,42 +11912,42 @@
   [
    "2026-05",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-05",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-05",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-05",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-05",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-05",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-05",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-05",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-05",
@@ -6921,227 +12567,227 @@
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
@@ -7536,7 +13182,7 @@
   [
    "2026-06",
    "evaluation",
-   ""
+   "agentic"
   ],
   [
    "2026-06",
@@ -7871,37 +13517,37 @@
   [
    "2026-06",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-06",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-06",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-06",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-06",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-06",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-06",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-06",
@@ -8481,287 +14127,292 @@
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
   ],
   [
    "2026-07",
    "application",
-   ""
+   "agentic"
+  ],
+  [
+   "2026-07",
+   "application",
+   "agentic"
   ],
   [
    "2026-07",
@@ -9246,27 +14897,27 @@
   [
    "2026-07",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-07",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-07",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-07",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-07",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-07",
@@ -9696,106 +15347,6 @@
   [
    "2026-08",
    "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
-   ""
-  ],
-  [
-   "2026-08",
-   "application",
    "agentic"
   ],
   [
@@ -9912,6 +15463,111 @@
    "2026-08",
    "application",
    "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "agentic"
+  ],
+  [
+   "2026-08",
+   "application",
+   "hybrid"
   ],
   [
    "2026-08",
@@ -10171,7 +15827,7 @@
   [
    "2026-08",
    "method",
-   ""
+   "non-agentic"
   ],
   [
    "2026-08",
@@ -10617,7 +16273,7 @@
   },
   {
    "name": "ICML 2026",
-   "papers": 10
+   "papers": 12
   },
   {
    "name": "MED",
@@ -10640,6 +16296,10 @@
    "papers": 6
   },
   {
+   "name": "ACL 2026",
+   "papers": 5
+  },
+  {
    "name": "Information",
    "papers": 4
   },
@@ -10650,117 +16310,113 @@
   {
    "name": "Research Square",
    "papers": 4
-  },
-  {
-   "name": "Electronics",
-   "papers": 4
   }
  ],
  "keyword_bursts": [
   {
+   "keyword": "autonomous",
+   "recent": 100,
+   "total": 126,
+   "burst_score": 1.2,
+   "recent_share": 0.0468
+  },
+  {
    "keyword": "framework",
-   "recent": 769,
-   "total": 829,
-   "burst_score": 1.04,
-   "recent_share": 0.4128
-  },
-  {
-   "keyword": "benchmark",
-   "recent": 856,
-   "total": 937,
-   "burst_score": 1.03,
-   "recent_share": 0.4595
-  },
-  {
-   "keyword": "analysis",
-   "recent": 328,
-   "total": 358,
-   "burst_score": 1.03,
-   "recent_share": 0.1761
+   "recent": 877,
+   "total": 1189,
+   "burst_score": 1.11,
+   "recent_share": 0.41
   },
   {
    "keyword": "system",
-   "recent": 746,
-   "total": 823,
-   "burst_score": 1.02,
-   "recent_share": 0.4004
-  },
-  {
-   "keyword": "method",
-   "recent": 665,
-   "total": 731,
-   "burst_score": 1.02,
-   "recent_share": 0.357
+   "recent": 843,
+   "total": 1142,
+   "burst_score": 1.11,
+   "recent_share": 0.3941
   },
   {
    "keyword": "tool",
-   "recent": 227,
-   "total": 250,
-   "burst_score": 1.02,
-   "recent_share": 0.1218
+   "recent": 257,
+   "total": 358,
+   "burst_score": 1.08,
+   "recent_share": 0.1201
   },
   {
-   "keyword": "model",
-   "recent": 1734,
-   "total": 1927,
-   "burst_score": 1.01,
-   "recent_share": 0.9308
+   "keyword": "benchmark",
+   "recent": 980,
+   "total": 1392,
+   "burst_score": 1.06,
+   "recent_share": 0.4582
   },
   {
-   "keyword": "learning",
-   "recent": 347,
-   "total": 387,
-   "burst_score": 1.01,
-   "recent_share": 0.1863
-  },
-  {
-   "keyword": "evaluation",
-   "recent": 572,
-   "total": 645,
-   "burst_score": 1.0,
-   "recent_share": 0.307
-  },
-  {
-   "keyword": "autonomous",
-   "recent": 95,
-   "total": 107,
-   "burst_score": 1.0,
-   "recent_share": 0.051
-  },
-  {
-   "keyword": "real-world",
-   "recent": 184,
-   "total": 209,
-   "burst_score": 0.99,
-   "recent_share": 0.0988
-  },
-  {
-   "keyword": "human",
-   "recent": 313,
-   "total": 357,
-   "burst_score": 0.98,
-   "recent_share": 0.168
-  },
-  {
-   "keyword": "dataset",
-   "recent": 395,
-   "total": 463,
-   "burst_score": 0.96,
-   "recent_share": 0.212
+   "keyword": "analysis",
+   "recent": 377,
+   "total": 543,
+   "burst_score": 1.05,
+   "recent_share": 0.1763
   },
   {
    "keyword": "scalable",
-   "recent": 131,
-   "total": 154,
-   "burst_score": 0.96,
-   "recent_share": 0.0703
+   "recent": 166,
+   "total": 241,
+   "burst_score": 1.04,
+   "recent_share": 0.0776
   },
   {
-   "keyword": "survey",
-   "recent": 70,
-   "total": 84,
+   "keyword": "model",
+   "recent": 1999,
+   "total": 3031,
+   "burst_score": 0.99,
+   "recent_share": 0.9345
+  },
+  {
+   "keyword": "evaluation",
+   "recent": 676,
+   "total": 1027,
+   "burst_score": 0.99,
+   "recent_share": 0.316
+  },
+  {
+   "keyword": "learning",
+   "recent": 393,
+   "total": 613,
+   "burst_score": 0.97,
+   "recent_share": 0.1837
+  },
+  {
+   "keyword": "real-world",
+   "recent": 224,
+   "total": 352,
+   "burst_score": 0.96,
+   "recent_share": 0.1047
+  },
+  {
+   "keyword": "review",
+   "recent": 103,
+   "total": 165,
    "burst_score": 0.94,
-   "recent_share": 0.0376
+   "recent_share": 0.0482
+  },
+  {
+   "keyword": "method",
+   "recent": 787,
+   "total": 1280,
+   "burst_score": 0.93,
+   "recent_share": 0.3679
+  },
+  {
+   "keyword": "dataset",
+   "recent": 462,
+   "total": 769,
+   "burst_score": 0.91,
+   "recent_share": 0.216
+  },
+  {
+   "keyword": "human",
+   "recent": 360,
+   "total": 594,
+   "burst_score": 0.91,
+   "recent_share": 0.1683
   }
  ]
 }
