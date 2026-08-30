@@ -3,33 +3,32 @@
   {
    "id": "application",
    "name": "Applications",
-   "count": 1418,
+   "count": 1417,
    "trajectory": {
     "2023": 28,
     "2024": 199,
     "2025": 356,
-    "2026": 835
+    "2026": 834
    },
    "momentum": {
     "id": "application",
     "name": "Application",
-    "total": 1418,
-    "recent": 995,
+    "total": 1417,
+    "recent": 994,
     "prior": 293,
-    "growth_pct": 239.6,
-    "recent_share": 0.702,
-    "papers_per_month": 82.9,
-    "score": 309.8
+    "growth_pct": 239.2,
+    "recent_share": 0.701,
+    "papers_per_month": 82.8,
+    "score": 309.3
    }
   },
   {
    "id": "evaluation",
    "name": "Evaluation & Benchmarks",
-   "count": 607,
+   "count": 606,
    "trajectory": {
     "1998": 1,
     "2001": 1,
-    "2004": 1,
     "2012": 2,
     "2017": 1,
     "2019": 2,
@@ -42,13 +41,13 @@
    "momentum": {
     "id": "evaluation",
     "name": "Evaluation",
-    "total": 607,
+    "total": 606,
     "recent": 391,
     "prior": 140,
     "growth_pct": 179.3,
-    "recent_share": 0.644,
+    "recent_share": 0.645,
     "papers_per_month": 32.6,
-    "score": 243.7
+    "score": 243.8
    }
   },
   {
@@ -115,12 +114,12 @@
   {
    "id": "agentic",
    "name": "Agentic",
-   "count": 1726
+   "count": 1725
   },
   {
    "id": "hybrid",
    "name": "Hybrid",
-   "count": 327
+   "count": 326
   },
   {
    "id": "non-agentic",
@@ -141,11 +140,6 @@
   ],
   [
    "2001-01",
-   "evaluation",
-   "hybrid"
-  ],
-  [
-   "2004-01",
    "evaluation",
    "hybrid"
   ],
@@ -15562,11 +15556,6 @@
   [
    "2026-08",
    "application",
-   "agentic"
-  ],
-  [
-   "2026-08",
-   "application",
    "hybrid"
   ],
   [
@@ -16284,11 +16273,11 @@
    "papers": 9
   },
   {
-   "name": "Open MIND",
-   "papers": 8
+   "name": "SSRN Electronic Journal",
+   "papers": 7
   },
   {
-   "name": "SSRN Electronic Journal",
+   "name": "Open MIND",
    "papers": 7
   },
   {
@@ -16322,38 +16311,38 @@
   },
   {
    "keyword": "framework",
-   "recent": 877,
-   "total": 1189,
+   "recent": 876,
+   "total": 1188,
    "burst_score": 1.11,
-   "recent_share": 0.41
+   "recent_share": 0.4097
   },
   {
    "keyword": "system",
    "recent": 843,
    "total": 1142,
    "burst_score": 1.11,
-   "recent_share": 0.3941
+   "recent_share": 0.3943
   },
   {
    "keyword": "tool",
    "recent": 257,
    "total": 358,
    "burst_score": 1.08,
-   "recent_share": 0.1201
+   "recent_share": 0.1202
   },
   {
    "keyword": "benchmark",
-   "recent": 980,
-   "total": 1392,
+   "recent": 979,
+   "total": 1390,
    "burst_score": 1.06,
-   "recent_share": 0.4582
+   "recent_share": 0.4579
   },
   {
    "keyword": "analysis",
-   "recent": 377,
-   "total": 543,
+   "recent": 376,
+   "total": 542,
    "burst_score": 1.05,
-   "recent_share": 0.1763
+   "recent_share": 0.1759
   },
   {
    "keyword": "scalable",
@@ -16364,31 +16353,31 @@
   },
   {
    "keyword": "model",
-   "recent": 1999,
-   "total": 3031,
+   "recent": 1998,
+   "total": 3030,
    "burst_score": 0.99,
    "recent_share": 0.9345
   },
   {
    "keyword": "evaluation",
-   "recent": 676,
-   "total": 1027,
+   "recent": 675,
+   "total": 1026,
    "burst_score": 0.99,
-   "recent_share": 0.316
+   "recent_share": 0.3157
   },
   {
    "keyword": "learning",
    "recent": 393,
    "total": 613,
    "burst_score": 0.97,
-   "recent_share": 0.1837
+   "recent_share": 0.1838
   },
   {
    "keyword": "real-world",
    "recent": 224,
    "total": 352,
    "burst_score": 0.96,
-   "recent_share": 0.1047
+   "recent_share": 0.1048
   },
   {
    "keyword": "review",
@@ -16402,21 +16391,21 @@
    "recent": 787,
    "total": 1280,
    "burst_score": 0.93,
-   "recent_share": 0.3679
+   "recent_share": 0.3681
   },
   {
    "keyword": "dataset",
    "recent": 462,
    "total": 769,
    "burst_score": 0.91,
-   "recent_share": 0.216
+   "recent_share": 0.2161
   },
   {
    "keyword": "human",
    "recent": 360,
    "total": 594,
    "burst_score": 0.91,
-   "recent_share": 0.1683
+   "recent_share": 0.1684
   }
  ]
 }

@@ -467,16 +467,16 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 
 ## 📊 Corpus Statistics
 
-**3224 papers** across **4 categories**.  
-Sources: **arXiv** 2756 (85%).  
+**3222 papers** across **4 categories**.  
+Sources: **arXiv** 2756 (86%).  
 
 ### Top categories
 
 | Category | Papers | Recent | |
 |----------|--------|--------|-|
-| application | **1418** | 995 | ████████████ |
+| application | **1417** | 994 | ████████████ |
 | method | **1078** | 708 | █████████░░░ |
-| evaluation | **607** | 391 | █████░░░░░░░ |
+| evaluation | **606** | 391 | █████░░░░░░░ |
 | survey | **121** | 45 | █░░░░░░░░░░░ |
 
 ### By year
@@ -486,7 +486,6 @@ Sources: **arXiv** 2756 (85%).
 | 1998 | 1 | █░░░░░░░░░░░ |
 | 2000 | 1 | █░░░░░░░░░░░ |
 | 2001 | 1 | █░░░░░░░░░░░ |
-| 2004 | 1 | █░░░░░░░░░░░ |
 | 2008 | 1 | █░░░░░░░░░░░ |
 | 2012 | 6 | █░░░░░░░░░░░ |
 | 2013 | 1 | █░░░░░░░░░░░ |
@@ -501,15 +500,15 @@ Sources: **arXiv** 2756 (85%).
 | 2023 | 72 | █░░░░░░░░░░░ |
 | 2024 | 532 | ███░░░░░░░░░ |
 | 2025 | 746 | █████░░░░░░░ |
-| 2026 | 1846 | ████████████ |
+| 2026 | 1845 | ████████████ |
 
 ### Momentum (hottest categories)
 
 | Category | Total | Rate | Recent | Score |
 |----------|-------|------|--------|-------|
-| Application | 1418 | 82.9/mo | 70% | 310 |
+| Application | 1417 | 82.8/mo | 70% | 309 |
 | Method | 1078 | 59.0/mo | 66% | 304 |
-| Evaluation | 607 | 32.6/mo | 64% | 244 |
+| Evaluation | 606 | 32.6/mo | 64% | 244 |
 | Survey | 121 | 3.8/mo | 37% | 40 |
 
 ### Trending keywords
@@ -517,13 +516,13 @@ Sources: **arXiv** 2756 (85%).
 | Keyword | Papers | Burst |
 |---------|--------|-------|
 | autonomous | 100 | 1.2 |
-| framework | 877 | 1.11 |
+| framework | 876 | 1.11 |
 | system | 843 | 1.11 |
 | tool | 257 | 1.08 |
-| benchmark | 980 | 1.06 |
-| analysis | 377 | 1.05 |
+| benchmark | 979 | 1.06 |
+| analysis | 376 | 1.05 |
 | scalable | 166 | 1.04 |
-| model | 1999 | 0.99 |
+| model | 1998 | 0.99 |
 
 ### Top venues
 
@@ -537,8 +536,8 @@ Sources: **arXiv** 2756 (85%).
 | ICML 2026 | 12 |
 | MED | 10 |
 | Preprints.org | 9 |
-| Open MIND | 8 |
 | SSRN Electronic Journal | 7 |
+| Open MIND | 7 |
 
 ### Research gaps (thinnest cells)
 
@@ -546,8 +545,8 @@ Sources: **arXiv** 2756 (85%).
 |------|--------|
 | `survey/hybrid` | 9 |
 | `application/non-agentic` | 10 |
+| `evaluation/hybrid` | 11 |
 | `survey/non-agentic` | 12 |
-| `evaluation/hybrid` | 12 |
 | `method/agentic` | 13 |
 
 *Generated 2026-08 by `scripts/standard_stats.py`.*
