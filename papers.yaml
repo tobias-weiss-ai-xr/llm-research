@@ -68282,7 +68282,6 @@ papers:
   - Nisharg Nargund
   - Priyesh Shukla
   venue: ''
-  code_url: https://github.com/1nisharg/TernaryLM-Memory-Efficient-Language-Modeling
   project_url: ''
   abstract: 'Large language models (LLMs) achieve remarkable performance but demand
     substantial computational resources, limiting deployment on edge devices and resource-constrained
@@ -79995,7 +79994,6 @@ papers:
   - Jing Ma
   - Lidong Bing
   venue: ''
-  code_url: https://github.com/ChiYeungLaw/AMR-Evol
   project_url: ''
   abstract: 'The impressive performance of proprietary LLMs like GPT4 in code generation
     has led to a trend to replicate these capabilities in open-source models through
@@ -82057,7 +82055,6 @@ papers:
   - Shiyu Zhao
   - Shiqing Ma
   venue: ''
-  code_url: https://github.com/GeniusHTX/TALE
   project_url: ''
   abstract: 'Reasoning is critical for large language models (LLMs) to excel in a
     wide range of tasks. While methods like Chain-of-Thought (CoT) reasoning and enhance
@@ -85937,7 +85934,7 @@ papers:
   - Marcelo Lotif
   venue: ''
   code_url: ''
-  project_url: https://vectorinstitute.github.io/FairSense-AI,
+  project_url: https://vectorinstitute.github.io/FairSense-AI
   abstract: 'In this paper, we introduce FairSense-AI: a multimodal framework designed
     to detect and mitigate bias in both text and images. By leveraging Large Language
     Models (LLMs) and Vision-Language Models (VLMs), FairSense-AI uncovers subtle
@@ -90558,7 +90555,7 @@ papers:
   - Jeongbeom Jeong
   venue: ''
   code_url: ''
-  project_url: https://huggingface.co/spaces/NCSOFT/ArenaLite}{https://huggingface.co/spaces/NCSOFT/ArenaLite}
+  project_url: https://huggingface.co/spaces/NCSOFT/ArenaLite
   abstract: 'As Large Language Models (LLMs) expand across domains, LLM judges have
     become essential for systems evaluation. Current benchmarks typically compare
     system outputs against baselines. This baseline-mediated approach, though convenient,
@@ -95087,7 +95084,6 @@ papers:
   - Jiachen Jiang
   - Yiqi Zhong
   venue: ''
-  code_url: https://github.com/tding1/Efficient-LLM-Survey
   project_url: ''
   abstract: The rapid growth of Large Language Models (LLMs) has been a driving force
     in transforming various domains, reshaping the artificial general intelligence
