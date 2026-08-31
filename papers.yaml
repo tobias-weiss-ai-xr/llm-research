@@ -97139,3 +97139,89 @@ papers:
     in model alignment, scalable adaptation, and inference-time reasoning, and outline
     future research directions. We also provide a public repository to continually
     track developments in this fast-evolving field: https://github.com/mbzuai-oryx/Awesome-LLM-Post-training.'
+- title: 'Speculative Probing: LLM Monitoring at Speculative-Decoding Cost'
+  date: 2026-08
+  url: https://arxiv.org/abs/2608.28099v1
+  category: method
+  subcategory: non-agentic
+  authors:
+  - Collin Zhang
+  - Tingwei Zhang
+  - Vitaly Shmatikov
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: 'Real-time classification during language model inference is valuable
+    for safety filtering, behavioral analysis, and model monitoring, but current approaches
+    force a trade-off between accuracy and efficiency. Hidden-state probes are fast
+    but limited: they are either not context-aware: operating on a single vector and
+    cannot model interactions across positions; or they are very costly: having dedicated
+    classifier models (Llama Guard, Qwen Guard, LLM-as-judge) or performing computation
+    on hidden states for all tokens and then pooling the results (MultiMax). This
+    shows an intrinsic trade-off between efficiency and accuracy. However, we find
+    that the speculative-decoding module in recent LLMs can be repurposed for efficient
+    high-quality classification. By appending a trained soft prompt at the end of
+    the target sequence, we can repurpose the speculative-decoding module into a sequence
+    classifier. At inference time in a speculative-decoding pipeline, the KV cache
+    is already in GPU memory, so classification adds negligible overhead. We evaluate
+    on four classification tasks across four models (Qwen3.5-4B, 9B, 27B, MiniCPM4.1-8B).
+    Our small probes consistently outperform zero-shot GPT-5.4-mini and, on multilingual
+    prompt safety, match or beat specialized 8B safety classifiers (Qwen3Guard-Gen-8B,
+    Llama-Guard-3-8B) without running a full LLM.'
+- title: A Survey on Rubric-Guided Reinforcement Learning for Language Models
+  date: 2026-08
+  url: https://arxiv.org/abs/2608.27505v1
+  category: method
+  subcategory: non-agentic
+  authors:
+  - Zifei Shan
+  - Fangning Shao
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: Reinforcement learning from human feedback (RLHF) has become the dominant
+    paradigm for aligning large language models (LLMs) with human preferences. However,
+    traditional RLHF relies on scalar reward signals that lack interpretability and
+    fail to capture the multifaceted nature of response quality. Rubric-guided reinforcement
+    learning addresses these limitations by introducing structured, interpretable
+    evaluation criteria, or rubrics, as the backbone of reward design, feedback generation,
+    and policy optimization. In this survey, we introduce a Bayesian framework that
+    defines constitutions as prior distributions $P(R)$ over evaluation criteria and
+    rubrics as conditional instantiations $R_x \sim P(R|x)$. Under this unified view,
+    we present a taxonomy of rubric-guided RL along the prior-posterior axis, covering
+    constitutional AI, instance-specific rubrics, process-level supervision, self-evolving
+    rubrics, and their agentic and multimodal extensions. Furthermore, as rubrics
+    are natural-language artifacts, we present a linguistic analysis of how granularity
+    trade-offs, semantic drift, and linguistic reward hacking impact alignment reliability,
+    identifying key open problems for future research.
+- title: 'Same Meaning, Different Scores: Lexical and Syntactic Sensitivity in LLM
+    Evaluation'
+  date: 2026-02
+  url: https://arxiv.org/abs/2602.17316v1
+  category: evaluation
+  subcategory: agentic
+  authors:
+  - Bogdan Kostić
+  - Conor Fallon
+  - Julian Risch
+  - Alexander Löser
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: 'The rapid advancement of Large Language Models (LLMs) has established
+    standardized evaluation benchmarks as the primary instrument for model comparison.
+    Yet, their reliability is increasingly questioned due to sensitivity to shallow
+    variations in input prompts. This paper examines how controlled, truth-conditionally
+    equivalent lexical and syntactic perturbations affect the absolute performance
+    and relative ranking of 23 contemporary LLMs across three benchmarks: MMLU, SQuAD,
+    and AMEGA. We employ two linguistically principled pipelines to generate meaning-preserving
+    variations: one performing synonym substitution for lexical changes, and another
+    using dependency parsing to determine applicable syntactic transformations. Results
+    show that lexical perturbations consistently induce substantial, statistically
+    significant performance degradation across nearly all models and tasks, while
+    syntactic perturbations have more heterogeneous effects, occasionally improving
+    results. Both perturbation types destabilize model leaderboards on complex tasks.
+    Furthermore, model robustness did not consistently scale with model size, revealing
+    strong task dependence. Overall, the findings suggest that LLMs rely more on surface-level
+    lexical patterns than on abstract linguistic competence, underscoring the need
+    for robustness testing as a standard component of LLM evaluation.'
