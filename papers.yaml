@@ -97225,3 +97225,131 @@ papers:
     strong task dependence. Overall, the findings suggest that LLMs rely more on surface-level
     lexical patterns than on abstract linguistic competence, underscoring the need
     for robustness testing as a standard component of LLM evaluation.'
+- title: 'DR-LoRA: Dynamic Rank LoRA for Fine-Tuning Mixture-of-Experts Models'
+  date: 2026-01
+  url: https://arxiv.org/abs/2601.04823v6
+  category: method
+  subcategory: non-agentic
+  authors:
+  - Guanzhi Deng
+  - Bo Li
+  - Ronghao Chen
+  - Xiujin Liu
+  - Zhuo Han
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: 'Mixture-of-Experts (MoE) has become a prominent paradigm for scaling
+    Large Language Models (LLMs). Parameter-efficient fine-tuning methods, such as
+    LoRA, are widely adopted to adapt pretrained MoE LLMs to downstream tasks. However,
+    existing approaches typically assign identical LoRA ranks to all expert modules,
+    ignoring the heterogeneous specialization of pretrained experts. This uniform
+    allocation leads to a resource mismatch: task-relevant experts are under-provisioned,
+    while less relevant ones receive redundant parameters. To address this, we propose
+    DR-LoRA, a Dynamic Rank LoRA framework for fine-tuning pretrained MoE models.
+    Specifically, DR-LoRA initializes all expert LoRA modules with a small active
+    rank and uses an expert saliency score, which combines routing frequency and gradient-based
+    rank importance, to identify which experts would benefit most from additional
+    capacity. It then periodically expands the active ranks of the task-critical expert
+    LoRA, progressively constructing a heterogeneous rank distribution tailored to
+    the target task. Experiments on three MoE models across six tasks show that DR-LoRA
+    consistently outperforms LoRA and other strong baselines, demonstrating that task-adaptive
+    heterogeneous rank allocation is an effective strategy to improve active capacity
+    utilization in MoE fine-tuning.'
+- title: 'MA-RAG: Multi-Agent Retrieval-Augmented Generation for Query-Driven Summarization
+    of Longitudinal Parkinson''s Disease Assessments'
+  date: 2026-07
+  url: https://arxiv.org/abs/2608.28624v1
+  category: application
+  subcategory: hybrid
+  authors:
+  - Sana Alamgeera
+  - Denise Goberta
+  - Muhammad Irshad
+  - Anne H. H. Ngu
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: 'Accurate interpretation of single-visit and longitudinal clinical assessments
+    for Parkinson''s disease is time-consuming and often depends on specialist expertise.
+    Although large language models (LLMs) can generate natural language summaries,
+    they frequently lack domain-specific clinical grounding and struggle to produce
+    factually correct and temporally consistent responses for structured longitudinal
+    assessment data. To address these limitations, we propose MA-RAG, a query-driven
+    multi-agent retrieval-augmented generation framework that decomposes clinical
+    reasoning into domain-specialized agents, combines structured fact extraction,
+    and synthesizes clinically grounded summaries through a final verification stage.
+    The framework supports four clinical analysis tasks: single-session, trajectory,
+    comparison, and cohort summarization. We evaluate MA-RAG using objective metrics,
+    namely Fact Precision, Hallucination Rate, Temporal Fidelity, and Semantic Similarity,
+    together with subjective evaluations conducted by clinical experts. Compared to
+    Traditional, RAG-only, and Single-agent RAG baselines, MA-RAG substantially improves
+    factual correctness, achieving up to a 122% relative increase in Fact Precision
+    (from 0.436 to 0.990) and reducing the Hallucination Rate by up to 98% (from 0.564
+    to 0.010), while consistently receiving top ratings from clinical experts for
+    organization and clinical usefulness. These results demonstrate that domain-specialized
+    multi-agent reasoning enables reliable query-driven summarization of structured
+    longitudinal clinical assessment data.'
+- title: 'DevBench: A multimodal developmental benchmark for language learning'
+  date: 2024-06
+  url: https://arxiv.org/abs/2406.10215v2
+  category: application
+  subcategory: agentic
+  authors:
+  - Alvin Wei Ming Tan
+  - Sunny Yu
+  - Bria Long
+  - Wanjing Anya Ma
+  - Tonya Murray
+  venue: NeurIPS 2024
+  code_url: ''
+  project_url: ''
+  abstract: How (dis)similar are the learning trajectories of vision-language models
+    and children? Recent modeling work has attempted to understand the gap between
+    models' and humans' data efficiency by constructing models trained on less data,
+    especially multimodal naturalistic data. However, such models are often evaluated
+    on adult-level benchmarks, with limited breadth in language abilities tested,
+    and without direct comparison to behavioral data. We introduce DevBench, a multimodal
+    benchmark comprising seven language evaluation tasks spanning the domains of lexical,
+    syntactic, and semantic ability, with behavioral data from both children and adults.
+    We evaluate a set of vision-language models on these tasks, comparing models and
+    humans not only on accuracy but on their response patterns. Across tasks, models
+    exhibit variation in their closeness to human response patterns, and models that
+    perform better on a task also more closely resemble human behavioral responses.
+    We also examine the developmental trajectory of OpenCLIP over training, finding
+    that greater training results in closer approximations to adult response patterns.
+    DevBench thus provides a benchmark for comparing models to human language development.
+    These comparisons highlight ways in which model and human language learning processes
+    diverge, providing insight into entry points for improving language models.
+- title: 'Cognitive Overload: Jailbreaking Large Language Models with Overloaded Logical
+    Thinking'
+  date: 2023-11
+  url: https://arxiv.org/abs/2311.09827v2
+  category: evaluation
+  subcategory: agentic
+  authors:
+  - Nan Xu
+  - Fei Wang
+  - Ben Zhou
+  - Bang Zheng Li
+  - Chaowei Xiao
+  venue: ''
+  code_url: ''
+  project_url: ''
+  abstract: While large language models (LLMs) have demonstrated increasing power,
+    they have also given rise to a wide range of harmful behaviors. As representatives,
+    jailbreak attacks can provoke harmful or unethical responses from LLMs, even after
+    safety alignment. In this paper, we investigate a novel category of jailbreak
+    attacks specifically designed to target the cognitive structure and processes
+    of LLMs. Specifically, we analyze the safety vulnerability of LLMs in the face
+    of (1) multilingual cognitive overload, (2) veiled expression, and (3) effect-to-cause
+    reasoning. Different from previous jailbreak attacks, our proposed cognitive overload
+    is a black-box attack with no need for knowledge of model architecture or access
+    to model weights. Experiments conducted on AdvBench and MasterKey reveal that
+    various LLMs, including both popular open-source model Llama 2 and the proprietary
+    model ChatGPT, can be compromised through cognitive overload. Motivated by cognitive
+    psychology work on managing cognitive load, we further investigate defending cognitive
+    overload attack from two perspectives. Empirical studies show that our cognitive
+    overload from three perspectives can jailbreak all studied LLMs successfully,
+    while existing defense strategies can hardly mitigate the caused malicious uses
+    effectively.

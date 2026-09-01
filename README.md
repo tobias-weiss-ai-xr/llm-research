@@ -467,17 +467,17 @@ This repo is designed to be driven by coding agents (OpenCode, Claude Code, …)
 
 ## 📊 Corpus Statistics
 
-**3222 papers** across **4 categories**.  
-Sources: **arXiv** 2756 (86%).  
+**3229 papers** across **4 categories**.  
+Sources: **arXiv** 2763 (86%).  
 
 ### Top categories
 
 | Category | Papers | Recent | |
 |----------|--------|--------|-|
-| application | **1417** | 994 | ████████████ |
-| method | **1078** | 708 | █████████░░░ |
-| evaluation | **606** | 391 | █████░░░░░░░ |
-| survey | **121** | 45 | █░░░░░░░░░░░ |
+| application | **1419** | 970 | ████████████ |
+| method | **1081** | 697 | █████████░░░ |
+| evaluation | **608** | 382 | █████░░░░░░░ |
+| survey | **121** | 40 | █░░░░░░░░░░░ |
 
 ### By year
 
@@ -497,32 +497,32 @@ Sources: **arXiv** 2756 (86%).
 | 2019 | 4 | █░░░░░░░░░░░ |
 | 2020 | 2 | █░░░░░░░░░░░ |
 | 2021 | 1 | █░░░░░░░░░░░ |
-| 2023 | 72 | █░░░░░░░░░░░ |
-| 2024 | 532 | ███░░░░░░░░░ |
+| 2023 | 73 | █░░░░░░░░░░░ |
+| 2024 | 533 | ███░░░░░░░░░ |
 | 2025 | 746 | █████░░░░░░░ |
-| 2026 | 1845 | ████████████ |
+| 2026 | 1850 | ████████████ |
 
 ### Momentum (hottest categories)
 
 | Category | Total | Rate | Recent | Score |
 |----------|-------|------|--------|-------|
-| Application | 1417 | 82.8/mo | 70% | 309 |
-| Method | 1078 | 59.0/mo | 66% | 304 |
-| Evaluation | 606 | 32.6/mo | 64% | 244 |
-| Survey | 121 | 3.8/mo | 37% | 40 |
+| Method | 1081 | 58.1/mo | 64% | 295 |
+| Application | 1419 | 80.8/mo | 68% | 284 |
+| Evaluation | 608 | 31.8/mo | 63% | 224 |
+| Survey | 121 | 3.3/mo | 33% | 16 |
 
 ### Trending keywords
 
 | Keyword | Papers | Burst |
 |---------|--------|-------|
-| autonomous | 100 | 1.2 |
-| framework | 876 | 1.11 |
-| system | 843 | 1.11 |
-| tool | 257 | 1.08 |
-| benchmark | 979 | 1.06 |
-| analysis | 376 | 1.05 |
-| scalable | 166 | 1.04 |
-| model | 1998 | 0.99 |
+| autonomous | 98 | 1.2 |
+| framework | 856 | 1.11 |
+| system | 820 | 1.11 |
+| tool | 252 | 1.09 |
+| benchmark | 962 | 1.07 |
+| analysis | 365 | 1.04 |
+| scalable | 157 | 1.01 |
+| model | 1949 | 0.99 |
 
 ### Top venues
 
@@ -549,7 +549,7 @@ Sources: **arXiv** 2756 (86%).
 | `survey/non-agentic` | 12 |
 | `method/agentic` | 13 |
 
-*Generated 2026-08 by `scripts/standard_stats.py`.*
+*Generated 2026-09 by `scripts/standard_stats.py`.*
 
 <!-- END CORPUS STATISTICS -->
 

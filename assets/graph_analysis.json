@@ -3,29 +3,29 @@
   {
    "id": "application",
    "name": "Applications",
-   "count": 1417,
+   "count": 1419,
    "trajectory": {
     "2023": 28,
-    "2024": 199,
+    "2024": 200,
     "2025": 356,
-    "2026": 834
+    "2026": 835
    },
    "momentum": {
     "id": "application",
     "name": "Application",
-    "total": 1417,
-    "recent": 994,
-    "prior": 293,
-    "growth_pct": 239.2,
-    "recent_share": 0.701,
-    "papers_per_month": 82.8,
-    "score": 309.3
+    "total": 1419,
+    "recent": 970,
+    "prior": 307,
+    "growth_pct": 216.0,
+    "recent_share": 0.684,
+    "papers_per_month": 80.8,
+    "score": 284.4
    }
   },
   {
    "id": "evaluation",
    "name": "Evaluation & Benchmarks",
-   "count": 606,
+   "count": 608,
    "trajectory": {
     "1998": 1,
     "2001": 1,
@@ -33,27 +33,27 @@
     "2017": 1,
     "2019": 2,
     "2021": 1,
-    "2023": 14,
+    "2023": 15,
     "2024": 99,
     "2025": 145,
-    "2026": 340
+    "2026": 341
    },
    "momentum": {
     "id": "evaluation",
     "name": "Evaluation",
-    "total": 606,
-    "recent": 391,
-    "prior": 140,
-    "growth_pct": 179.3,
-    "recent_share": 0.645,
-    "papers_per_month": 32.6,
-    "score": 243.8
+    "total": 608,
+    "recent": 382,
+    "prior": 146,
+    "growth_pct": 161.6,
+    "recent_share": 0.628,
+    "papers_per_month": 31.8,
+    "score": 224.4
    }
   },
   {
    "id": "method",
    "name": "Methods & Architectures",
-   "count": 1078,
+   "count": 1081,
    "trajectory": {
     "2000": 1,
     "2008": 1,
@@ -68,18 +68,18 @@
     "2023": 25,
     "2024": 203,
     "2025": 197,
-    "2026": 641
+    "2026": 644
    },
    "momentum": {
     "id": "method",
     "name": "Method",
-    "total": 1078,
-    "recent": 708,
-    "prior": 209,
-    "growth_pct": 238.8,
-    "recent_share": 0.657,
-    "papers_per_month": 59.0,
-    "score": 304.5
+    "total": 1081,
+    "recent": 697,
+    "prior": 211,
+    "growth_pct": 230.3,
+    "recent_share": 0.645,
+    "papers_per_month": 58.1,
+    "score": 294.8
    }
   },
   {
@@ -101,12 +101,12 @@
     "id": "survey",
     "name": "Survey",
     "total": 121,
-    "recent": 45,
-    "prior": 44,
-    "growth_pct": 2.3,
-    "recent_share": 0.372,
-    "papers_per_month": 3.8,
-    "score": 39.5
+    "recent": 40,
+    "prior": 48,
+    "growth_pct": -16.7,
+    "recent_share": 0.331,
+    "papers_per_month": 3.3,
+    "score": 16.4
    }
   }
  ],
@@ -114,17 +114,17 @@
   {
    "id": "agentic",
    "name": "Agentic",
-   "count": 1725
+   "count": 1728
   },
   {
    "id": "hybrid",
    "name": "Hybrid",
-   "count": 326
+   "count": 327
   },
   {
    "id": "non-agentic",
    "name": "Non-Agentic",
-   "count": 1171
+   "count": 1174
   }
  ],
  "timeline": [
@@ -515,8 +515,8 @@
   ],
   [
    "2023-11",
-   "method",
-   "non-agentic"
+   "evaluation",
+   "agentic"
   ],
   [
    "2023-11",
@@ -539,6 +539,11 @@
    "non-agentic"
   ],
   [
+   "2023-11",
+   "method",
+   "non-agentic"
+  ],
+  [
    "2023-12",
    "application",
    "agentic"
@@ -567,16 +572,6 @@
    "2023-12",
    "evaluation",
    "agentic"
-  ],
-  [
-   "2023-12",
-   "method",
-   "non-agentic"
-  ],
-  [
-   "2023-12",
-   "method",
-   "non-agentic"
   ],
   [
    "2023-12",
@@ -605,8 +600,13 @@
   ],
   [
    "2023-12",
-   "survey",
-   "agentic"
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2023-12",
+   "method",
+   "non-agentic"
   ],
   [
    "2023-12",
@@ -624,6 +624,11 @@
    "agentic"
   ],
   [
+   "2023-12",
+   "survey",
+   "agentic"
+  ],
+  [
    "2024-01",
    "application",
    "agentic"
@@ -1636,6 +1641,11 @@
   [
    "2024-05",
    "survey",
+   "agentic"
+  ],
+  [
+   "2024-06",
+   "application",
    "agentic"
   ],
   [
@@ -7510,6 +7520,11 @@
   ],
   [
    "2026-01",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-01",
    "survey",
    "agentic"
   ],
@@ -7735,8 +7750,8 @@
   ],
   [
    "2026-02",
-   "method",
-   "non-agentic"
+   "evaluation",
+   "agentic"
   ],
   [
    "2026-02",
@@ -7854,6 +7869,11 @@
    "non-agentic"
   ],
   [
+   "2026-02",
+   "method",
+   "non-agentic"
+  ],
+  [
    "2026-03",
    "application",
    "agentic"
@@ -14635,6 +14655,11 @@
   ],
   [
    "2026-07",
+   "application",
+   "hybrid"
+  ],
+  [
+   "2026-07",
    "evaluation",
    "agentic"
   ],
@@ -15811,6 +15836,16 @@
   [
    "2026-08",
    "evaluation",
+   "non-agentic"
+  ],
+  [
+   "2026-08",
+   "method",
+   "non-agentic"
+  ],
+  [
+   "2026-08",
+   "method",
    "non-agentic"
   ],
   [
@@ -16304,108 +16339,108 @@
  "keyword_bursts": [
   {
    "keyword": "autonomous",
-   "recent": 100,
+   "recent": 98,
    "total": 126,
    "burst_score": 1.2,
-   "recent_share": 0.0468
+   "recent_share": 0.0469
   },
   {
    "keyword": "framework",
-   "recent": 876,
-   "total": 1188,
+   "recent": 856,
+   "total": 1191,
    "burst_score": 1.11,
-   "recent_share": 0.4097
+   "recent_share": 0.4098
   },
   {
    "keyword": "system",
-   "recent": 843,
+   "recent": 820,
    "total": 1142,
    "burst_score": 1.11,
-   "recent_share": 0.3943
+   "recent_share": 0.3925
   },
   {
    "keyword": "tool",
-   "recent": 257,
+   "recent": 252,
    "total": 358,
-   "burst_score": 1.08,
-   "recent_share": 0.1202
+   "burst_score": 1.09,
+   "recent_share": 0.1206
   },
   {
    "keyword": "benchmark",
-   "recent": 979,
-   "total": 1390,
-   "burst_score": 1.06,
-   "recent_share": 0.4579
+   "recent": 962,
+   "total": 1392,
+   "burst_score": 1.07,
+   "recent_share": 0.4605
   },
   {
    "keyword": "analysis",
-   "recent": 376,
-   "total": 542,
-   "burst_score": 1.05,
-   "recent_share": 0.1759
+   "recent": 365,
+   "total": 545,
+   "burst_score": 1.04,
+   "recent_share": 0.1747
   },
   {
    "keyword": "scalable",
-   "recent": 166,
+   "recent": 157,
    "total": 241,
-   "burst_score": 1.04,
-   "recent_share": 0.0776
+   "burst_score": 1.01,
+   "recent_share": 0.0752
   },
   {
    "keyword": "model",
-   "recent": 1998,
-   "total": 3030,
+   "recent": 1949,
+   "total": 3037,
    "burst_score": 0.99,
-   "recent_share": 0.9345
+   "recent_share": 0.933
   },
   {
    "keyword": "evaluation",
-   "recent": 675,
-   "total": 1026,
-   "burst_score": 0.99,
-   "recent_share": 0.3157
+   "recent": 656,
+   "total": 1030,
+   "burst_score": 0.98,
+   "recent_share": 0.314
   },
   {
    "keyword": "learning",
-   "recent": 393,
-   "total": 613,
+   "recent": 385,
+   "total": 615,
    "burst_score": 0.97,
-   "recent_share": 0.1838
+   "recent_share": 0.1843
   },
   {
    "keyword": "real-world",
-   "recent": 224,
+   "recent": 219,
    "total": 352,
    "burst_score": 0.96,
    "recent_share": 0.1048
   },
   {
-   "keyword": "review",
-   "recent": 103,
-   "total": 165,
-   "burst_score": 0.94,
-   "recent_share": 0.0482
-  },
-  {
    "keyword": "method",
-   "recent": 787,
-   "total": 1280,
-   "burst_score": 0.93,
-   "recent_share": 0.3681
-  },
-  {
-   "keyword": "dataset",
-   "recent": 462,
-   "total": 769,
-   "burst_score": 0.91,
-   "recent_share": 0.2161
+   "recent": 761,
+   "total": 1281,
+   "burst_score": 0.92,
+   "recent_share": 0.3643
   },
   {
    "keyword": "human",
-   "recent": 360,
-   "total": 594,
+   "recent": 349,
+   "total": 596,
    "burst_score": 0.91,
-   "recent_share": 0.1684
+   "recent_share": 0.1671
+  },
+  {
+   "keyword": "review",
+   "recent": 97,
+   "total": 165,
+   "burst_score": 0.91,
+   "recent_share": 0.0464
+  },
+  {
+   "keyword": "dataset",
+   "recent": 448,
+   "total": 769,
+   "burst_score": 0.9,
+   "recent_share": 0.2145
   }
  ]
 }
